@@ -43,4 +43,6 @@ target 'upcomingGames' do
 
   # Automatically detect installed unimodules
   use_unimodules!
+  pod 'RealmJS', :path => '../node_modules/realm'
+
 end
