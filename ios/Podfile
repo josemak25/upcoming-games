@@ -45,4 +45,6 @@ target 'upcomingGames' do
   use_unimodules!
   pod 'RealmJS', :path => '../node_modules/realm'
 
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
 end
