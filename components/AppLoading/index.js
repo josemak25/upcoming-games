@@ -42,7 +42,6 @@ export default function AppLoading({ setIsAppReady }) {
       startAsync={loadAllAppAssets}
       onFinish={() => setIsAppReady(true)}
       onError={console.warn}
-      autoHideSplash={false}
     />
   );
 }
