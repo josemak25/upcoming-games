@@ -7,8 +7,7 @@ export const colors = {
   CARD_SHADOW_COLOR: "#E3E5EB",
   FONT_DARK_COLOR: "#413F42",
   FONT_MILK_COLOR: "#C4C3C4",
-  FONT_LIGHT_COLOR: "#FFFFFF",
-  FONT_SPLASH_COLOR: "#292626"
+  FONT_LIGHT_COLOR: "#FFFFFF"
 };
 
 // All app font sizes
@@ -16,10 +15,8 @@ export const fonts = {
   FONT_SIZE_SMALL: "10px",
   FONT_SIZE_MEDIUM: "12px",
   FONT_SIZE_LARGE: "15px",
-  FONT_SIZE_SPLASH_SCREEN: "35px",
-  FONT_FAMILY_REGULAR: "notosans-regular",
-  FONT_FAMILY_BOLD: "notosans-bold",
-  FONT_FAMILY_BOLD_EXTRA: "bungee-bold",
+  FONT_FAMILY_BOLD: "notoSans-bold",
+  FONT_FAMILY_REGULAR: "notoSans-regular",
   FONT_WEIGHT_LIGHT: 200,
   FONT_WEIGHT_MEDIUM: 600,
   FONT_WEIGHT_HEAVY: 800
