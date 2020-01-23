@@ -32,5 +32,5 @@ export const customHeaderStyle = {
   shadowOpacity: 0
 };
 
-// App theme
-export default theme = { colors, fonts, customHeaderStyle };
+// Database version
+export const databaseVersion = 1;
