@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppLoading from "./components/AppLoading";
 import AppRouter from "./router";
 import "./config";
