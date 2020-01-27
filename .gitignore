@@ -35,6 +35,13 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# realm database
+#
+database/app.realm.management
+database/app.realm.lock
+database/app.realm.note
+
+
 # BUCK
 buck-out/
 \.buckd/

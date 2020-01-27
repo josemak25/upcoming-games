@@ -1,10 +1,10 @@
 {
-  "devToolsPort": 19003,
+  "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19005,
-  "packagerPid": 3708,
+  "packagerPort": 19001,
+  "packagerPid": 20226,
   "expoServerNgrokUrl": "https://jf-jb6.josemak25.upcoming-games.exp.direct",
   "packagerNgrokUrl": "https://packager.jf-jb6.josemak25.upcoming-games.exp.direct",
-  "ngrokPid": 3732,
+  "ngrokPid": 20249,
   "webpackServerPort": null
 }
