@@ -1,11 +1,12 @@
-import { tableSchema } from "@nozbe/watermelondb";
+export const VIDEO_SCHEMA = "Video";
 
-export default videos = tableSchema({
-  name: "videos",
-  columns: [
-    { name: "video_id", type: "number" },
-    { name: "game_id", type: "number", isIndexed: true },
-    { name: "name", type: "string" },
-    { name: "video_url_id", type: "string" }
-  ]
-});
+export default videoSchema = {
+  primaryKey: "id",
+  name: VIDEO_SCHEMA,
+  properties: {
+    id: "int",
+    name: "string",
+    game: "int",
+    video_id: "string"
+  }
+};
