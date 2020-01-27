@@ -1,15 +1,14 @@
-// model/schema.js
-import { tableSchema } from "@nozbe/watermelondb";
+export const GENRE_SCHEMA = "Genre";
 
-export default games = tableSchema({
-  name: "genres",
-  columns: [
-    { name: "genre_id", type: "number" },
-    { name: "game_id", type: "number", isIndexed: true },
-    { name: "name", type: "string" },
-    { name: "slug", type: "string" },
-    { name: "url", type: "string" },
-    { name: "created_at", type: "number" },
-    { name: "updated_at", type: "number" }
-  ]
-});
+export default genreSchema = {
+  primaryKey: "id",
+  name: GENRE_SCHEMA,
+  properties: {
+    id: "int",
+    name: "string",
+    slug: "string",
+    url: "string",
+    created_at: "int",
+    updated_at: "int"
+  }
+};

@@ -17,9 +17,9 @@ export default function AppLoading({ setIsAppReady }) {
 
   const loadAllAppAssets = async () => {
     const imageAssets = cacheImages([
-      require("../../assets/images/icon.png"),
-      require("../../assets/images/splash.png"),
-      require("../../assets/images/splash_icon.png")
+      require("../../assets/icon.png"),
+      require("../../assets/splash.png"),
+      require("../../assets/splash_icon.png")
     ]);
 
     const fontAssets = cacheFonts([

@@ -1,12 +1,8 @@
-import { appSchema } from "@nozbe/watermelondb";
-import { databaseVersion } from "../../constants";
+// models/index.js
+import Games from "./games";
+import Genres from "./genres";
+import Screenshots from "./screenshots";
+import Videos from "./videos";
+import Favorites from "./favorites";
 
-import gameSchema from "./games";
-import genreSchema from "./genres";
-import screenshotSchema from "./screenshots";
-import videoSchema from "./videos";
-
-export default dbSchema = appSchema({
-  version: databaseVersion,
-  tables: [gameSchema, genreSchema, screenshotSchema, videoSchema]
-});
+export default dbSchemas = [Games, Genres, Screenshots, Videos, Favorites];
