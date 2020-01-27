@@ -33,4 +33,4 @@ export const customHeaderStyle = {
 };
 
 // Database version
-export const databaseVersion = 1;
+export const schemaVersion = 5;
