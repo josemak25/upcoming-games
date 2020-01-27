@@ -1,16 +1,38 @@
-import { Database } from "@nozbe/watermelondb";
-import SQLiteAdapter from "@nozbe/watermelondb/adapters/sqlite";
+import Realm from "realm";
+import dbSchemas from "./schema";
+import { schemaVersion } from "../constants";
 
-import dbSchema from "./schema";
-import dbModels from "./models";
+export default class database {
+  static realm = null;
 
-const adapter = new SQLiteAdapter({
-  dbName: "upcomingGames",
-  schema: dbSchema
-});
+  static async connect() {
+    try {
+      const response = await Realm.open({
+        path: "upcomingGames.realm",
+        schema: [...dbSchemas],
+        schemaVersion,
+        readOnly: false
+      });
+      this.realm = response;
+    } catch (error) {
+      console.warn(error);
+    }
+  }
 
-export default database = new Database({
-  adapter,
-  modelClasses: dbModels,
-  actionsEnabled: true
-});
+  static async create() {
+    try {
+      realm.write(() => {
+        realm.create("Car", { make: "Honda", model: "Accord", drive: "awd" });
+      });
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+
+  static async close() {
+    const { realm } = this;
+    if (realm !== null && !realm.isClosed) {
+      realm.close();
+    }
+  }
+}
