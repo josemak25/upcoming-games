@@ -24,4 +24,4 @@ const AppNavigator = createStackNavigator(
   }
 );
 
-export default AppRoutes = createAppContainer(AppNavigator);
+export default Routes = createAppContainer(AppNavigator);

@@ -10,10 +10,10 @@ export default function SplashScreen({ navigation }) {
     <Container>
       <ImageBackground
         style={{ resizeMode: "contain" }}
-        source={require("../../assets/splash.png")}
+        source={require("../../../assets/splash.png")}
         fadeDuration={0}
       >
-        <Logo source={require("../../assets/splash_icon.png")} />
+        <Logo source={require("../../../assets/splash_icon.png")} />
         <IconTexts>
           <Title>Upcoming</Title>
           <Title>Games</Title>

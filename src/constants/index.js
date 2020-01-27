@@ -31,6 +31,3 @@ export const customHeaderStyle = {
   elevation: 0,
   shadowOpacity: 0
 };
-
-// Database version
-export const schemaVersion = 5;

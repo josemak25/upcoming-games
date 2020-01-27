@@ -1,6 +1,6 @@
 import Realm from "realm";
 import dbSchemas from "./schema";
-import { schemaVersion } from "../constants";
+import APP_CONFIG from "../config";
 
 export default class database {
   static realm = null;
@@ -10,8 +10,7 @@ export default class database {
       const response = await Realm.open({
         path: "upcomingGames.realm",
         schema: [...dbSchemas],
-        schemaVersion,
-        readOnly: false
+        schemaVersion: APP_CONFIG.SCHEMA_VERSION
       });
       this.realm = response;
     } catch (error) {
@@ -29,7 +28,7 @@ export default class database {
     }
   }
 
-  static async close() {
+  static close() {
     const { realm } = this;
     if (realm !== null && !realm.isClosed) {
       realm.close();
