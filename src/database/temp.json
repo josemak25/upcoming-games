@@ -1,0 +1,529 @@
+[
+  {
+    "id": 11169,
+    "genres": [
+      {
+        "id": 12,
+        "created_at": 1297555200,
+        "name": "Role-playing (RPG)",
+        "slug": "role-playing-rpg",
+        "updated_at": 1323216000,
+        "url": "https://www.igdb.com/genres/role-playing-rpg"
+      },
+      {
+        "id": 31,
+        "created_at": 1323561600,
+        "name": "Adventure",
+        "slug": "adventure",
+        "updated_at": 1323561600,
+        "url": "https://www.igdb.com/genres/adventure"
+      }
+    ],
+    "name": "Final Fantasy VII Remake",
+    "release_dates": [185105],
+    "screenshots": [
+      {
+        "id": 41358,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "kosugq04dbbqedpfgosv",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/kosugq04dbbqedpfgosv.jpg",
+        "width": 1920
+      },
+      {
+        "id": 41359,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "lb4ld2p4uqy5xdpmf7pc",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/lb4ld2p4uqy5xdpmf7pc.jpg",
+        "width": 1920
+      },
+      {
+        "id": 41360,
+        "game": 11169,
+        "height": 720,
+        "image_id": "f1rsy5dsvmye2lnsk8al",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/f1rsy5dsvmye2lnsk8al.jpg",
+        "width": 1280
+      },
+      {
+        "id": 41361,
+        "game": 11169,
+        "height": 720,
+        "image_id": "vyukxxzgg2shzxo6pimd",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/vyukxxzgg2shzxo6pimd.jpg",
+        "width": 1280
+      },
+      {
+        "id": 320792,
+        "alpha_channel": false,
+        "animated": false,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "sc6viw",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viw.jpg",
+        "width": 1920
+      },
+      {
+        "id": 320793,
+        "alpha_channel": false,
+        "animated": false,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "sc6vix",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vix.jpg",
+        "width": 1920
+      },
+      {
+        "id": 320794,
+        "alpha_channel": false,
+        "animated": false,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "sc6viy",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viy.jpg",
+        "width": 1920
+      },
+      {
+        "id": 320795,
+        "alpha_channel": false,
+        "animated": false,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "sc6viz",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viz.jpg",
+        "width": 1920
+      },
+      {
+        "id": 320796,
+        "alpha_channel": false,
+        "animated": false,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "sc6vj0",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vj0.jpg",
+        "width": 1920
+      },
+      {
+        "id": 320797,
+        "alpha_channel": false,
+        "animated": false,
+        "game": 11169,
+        "height": 1080,
+        "image_id": "sc6vj1",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vj1.jpg",
+        "width": 1920
+      }
+    ],
+    "summary": "SQUARE ENIX® announced that it has begun production on the full remake of FINAL FANTASY® VII for the PlayStation®4 computer entertainment system.",
+    "url": "https://www.igdb.com/games/final-fantasy-vii-remake",
+    "videos": [
+      {
+        "id": 4434,
+        "game": 11169,
+        "name": "E3 Trailer",
+        "video_id": "3x-X4_Z9OX4"
+      },
+      {
+        "id": 6399,
+        "game": 11169,
+        "name": "PlayStation Experience 2015 Trailer",
+        "video_id": "mi41Fb3inU0"
+      },
+      {
+        "id": 6490,
+        "game": 11169,
+        "name": "Trailer",
+        "video_id": "QLYyWAqTTAo"
+      },
+      {
+        "id": 27150,
+        "game": 11169,
+        "name": "2019 State of Play Trailer",
+        "video_id": "qOn2bWuA_0w"
+      },
+      {
+        "id": 27902,
+        "game": 11169,
+        "name": "Trailer",
+        "video_id": "aTCmN8TtkgQ"
+      },
+      {
+        "id": 28047,
+        "game": 11169,
+        "name": "Trailer",
+        "video_id": "Z3xSGv3Hfio"
+      },
+      {
+        "id": 31901,
+        "game": 11169,
+        "name": "Trailer",
+        "video_id": "eHdaWMP7D2s"
+      }
+    ]
+  },
+  {
+    "id": 22395,
+    "genres": [
+      {
+        "id": 5,
+        "created_at": 1297555200,
+        "name": "Shooter",
+        "slug": "shooter",
+        "updated_at": 1323216000,
+        "url": "https://www.igdb.com/genres/shooter"
+      },
+      {
+        "id": 24,
+        "created_at": 1300924800,
+        "name": "Tactical",
+        "slug": "tactical",
+        "updated_at": 1323216000,
+        "url": "https://www.igdb.com/genres/tactical"
+      }
+    ],
+    "name": "Boundary",
+    "release_dates": [184379],
+    "screenshots": [
+      {
+        "id": 30125,
+        "game": 22395,
+        "height": 805,
+        "image_id": "clvj7qbsq7c973hn1jti",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/clvj7qbsq7c973hn1jti.jpg",
+        "width": 1280
+      },
+      {
+        "id": 30126,
+        "game": 22395,
+        "height": 805,
+        "image_id": "hrh5apo0edf9gfpnareb",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/hrh5apo0edf9gfpnareb.jpg",
+        "width": 1280
+      },
+      {
+        "id": 30127,
+        "game": 22395,
+        "height": 800,
+        "image_id": "jvivkfutcxnkmehvotgd",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/jvivkfutcxnkmehvotgd.jpg",
+        "width": 1280
+      },
+      {
+        "id": 30128,
+        "game": 22395,
+        "height": 800,
+        "image_id": "wtw0bjlyimtuwilojdbl",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/wtw0bjlyimtuwilojdbl.jpg",
+        "width": 1280
+      },
+      {
+        "id": 30129,
+        "game": 22395,
+        "height": 805,
+        "image_id": "m4ojpxnuchtiygomwkb3",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/m4ojpxnuchtiygomwkb3.jpg",
+        "width": 1280
+      }
+    ],
+    "summary": "A multiplayer tactical space-based shooter that puts players in the role of a heavily armed astronauts in space engaging in fierce zero gravity firefights. Fully customizable loadouts, weapons and ammo types across 6 classes of Astronaut for players to choose from in multiple game modes.",
+    "url": "https://www.igdb.com/games/boundary",
+    "videos": [
+      {
+        "id": 9323,
+        "game": 22395,
+        "name": "Trailer",
+        "video_id": "RUU4_W8bWcU"
+      },
+      {
+        "id": 28469,
+        "game": 22395,
+        "name": "Trailer",
+        "video_id": "p-6TaGGqZUQ"
+      }
+    ]
+  },
+  {
+    "id": 22788,
+    "genres": [
+      {
+        "id": 12,
+        "created_at": 1297555200,
+        "name": "Role-playing (RPG)",
+        "slug": "role-playing-rpg",
+        "updated_at": 1323216000,
+        "url": "https://www.igdb.com/genres/role-playing-rpg"
+      },
+      {
+        "id": 25,
+        "created_at": 1301616000,
+        "name": "Hack and slash/Beat 'em up",
+        "slug": "hack-and-slash-beat-em-up",
+        "updated_at": 1323216000,
+        "url": "https://www.igdb.com/genres/hack-and-slash-beat-em-up"
+      }
+    ],
+    "name": "Granblue Fantasy: Relink",
+    "release_dates": [186366],
+    "screenshots": [
+      {
+        "id": 139847,
+        "game": 22788,
+        "height": 506,
+        "image_id": "i4xwgodqa3mu4hnz2tqf",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/i4xwgodqa3mu4hnz2tqf.jpg",
+        "width": 900
+      },
+      {
+        "id": 139848,
+        "game": 22788,
+        "height": 506,
+        "image_id": "zrjemcp7ittnbgwki0ao",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/zrjemcp7ittnbgwki0ao.jpg",
+        "width": 900
+      },
+      {
+        "id": 139849,
+        "game": 22788,
+        "height": 506,
+        "image_id": "n19sh5zyco4aflfj91mf",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/n19sh5zyco4aflfj91mf.jpg",
+        "width": 900
+      },
+      {
+        "id": 139850,
+        "game": 22788,
+        "height": 507,
+        "image_id": "um4yx4d287fhleagkhtu",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/um4yx4d287fhleagkhtu.jpg",
+        "width": 900
+      },
+      {
+        "id": 139851,
+        "game": 22788,
+        "height": 507,
+        "image_id": "v4ddbnkulydmkd6fxta7",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/v4ddbnkulydmkd6fxta7.jpg",
+        "width": 900
+      }
+    ],
+    "summary": "A 3D action-RPG based on the mobile game \"Granblue Fatntasy\"",
+    "url": "https://www.igdb.com/games/granblue-fantasy-relink",
+    "videos": [
+      {
+        "id": 9491,
+        "game": 22788,
+        "name": "Trailer",
+        "video_id": "r-K5n1sbdrQ"
+      },
+      {
+        "id": 20934,
+        "game": 22788,
+        "name": "Gameplay video",
+        "video_id": "odAeEqQTIrU"
+      }
+    ]
+  },
+  {
+    "id": 26192,
+    "genres": [
+      {
+        "id": 5,
+        "created_at": 1297555200,
+        "name": "Shooter",
+        "slug": "shooter",
+        "updated_at": 1323216000,
+        "url": "https://www.igdb.com/genres/shooter"
+      },
+      {
+        "id": 31,
+        "created_at": 1323561600,
+        "name": "Adventure",
+        "slug": "adventure",
+        "updated_at": 1323561600,
+        "url": "https://www.igdb.com/genres/adventure"
+      }
+    ],
+    "name": "The Last of Us: Part II",
+    "release_dates": [178075],
+    "screenshots": [
+      {
+        "id": 34673,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "oh8a5shtmdbqx73cv765",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/oh8a5shtmdbqx73cv765.jpg",
+        "width": 3840
+      },
+      {
+        "id": 34674,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "rqr5dxxw97zikyhdn2tq",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/rqr5dxxw97zikyhdn2tq.jpg",
+        "width": 3840
+      },
+      {
+        "id": 34675,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "mobc8z5fnxljhadccvy6",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/mobc8z5fnxljhadccvy6.jpg",
+        "width": 3840
+      },
+      {
+        "id": 34676,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "vlhzdqayyne2j3cjvpag",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/vlhzdqayyne2j3cjvpag.jpg",
+        "width": 3840
+      },
+      {
+        "id": 34677,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "kazgjykzu18dhqjpspko",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/kazgjykzu18dhqjpspko.jpg",
+        "width": 3840
+      },
+      {
+        "id": 214555,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "rdonk4uvyh8ijanrbs46",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/rdonk4uvyh8ijanrbs46.jpg",
+        "width": 3840
+      },
+      {
+        "id": 214556,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "dbqn4wax78tgvplrpf1m",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/dbqn4wax78tgvplrpf1m.jpg",
+        "width": 3840
+      },
+      {
+        "id": 214557,
+        "game": 26192,
+        "height": 2160,
+        "image_id": "mmenctgbvassqs1uepax",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/mmenctgbvassqs1uepax.jpg",
+        "width": 3840
+      }
+    ],
+    "summary": "Set 5 years after the events of The Last of Us, Joel and Ellie return on their journey through the ruined cities of America, their path ahead of them will be unfold.",
+    "url": "https://www.igdb.com/games/the-last-of-us-part-ii",
+    "videos": [
+      {
+        "id": 16542,
+        "game": 26192,
+        "name": "Discussion",
+        "video_id": "gF1EQAtaZEo"
+      },
+      {
+        "id": 16543,
+        "game": 26192,
+        "name": "PSX 2016 Announcement Trailer",
+        "video_id": "muniWyT4vTg"
+      },
+      {
+        "id": 16588,
+        "game": 26192,
+        "name": "PGW17 Trailer",
+        "video_id": "ArAdN5ilVRs"
+      },
+      {
+        "id": 16589,
+        "game": 26192,
+        "name": "PGW17 Interview Trailer",
+        "video_id": "HfxOtvmpsM8"
+      },
+      {
+        "id": 20624,
+        "game": 26192,
+        "name": "E3 2018 Trailer",
+        "video_id": "jziBvTUdCB0"
+      },
+      {
+        "id": 30066,
+        "game": 26192,
+        "name": "Trailer",
+        "video_id": "II5UsqP2JAk"
+      }
+    ]
+  },
+  {
+    "id": 28337,
+    "genres": [
+      {
+        "id": 31,
+        "created_at": 1323561600,
+        "name": "Adventure",
+        "slug": "adventure",
+        "updated_at": 1323561600,
+        "url": "https://www.igdb.com/genres/adventure"
+      }
+    ],
+    "name": "13 Sentinels: Aegis Rim",
+    "release_dates": [174088],
+    "screenshots": [
+      {
+        "id": 44002,
+        "game": 28337,
+        "height": 1080,
+        "image_id": "hhnjujaeqjwyuayr8u1y",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/hhnjujaeqjwyuayr8u1y.jpg",
+        "width": 1920
+      },
+      {
+        "id": 44003,
+        "game": 28337,
+        "height": 1080,
+        "image_id": "jpf7ujdcjyvazvnudop0",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/jpf7ujdcjyvazvnudop0.jpg",
+        "width": 1920
+      },
+      {
+        "id": 44004,
+        "game": 28337,
+        "height": 1080,
+        "image_id": "oztowdoy3i3f2fnhqtht",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/oztowdoy3i3f2fnhqtht.jpg",
+        "width": 1920
+      },
+      {
+        "id": 334391,
+        "alpha_channel": true,
+        "animated": false,
+        "game": 28337,
+        "height": 338,
+        "image_id": "sc760n",
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc760n.jpg",
+        "width": 601
+      }
+    ],
+    "summary": "\"A departure from the studio’s traditional fantasy style, the game takes place in a modern setting punctuated with giant mechs. Although the world may be bleak, Vanillaware’s signature artistic shine and gorgeous aesthetics will bring the characters and story of 13 Sentinels to life.\"",
+    "url": "https://www.igdb.com/games/13-sentinels-aegis-rim",
+    "videos": [
+      {
+        "id": 15944,
+        "game": 28337,
+        "name": "Trailer",
+        "video_id": "mV_RfdxpVOU"
+      },
+      {
+        "id": 15945,
+        "game": 28337,
+        "name": "Trailer",
+        "video_id": "cnbfwwHrRa8"
+      },
+      {
+        "id": 29206,
+        "game": 28337,
+        "name": "Trailer",
+        "video_id": "fuA7-9EV7OE"
+      }
+    ]
+  }
+]

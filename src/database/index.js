@@ -2,6 +2,8 @@ import Realm from "realm";
 import dbSchemas from "./schema";
 import APP_CONFIG from "../config";
 
+import { GAME_SCHEMA } from "./schema/games";
+
 export default class database {
   static realm = null;
 
@@ -18,14 +20,21 @@ export default class database {
     }
   }
 
-  static async create() {
+  static async create(games) {
+    const { realm } = this;
     try {
-      realm.write(() => {
-        realm.create("Car", { make: "Honda", model: "Accord", drive: "awd" });
-      });
+      const cachedGames = this.getCachedGames();
+      if (cachedGames.length) return cachedGames;
+
+      realm.write(() => games.forEach(game => realm.create(GAME_SCHEMA, game)));
     } catch (error) {
       console.warn(error);
     }
+  }
+
+  static getCachedGames() {
+    const { realm } = this;
+    return realm.objects(GAME_SCHEMA);
   }
 
   static close() {
