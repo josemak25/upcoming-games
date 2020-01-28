@@ -1,5 +1,6 @@
 import NetInfo from "@react-native-community/netinfo";
 import database from "../database";
+import temp from "../database/temp.json";
 import fetchGames from "../utils/fetchGames";
 
 import {
@@ -26,28 +27,27 @@ const addGamesFailure = error => ({
   payload: error
 });
 
-export default getGames = () => {
-  return dispatch => {
-    dispatch(addGamesStarted());
+export default loadGames = dispatch => {
+  dispatch(addGamesStarted());
 
-    // To unsubscribe to these update, just use:
-    // unsubscribe();
+  // To unsubscribe to these update, just use:
+  // unsubscribe();
+  const unsubscribe = NetInfo.addEventListener(async state => {
+    if (!state.isConnected && !state.isInternetReachable) {
+      const cachedGames = await database.getCachedGames();
+      dispatch(addCachedGames(cachedGames));
+    }
+
     try {
-      const unsubscribe = NetInfo.addEventListener(async state => {
-        if (!state.isConnected && !state.isInternetReachable) {
-          const cachedGames = await database.getCachedGames();
-          dispatch(addCachedGames(cachedGames));
-        }
+      // const response = await fetchGames();
+      // const games = await response.json();
 
-        const response = await fetchGames();
-        const games = await response.json();
-
-        // add games to database for caching
-        //   setImmediate(() => games.forEach(database.create));
-        dispatch(addGamesSuccess(games));
-      });
+      // add games to database for caching
+      const games = temp;
+      setImmediate(() => database.create(games));
+      dispatch(addGamesSuccess(games));
     } catch (error) {
       dispatch(addGamesFailure(error.message));
     }
-  };
+  });
 };
