@@ -5,7 +5,7 @@ const StoreContext = createContext();
 
 const StoreProvider = ({ children }) => {
   const initialState = {
-    isLoading: true,
+    isLoading: false,
     games: [],
     error: null
   };

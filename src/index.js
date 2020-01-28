@@ -6,7 +6,7 @@ import { StoreProvider } from "./store";
 export default AppRouter = () => {
   useEffect(() => {
     (async () => await database.connect())();
-    return () => database.close();
+    return database.close();
   }, []);
 
   return (

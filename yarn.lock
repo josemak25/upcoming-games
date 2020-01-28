@@ -1097,6 +1097,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.5.tgz#25421be6cd943a4b1660b62cfbcd45be8891462c"
   integrity sha512-Lj1DzfCmW0f4HnmHtEuX8Yy2f7cnUA8r5KGGUuDDGtQt1so6QJkKeUmsnLo2zYDtsF8due6hvIL06Vdo5xxuLQ==
 
+"@react-native-community/netinfo@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-4.6.0.tgz#fc0b79a226da78371158f885a2f798ff07c926be"
+  integrity sha512-wz39BUpExDU1kTpLlBkDwwb0Efg+uuwixToosTSarZgpzG/CmcRvWdD786TMiE5tLDd+Mpi2xh3w4FrVM8zjoA==
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
@@ -2679,10 +2684,10 @@ expo@~36.0.0:
     unimodules-task-manager-interface "~5.0.0"
     uuid-js "^0.7.5"
 
-expokit@36.0.0:
-  version "36.0.0"
-  resolved "https://registry.yarnpkg.com/expokit/-/expokit-36.0.0.tgz#e894cf6812b778c8291c2bb4840a99a71aeef359"
-  integrity sha512-r9ilYKfZySRuG3UWOxUlWV5rlrHeI5Ei0akM4SPraLF/oYaZu45U/G6kAAVjFAnoRH+l8nFGyzYToWED3WSU+w==
+expokit@36.0.1:
+  version "36.0.1"
+  resolved "https://registry.yarnpkg.com/expokit/-/expokit-36.0.1.tgz#54047edeb8df59efc314a4cf0b668195d499aaa2"
+  integrity sha512-k4Hqg4dSj996fIDkb0yApW+E3+JQezEHJJjnX6jIpYyKVLEoQStWdAYjHdTKwaMLMaw7gVi1ukY763Ujmdterg==
   dependencies:
     jsc-android "^245459.0.0"
 
