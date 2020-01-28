@@ -17,20 +17,20 @@ export default function AppLoading({ setIsAppReady }) {
 
   const loadAllAppAssets = async () => {
     const imageAssets = cacheImages([
-      require("../../assets/icon.png"),
-      require("../../assets/splash.png"),
-      require("../../assets/splash_icon.png")
+      require("../../../assets/icon.png"),
+      require("../../../assets/splash.png"),
+      require("../../../assets/splash_icon.png")
     ]);
 
     const fontAssets = cacheFonts([
       {
-        "notosans-regular": require("../../assets/fonts/NotoSans-Regular.ttf")
+        "notosans-regular": require("../../../assets/fonts/NotoSans-Regular.ttf")
       },
       {
-        "notosans-bold": require("../../assets/fonts/NotoSans-Bold.ttf")
+        "notosans-bold": require("../../../assets/fonts/NotoSans-Bold.ttf")
       },
       {
-        "bungee-bold": require("../../assets/fonts/Bungee-Regular.ttf")
+        "bungee-bold": require("../../../assets/fonts/Bungee-Regular.ttf")
       }
     ]);
 

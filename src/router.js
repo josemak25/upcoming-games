@@ -6,7 +6,7 @@ import Screens from "./screens";
 
 const AppNavigator = createStackNavigator(
   {
-    // // Splash Route
+    // Splash Route
     SplashScreen: { screen: Screens.SplashScreen },
 
     // Home Route
@@ -24,4 +24,4 @@ const AppNavigator = createStackNavigator(
   }
 );
 
-export default AppRoutes = createAppContainer(AppNavigator);
+export default Routes = createAppContainer(AppNavigator);
