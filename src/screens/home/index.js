@@ -1,7 +1,8 @@
 import React, { useEffect, useContext } from "react";
+import Header from "../../components/Header";
 import LoadingGames from "../../components/LoadingGames";
-import { StoreContext } from "../../store";
-import loadGames from "../../store/actions";
+
+import { StoreContext, loadGames } from "../../store";
 
 import { Container, PleaseDeleteMe } from "./styles";
 
@@ -23,6 +24,6 @@ export default function Home({ navigation }) {
   );
 }
 
-Home.navigationOptions = {
-  headerLeft: () => null
-};
+Home.navigationOptions = ({ navigation }) => ({
+  header: () => <Header />
+});
