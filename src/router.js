@@ -18,9 +18,7 @@ const AppNavigator = createStackNavigator(
 
   {
     initialRouteName: "SplashScreen",
-    defaultNavigationOptions: {
-      headerStyle: customHeaderStyle
-    }
+    defaultNavigationOptions: { headerStyle: customHeaderStyle }
   }
 );
 
