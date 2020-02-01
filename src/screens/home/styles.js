@@ -5,7 +5,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: ${colors.BACKGROUND_DARK_COLOR};
+  background-color: ${colors.BACKGROUND_LIGHT_COLOR};
 `;
 
 export const PleaseDeleteMe = styled.Text`
