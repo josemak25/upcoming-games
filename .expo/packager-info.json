@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 27593,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "packagerPid": 63917,
+  "expoServerNgrokUrl": "https://km-eky.josemak25.upcoming-games.exp.direct",
+  "packagerNgrokUrl": "https://packager.km-eky.josemak25.upcoming-games.exp.direct",
+  "ngrokPid": 63932,
   "webpackServerPort": null
 }

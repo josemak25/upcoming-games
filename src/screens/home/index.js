@@ -1,9 +1,13 @@
 import React, { useEffect, useContext } from "react";
+import { FlatList } from "react-native";
+import Game from "../../components/Game";
+import Header from "../../components/Header";
 import LoadingGames from "../../components/LoadingGames";
-import { StoreContext } from "../../store";
-import loadGames from "../../store/actions";
+import temp from "../../database/temp.json";
 
-import { Container, PleaseDeleteMe } from "./styles";
+import { StoreContext, loadGames } from "../../store";
+
+import { Container } from "./styles";
 
 export default function Home({ navigation }) {
   const [store, dispatch] = useContext(StoreContext);
@@ -14,15 +18,19 @@ export default function Home({ navigation }) {
 
   return !store.isLoading ? (
     <Container>
-      <PleaseDeleteMe>
-        Open up App.js to start working on your app!
-      </PleaseDeleteMe>
+      <FlatList
+        data={store.games}
+        renderItem={({ item }) => <Game {...item} />}
+        keyExtractor={game => `${game.id}`}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 60 }}
+      />
     </Container>
   ) : (
     <LoadingGames />
   );
 }
 
-Home.navigationOptions = {
-  headerLeft: () => null
-};
+Home.navigationOptions = ({ navigation }) => ({
+  header: () => <Header />
+});

@@ -1,5 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import appReducer from "./reducer";
+import loadGames from "./actions";
 
 const StoreContext = createContext();
 
@@ -19,4 +20,4 @@ const StoreProvider = ({ children }) => {
   );
 };
 
-export { StoreProvider, StoreContext };
+export { StoreProvider, StoreContext, loadGames };

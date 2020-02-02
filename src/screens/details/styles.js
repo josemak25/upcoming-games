@@ -9,7 +9,7 @@ export const Container = styled.View`
 `;
 
 export const PleaseDeleteMe = styled.Text`
-  font-size: ${fonts.FONT_SIZE_LARGE};
+  font-size: ${fonts.FONT_SIZE_LARGE}px;
   font-family: ${fonts.FONT_FAMILY_BOLD};
   letter-spacing: 1px;
   line-height: 36px;
