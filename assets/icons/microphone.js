@@ -4,7 +4,7 @@ import { colors } from "../../src/constants";
 
 export default function Microphone(props) {
   return (
-    <Svg width="50%" height="50%" viewBox="0 0 11.788 17" {...props}>
+    <Svg width="60%" height="60%" viewBox="0 0 11.788 17" {...props}>
       <G data-name="Group 109">
         <G data-name="Group 108">
           <Path
