@@ -8,7 +8,7 @@ export default gameSchema = {
     name: "string",
     summary: "string",
     url: "string",
-    release_dates: "int[]",
+    release_dates: "ReleaseDate[]",
     genres: "Genre[]",
     screenshots: "Screenshot[]",
     videos: "Video[]"

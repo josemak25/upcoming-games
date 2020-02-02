@@ -8,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: ${fonts.FONT_SIZE_SPLASH_SCREEN};
+  font-size: ${fonts.FONT_SIZE_SPLASH_SCREEN}px;
   font-family: ${fonts.FONT_FAMILY_BOLD_EXTRA};
   font-weight: ${fonts.FONT_WEIGHT_HEAVY};
   color: ${colors.FONT_SPLASH_COLOR};
