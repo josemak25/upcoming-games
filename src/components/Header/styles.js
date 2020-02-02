@@ -5,7 +5,7 @@ export const Container = styled.View`
   width: 100%;
   height: 150%;
   justify-content: flex-end;
-  padding-bottom: 30px;
+  padding: 15px 0px;
   background-color: ${colors.ICON_DARK_COLOR};
 `;
 
