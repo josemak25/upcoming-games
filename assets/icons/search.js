@@ -4,7 +4,7 @@ import { colors } from "../../src/constants";
 
 export default function Search(props) {
   return (
-    <Svg width="60%" height="60%" viewBox="0 0 22 22" {...props}>
+    <Svg width="70%" height="70%" viewBox="0 0 22 22" {...props}>
       <G data-name="Color/Fill">
         <Path
           d="M13.451 4.181q-3.073.984-4.032 4.839c-.957 3.855-2.148 4.347-6.017 2.976a7.162 7.162 0 006.017 3.6c1.811 0 6.5-2.521 5.963-7.313a19.822 19.822 0 00-1.931-4.102z"
