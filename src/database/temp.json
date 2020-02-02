@@ -1,529 +1,2014 @@
 [
   {
-    "id": 11169,
-    "genres": [
-      {
-        "id": 12,
-        "created_at": 1297555200,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg",
-        "updated_at": 1323216000,
-        "url": "https://www.igdb.com/genres/role-playing-rpg"
-      },
-      {
-        "id": 31,
-        "created_at": 1323561600,
-        "name": "Adventure",
-        "slug": "adventure",
-        "updated_at": 1323561600,
-        "url": "https://www.igdb.com/genres/adventure"
-      }
-    ],
-    "name": "Final Fantasy VII Remake",
-    "release_dates": [185105],
-    "screenshots": [
-      {
-        "id": 41358,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "kosugq04dbbqedpfgosv",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/kosugq04dbbqedpfgosv.jpg",
-        "width": 1920
-      },
-      {
-        "id": 41359,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "lb4ld2p4uqy5xdpmf7pc",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/lb4ld2p4uqy5xdpmf7pc.jpg",
-        "width": 1920
-      },
-      {
-        "id": 41360,
-        "game": 11169,
-        "height": 720,
-        "image_id": "f1rsy5dsvmye2lnsk8al",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/f1rsy5dsvmye2lnsk8al.jpg",
-        "width": 1280
-      },
-      {
-        "id": 41361,
-        "game": 11169,
-        "height": 720,
-        "image_id": "vyukxxzgg2shzxo6pimd",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/vyukxxzgg2shzxo6pimd.jpg",
-        "width": 1280
-      },
-      {
-        "id": 320792,
-        "alpha_channel": false,
-        "animated": false,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "sc6viw",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viw.jpg",
-        "width": 1920
-      },
-      {
-        "id": 320793,
-        "alpha_channel": false,
-        "animated": false,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "sc6vix",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vix.jpg",
-        "width": 1920
-      },
-      {
-        "id": 320794,
-        "alpha_channel": false,
-        "animated": false,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "sc6viy",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viy.jpg",
-        "width": 1920
-      },
-      {
-        "id": 320795,
-        "alpha_channel": false,
-        "animated": false,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "sc6viz",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viz.jpg",
-        "width": 1920
-      },
-      {
-        "id": 320796,
-        "alpha_channel": false,
-        "animated": false,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "sc6vj0",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vj0.jpg",
-        "width": 1920
-      },
-      {
-        "id": 320797,
-        "alpha_channel": false,
-        "animated": false,
-        "game": 11169,
-        "height": 1080,
-        "image_id": "sc6vj1",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vj1.jpg",
-        "width": 1920
-      }
-    ],
-    "summary": "SQUARE ENIX® announced that it has begun production on the full remake of FINAL FANTASY® VII for the PlayStation®4 computer entertainment system.",
-    "url": "https://www.igdb.com/games/final-fantasy-vii-remake",
-    "videos": [
-      {
-        "id": 4434,
-        "game": 11169,
-        "name": "E3 Trailer",
-        "video_id": "3x-X4_Z9OX4"
-      },
-      {
-        "id": 6399,
-        "game": 11169,
-        "name": "PlayStation Experience 2015 Trailer",
-        "video_id": "mi41Fb3inU0"
-      },
-      {
-        "id": 6490,
-        "game": 11169,
-        "name": "Trailer",
-        "video_id": "QLYyWAqTTAo"
-      },
-      {
-        "id": 27150,
-        "game": 11169,
-        "name": "2019 State of Play Trailer",
-        "video_id": "qOn2bWuA_0w"
-      },
-      {
-        "id": 27902,
-        "game": 11169,
-        "name": "Trailer",
-        "video_id": "aTCmN8TtkgQ"
-      },
-      {
-        "id": 28047,
-        "game": 11169,
-        "name": "Trailer",
-        "video_id": "Z3xSGv3Hfio"
-      },
-      {
-        "id": 31901,
-        "game": 11169,
-        "name": "Trailer",
-        "video_id": "eHdaWMP7D2s"
-      }
-    ]
+      "id": 11169,
+      "genres": [
+          {
+              "id": 12,
+              "created_at": 1297555200,
+              "name": "Role-playing (RPG)",
+              "slug": "role-playing-rpg",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/role-playing-rpg"
+          },
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "Final Fantasy VII Remake",
+      "release_dates": [
+          {
+              "id": 185105,
+              "category": 0,
+              "created_at": 1578960000,
+              "date": 1586476800,
+              "game": 11169,
+              "human": "2020-Apr-10",
+              "m": 4,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1578960000,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 41358,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "kosugq04dbbqedpfgosv",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/kosugq04dbbqedpfgosv.jpg",
+              "width": 1920
+          },
+          {
+              "id": 41359,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "lb4ld2p4uqy5xdpmf7pc",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/lb4ld2p4uqy5xdpmf7pc.jpg",
+              "width": 1920
+          },
+          {
+              "id": 41360,
+              "game": 11169,
+              "height": 720,
+              "image_id": "f1rsy5dsvmye2lnsk8al",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/f1rsy5dsvmye2lnsk8al.jpg",
+              "width": 1280
+          },
+          {
+              "id": 41361,
+              "game": 11169,
+              "height": 720,
+              "image_id": "vyukxxzgg2shzxo6pimd",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/vyukxxzgg2shzxo6pimd.jpg",
+              "width": 1280
+          },
+          {
+              "id": 320792,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "sc6viw",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viw.jpg",
+              "width": 1920
+          },
+          {
+              "id": 320793,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "sc6vix",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vix.jpg",
+              "width": 1920
+          },
+          {
+              "id": 320794,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "sc6viy",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viy.jpg",
+              "width": 1920
+          },
+          {
+              "id": 320795,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "sc6viz",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6viz.jpg",
+              "width": 1920
+          },
+          {
+              "id": 320796,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "sc6vj0",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vj0.jpg",
+              "width": 1920
+          },
+          {
+              "id": 320797,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 11169,
+              "height": 1080,
+              "image_id": "sc6vj1",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vj1.jpg",
+              "width": 1920
+          }
+      ],
+      "summary": "SQUARE ENIX® announced that it has begun production on the full remake of FINAL FANTASY® VII for the PlayStation®4 computer entertainment system.",
+      "url": "https://www.igdb.com/games/final-fantasy-vii-remake",
+      "videos": [
+          {
+              "id": 4434,
+              "game": 11169,
+              "name": "E3 Trailer",
+              "video_id": "3x-X4_Z9OX4"
+          },
+          {
+              "id": 6399,
+              "game": 11169,
+              "name": "PlayStation Experience 2015 Trailer",
+              "video_id": "mi41Fb3inU0"
+          },
+          {
+              "id": 6490,
+              "game": 11169,
+              "name": "Trailer",
+              "video_id": "QLYyWAqTTAo"
+          },
+          {
+              "id": 27150,
+              "game": 11169,
+              "name": "2019 State of Play Trailer",
+              "video_id": "qOn2bWuA_0w"
+          },
+          {
+              "id": 27902,
+              "game": 11169,
+              "name": "Trailer",
+              "video_id": "aTCmN8TtkgQ"
+          },
+          {
+              "id": 28047,
+              "game": 11169,
+              "name": "Trailer",
+              "video_id": "Z3xSGv3Hfio"
+          },
+          {
+              "id": 31901,
+              "game": 11169,
+              "name": "Trailer",
+              "video_id": "eHdaWMP7D2s"
+          }
+      ]
   },
   {
-    "id": 22395,
-    "genres": [
-      {
-        "id": 5,
-        "created_at": 1297555200,
-        "name": "Shooter",
-        "slug": "shooter",
-        "updated_at": 1323216000,
-        "url": "https://www.igdb.com/genres/shooter"
-      },
-      {
-        "id": 24,
-        "created_at": 1300924800,
-        "name": "Tactical",
-        "slug": "tactical",
-        "updated_at": 1323216000,
-        "url": "https://www.igdb.com/genres/tactical"
-      }
-    ],
-    "name": "Boundary",
-    "release_dates": [184379],
-    "screenshots": [
-      {
-        "id": 30125,
-        "game": 22395,
-        "height": 805,
-        "image_id": "clvj7qbsq7c973hn1jti",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/clvj7qbsq7c973hn1jti.jpg",
-        "width": 1280
-      },
-      {
-        "id": 30126,
-        "game": 22395,
-        "height": 805,
-        "image_id": "hrh5apo0edf9gfpnareb",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/hrh5apo0edf9gfpnareb.jpg",
-        "width": 1280
-      },
-      {
-        "id": 30127,
-        "game": 22395,
-        "height": 800,
-        "image_id": "jvivkfutcxnkmehvotgd",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/jvivkfutcxnkmehvotgd.jpg",
-        "width": 1280
-      },
-      {
-        "id": 30128,
-        "game": 22395,
-        "height": 800,
-        "image_id": "wtw0bjlyimtuwilojdbl",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/wtw0bjlyimtuwilojdbl.jpg",
-        "width": 1280
-      },
-      {
-        "id": 30129,
-        "game": 22395,
-        "height": 805,
-        "image_id": "m4ojpxnuchtiygomwkb3",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/m4ojpxnuchtiygomwkb3.jpg",
-        "width": 1280
-      }
-    ],
-    "summary": "A multiplayer tactical space-based shooter that puts players in the role of a heavily armed astronauts in space engaging in fierce zero gravity firefights. Fully customizable loadouts, weapons and ammo types across 6 classes of Astronaut for players to choose from in multiple game modes.",
-    "url": "https://www.igdb.com/games/boundary",
-    "videos": [
-      {
-        "id": 9323,
-        "game": 22395,
-        "name": "Trailer",
-        "video_id": "RUU4_W8bWcU"
-      },
-      {
-        "id": 28469,
-        "game": 22395,
-        "name": "Trailer",
-        "video_id": "p-6TaGGqZUQ"
-      }
-    ]
+      "id": 22395,
+      "genres": [
+          {
+              "id": 5,
+              "created_at": 1297555200,
+              "name": "Shooter",
+              "slug": "shooter",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/shooter"
+          },
+          {
+              "id": 24,
+              "created_at": 1300924800,
+              "name": "Tactical",
+              "slug": "tactical",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/tactical"
+          }
+      ],
+      "name": "Boundary",
+      "release_dates": [
+          {
+              "id": 184379,
+              "category": 2,
+              "created_at": 1578355200,
+              "date": 1609372800,
+              "game": 22395,
+              "human": "2020",
+              "m": 12,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1578355200,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 30125,
+              "game": 22395,
+              "height": 805,
+              "image_id": "clvj7qbsq7c973hn1jti",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/clvj7qbsq7c973hn1jti.jpg",
+              "width": 1280
+          },
+          {
+              "id": 30126,
+              "game": 22395,
+              "height": 805,
+              "image_id": "hrh5apo0edf9gfpnareb",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/hrh5apo0edf9gfpnareb.jpg",
+              "width": 1280
+          },
+          {
+              "id": 30127,
+              "game": 22395,
+              "height": 800,
+              "image_id": "jvivkfutcxnkmehvotgd",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/jvivkfutcxnkmehvotgd.jpg",
+              "width": 1280
+          },
+          {
+              "id": 30128,
+              "game": 22395,
+              "height": 800,
+              "image_id": "wtw0bjlyimtuwilojdbl",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/wtw0bjlyimtuwilojdbl.jpg",
+              "width": 1280
+          },
+          {
+              "id": 30129,
+              "game": 22395,
+              "height": 805,
+              "image_id": "m4ojpxnuchtiygomwkb3",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/m4ojpxnuchtiygomwkb3.jpg",
+              "width": 1280
+          }
+      ],
+      "summary": "A multiplayer tactical space-based shooter that puts players in the role of a heavily armed astronauts in space engaging in fierce zero gravity firefights. Fully customizable loadouts, weapons and ammo types across 6 classes of Astronaut for players to choose from in multiple game modes.",
+      "url": "https://www.igdb.com/games/boundary",
+      "videos": [
+          {
+              "id": 9323,
+              "game": 22395,
+              "name": "Trailer",
+              "video_id": "RUU4_W8bWcU"
+          },
+          {
+              "id": 28469,
+              "game": 22395,
+              "name": "Trailer",
+              "video_id": "p-6TaGGqZUQ"
+          }
+      ]
   },
   {
-    "id": 22788,
-    "genres": [
-      {
-        "id": 12,
-        "created_at": 1297555200,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg",
-        "updated_at": 1323216000,
-        "url": "https://www.igdb.com/genres/role-playing-rpg"
-      },
-      {
-        "id": 25,
-        "created_at": 1301616000,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up",
-        "updated_at": 1323216000,
-        "url": "https://www.igdb.com/genres/hack-and-slash-beat-em-up"
-      }
-    ],
-    "name": "Granblue Fantasy: Relink",
-    "release_dates": [186366],
-    "screenshots": [
-      {
-        "id": 139847,
-        "game": 22788,
-        "height": 506,
-        "image_id": "i4xwgodqa3mu4hnz2tqf",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/i4xwgodqa3mu4hnz2tqf.jpg",
-        "width": 900
-      },
-      {
-        "id": 139848,
-        "game": 22788,
-        "height": 506,
-        "image_id": "zrjemcp7ittnbgwki0ao",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/zrjemcp7ittnbgwki0ao.jpg",
-        "width": 900
-      },
-      {
-        "id": 139849,
-        "game": 22788,
-        "height": 506,
-        "image_id": "n19sh5zyco4aflfj91mf",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/n19sh5zyco4aflfj91mf.jpg",
-        "width": 900
-      },
-      {
-        "id": 139850,
-        "game": 22788,
-        "height": 507,
-        "image_id": "um4yx4d287fhleagkhtu",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/um4yx4d287fhleagkhtu.jpg",
-        "width": 900
-      },
-      {
-        "id": 139851,
-        "game": 22788,
-        "height": 507,
-        "image_id": "v4ddbnkulydmkd6fxta7",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/v4ddbnkulydmkd6fxta7.jpg",
-        "width": 900
-      }
-    ],
-    "summary": "A 3D action-RPG based on the mobile game \"Granblue Fatntasy\"",
-    "url": "https://www.igdb.com/games/granblue-fantasy-relink",
-    "videos": [
-      {
-        "id": 9491,
-        "game": 22788,
-        "name": "Trailer",
-        "video_id": "r-K5n1sbdrQ"
-      },
-      {
-        "id": 20934,
-        "game": 22788,
-        "name": "Gameplay video",
-        "video_id": "odAeEqQTIrU"
-      }
-    ]
+      "id": 22788,
+      "genres": [
+          {
+              "id": 12,
+              "created_at": 1297555200,
+              "name": "Role-playing (RPG)",
+              "slug": "role-playing-rpg",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/role-playing-rpg"
+          },
+          {
+              "id": 25,
+              "created_at": 1301616000,
+              "name": "Hack and slash/Beat 'em up",
+              "slug": "hack-and-slash-beat-em-up",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/hack-and-slash-beat-em-up"
+          }
+      ],
+      "name": "Granblue Fantasy: Relink",
+      "release_dates": [
+          {
+              "id": 186366,
+              "category": 2,
+              "created_at": 1579478400,
+              "date": 1609372800,
+              "game": 22788,
+              "human": "2020",
+              "m": 12,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1579478400,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 139847,
+              "game": 22788,
+              "height": 506,
+              "image_id": "i4xwgodqa3mu4hnz2tqf",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/i4xwgodqa3mu4hnz2tqf.jpg",
+              "width": 900
+          },
+          {
+              "id": 139848,
+              "game": 22788,
+              "height": 506,
+              "image_id": "zrjemcp7ittnbgwki0ao",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/zrjemcp7ittnbgwki0ao.jpg",
+              "width": 900
+          },
+          {
+              "id": 139849,
+              "game": 22788,
+              "height": 506,
+              "image_id": "n19sh5zyco4aflfj91mf",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/n19sh5zyco4aflfj91mf.jpg",
+              "width": 900
+          },
+          {
+              "id": 139850,
+              "game": 22788,
+              "height": 507,
+              "image_id": "um4yx4d287fhleagkhtu",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/um4yx4d287fhleagkhtu.jpg",
+              "width": 900
+          },
+          {
+              "id": 139851,
+              "game": 22788,
+              "height": 507,
+              "image_id": "v4ddbnkulydmkd6fxta7",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/v4ddbnkulydmkd6fxta7.jpg",
+              "width": 900
+          }
+      ],
+      "summary": "A 3D action-RPG based on the mobile game \"Granblue Fatntasy\"",
+      "url": "https://www.igdb.com/games/granblue-fantasy-relink",
+      "videos": [
+          {
+              "id": 9491,
+              "game": 22788,
+              "name": "Trailer",
+              "video_id": "r-K5n1sbdrQ"
+          },
+          {
+              "id": 20934,
+              "game": 22788,
+              "name": "Gameplay video",
+              "video_id": "odAeEqQTIrU"
+          }
+      ]
   },
   {
-    "id": 26192,
-    "genres": [
-      {
-        "id": 5,
-        "created_at": 1297555200,
-        "name": "Shooter",
-        "slug": "shooter",
-        "updated_at": 1323216000,
-        "url": "https://www.igdb.com/genres/shooter"
-      },
-      {
-        "id": 31,
-        "created_at": 1323561600,
-        "name": "Adventure",
-        "slug": "adventure",
-        "updated_at": 1323561600,
-        "url": "https://www.igdb.com/genres/adventure"
-      }
-    ],
-    "name": "The Last of Us: Part II",
-    "release_dates": [178075],
-    "screenshots": [
-      {
-        "id": 34673,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "oh8a5shtmdbqx73cv765",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/oh8a5shtmdbqx73cv765.jpg",
-        "width": 3840
-      },
-      {
-        "id": 34674,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "rqr5dxxw97zikyhdn2tq",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/rqr5dxxw97zikyhdn2tq.jpg",
-        "width": 3840
-      },
-      {
-        "id": 34675,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "mobc8z5fnxljhadccvy6",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/mobc8z5fnxljhadccvy6.jpg",
-        "width": 3840
-      },
-      {
-        "id": 34676,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "vlhzdqayyne2j3cjvpag",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/vlhzdqayyne2j3cjvpag.jpg",
-        "width": 3840
-      },
-      {
-        "id": 34677,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "kazgjykzu18dhqjpspko",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/kazgjykzu18dhqjpspko.jpg",
-        "width": 3840
-      },
-      {
-        "id": 214555,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "rdonk4uvyh8ijanrbs46",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/rdonk4uvyh8ijanrbs46.jpg",
-        "width": 3840
-      },
-      {
-        "id": 214556,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "dbqn4wax78tgvplrpf1m",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/dbqn4wax78tgvplrpf1m.jpg",
-        "width": 3840
-      },
-      {
-        "id": 214557,
-        "game": 26192,
-        "height": 2160,
-        "image_id": "mmenctgbvassqs1uepax",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/mmenctgbvassqs1uepax.jpg",
-        "width": 3840
-      }
-    ],
-    "summary": "Set 5 years after the events of The Last of Us, Joel and Ellie return on their journey through the ruined cities of America, their path ahead of them will be unfold.",
-    "url": "https://www.igdb.com/games/the-last-of-us-part-ii",
-    "videos": [
-      {
-        "id": 16542,
-        "game": 26192,
-        "name": "Discussion",
-        "video_id": "gF1EQAtaZEo"
-      },
-      {
-        "id": 16543,
-        "game": 26192,
-        "name": "PSX 2016 Announcement Trailer",
-        "video_id": "muniWyT4vTg"
-      },
-      {
-        "id": 16588,
-        "game": 26192,
-        "name": "PGW17 Trailer",
-        "video_id": "ArAdN5ilVRs"
-      },
-      {
-        "id": 16589,
-        "game": 26192,
-        "name": "PGW17 Interview Trailer",
-        "video_id": "HfxOtvmpsM8"
-      },
-      {
-        "id": 20624,
-        "game": 26192,
-        "name": "E3 2018 Trailer",
-        "video_id": "jziBvTUdCB0"
-      },
-      {
-        "id": 30066,
-        "game": 26192,
-        "name": "Trailer",
-        "video_id": "II5UsqP2JAk"
-      }
-    ]
+      "id": 26192,
+      "genres": [
+          {
+              "id": 5,
+              "created_at": 1297555200,
+              "name": "Shooter",
+              "slug": "shooter",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/shooter"
+          },
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "The Last of Us: Part II",
+      "release_dates": [
+          {
+              "id": 178075,
+              "category": 0,
+              "created_at": 1571961600,
+              "date": 1590710400,
+              "game": 26192,
+              "human": "2020-May-29",
+              "m": 5,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1571961600,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 34673,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "oh8a5shtmdbqx73cv765",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/oh8a5shtmdbqx73cv765.jpg",
+              "width": 3840
+          },
+          {
+              "id": 34674,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "rqr5dxxw97zikyhdn2tq",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/rqr5dxxw97zikyhdn2tq.jpg",
+              "width": 3840
+          },
+          {
+              "id": 34675,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "mobc8z5fnxljhadccvy6",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/mobc8z5fnxljhadccvy6.jpg",
+              "width": 3840
+          },
+          {
+              "id": 34676,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "vlhzdqayyne2j3cjvpag",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/vlhzdqayyne2j3cjvpag.jpg",
+              "width": 3840
+          },
+          {
+              "id": 34677,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "kazgjykzu18dhqjpspko",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/kazgjykzu18dhqjpspko.jpg",
+              "width": 3840
+          },
+          {
+              "id": 214555,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "rdonk4uvyh8ijanrbs46",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/rdonk4uvyh8ijanrbs46.jpg",
+              "width": 3840
+          },
+          {
+              "id": 214556,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "dbqn4wax78tgvplrpf1m",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/dbqn4wax78tgvplrpf1m.jpg",
+              "width": 3840
+          },
+          {
+              "id": 214557,
+              "game": 26192,
+              "height": 2160,
+              "image_id": "mmenctgbvassqs1uepax",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/mmenctgbvassqs1uepax.jpg",
+              "width": 3840
+          }
+      ],
+      "summary": "Set 5 years after the events of The Last of Us, Joel and Ellie return on their journey through the ruined cities of America, their path ahead of them will be unfold.",
+      "url": "https://www.igdb.com/games/the-last-of-us-part-ii",
+      "videos": [
+          {
+              "id": 16542,
+              "game": 26192,
+              "name": "Discussion",
+              "video_id": "gF1EQAtaZEo"
+          },
+          {
+              "id": 16543,
+              "game": 26192,
+              "name": "PSX 2016 Announcement Trailer",
+              "video_id": "muniWyT4vTg"
+          },
+          {
+              "id": 16588,
+              "game": 26192,
+              "name": "PGW17 Trailer",
+              "video_id": "ArAdN5ilVRs"
+          },
+          {
+              "id": 16589,
+              "game": 26192,
+              "name": "PGW17 Interview Trailer",
+              "video_id": "HfxOtvmpsM8"
+          },
+          {
+              "id": 20624,
+              "game": 26192,
+              "name": "E3 2018 Trailer",
+              "video_id": "jziBvTUdCB0"
+          },
+          {
+              "id": 30066,
+              "game": 26192,
+              "name": "Trailer",
+              "video_id": "II5UsqP2JAk"
+          }
+      ]
   },
   {
-    "id": 28337,
-    "genres": [
-      {
-        "id": 31,
-        "created_at": 1323561600,
-        "name": "Adventure",
-        "slug": "adventure",
-        "updated_at": 1323561600,
-        "url": "https://www.igdb.com/genres/adventure"
-      }
-    ],
-    "name": "13 Sentinels: Aegis Rim",
-    "release_dates": [174088],
-    "screenshots": [
-      {
-        "id": 44002,
-        "game": 28337,
-        "height": 1080,
-        "image_id": "hhnjujaeqjwyuayr8u1y",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/hhnjujaeqjwyuayr8u1y.jpg",
-        "width": 1920
-      },
-      {
-        "id": 44003,
-        "game": 28337,
-        "height": 1080,
-        "image_id": "jpf7ujdcjyvazvnudop0",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/jpf7ujdcjyvazvnudop0.jpg",
-        "width": 1920
-      },
-      {
-        "id": 44004,
-        "game": 28337,
-        "height": 1080,
-        "image_id": "oztowdoy3i3f2fnhqtht",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/oztowdoy3i3f2fnhqtht.jpg",
-        "width": 1920
-      },
-      {
-        "id": 334391,
-        "alpha_channel": true,
-        "animated": false,
-        "game": 28337,
-        "height": 338,
-        "image_id": "sc760n",
-        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc760n.jpg",
-        "width": 601
-      }
-    ],
-    "summary": "\"A departure from the studio’s traditional fantasy style, the game takes place in a modern setting punctuated with giant mechs. Although the world may be bleak, Vanillaware’s signature artistic shine and gorgeous aesthetics will bring the characters and story of 13 Sentinels to life.\"",
-    "url": "https://www.igdb.com/games/13-sentinels-aegis-rim",
-    "videos": [
-      {
-        "id": 15944,
-        "game": 28337,
-        "name": "Trailer",
-        "video_id": "mV_RfdxpVOU"
-      },
-      {
-        "id": 15945,
-        "game": 28337,
-        "name": "Trailer",
-        "video_id": "cnbfwwHrRa8"
-      },
-      {
-        "id": 29206,
-        "game": 28337,
-        "name": "Trailer",
-        "video_id": "fuA7-9EV7OE"
-      }
-    ]
+      "id": 36550,
+      "genres": [
+          {
+              "id": 12,
+              "created_at": 1297555200,
+              "name": "Role-playing (RPG)",
+              "slug": "role-playing-rpg",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/role-playing-rpg"
+          }
+      ],
+      "name": "Yakuza: Like a Dragon",
+      "release_dates": [
+          {
+              "id": 182658,
+              "category": 0,
+              "created_at": 1577404800,
+              "date": 1579132800,
+              "game": 36550,
+              "human": "2020-Jan-16",
+              "m": 1,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1577404800,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 322653,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wyl",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wyl.jpg",
+              "width": 1024
+          },
+          {
+              "id": 322654,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wym",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wym.jpg",
+              "width": 1024
+          },
+          {
+              "id": 322655,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wyn",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wyn.jpg",
+              "width": 1024
+          },
+          {
+              "id": 322656,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wyo",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wyo.jpg",
+              "width": 1024
+          },
+          {
+              "id": 322657,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wyp",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wyp.jpg",
+              "width": 1024
+          },
+          {
+              "id": 322658,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wyq",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wyq.jpg",
+              "width": 1024
+          },
+          {
+              "id": 322659,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 36550,
+              "height": 576,
+              "image_id": "sc6wyr",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6wyr.jpg",
+              "width": 1024
+          }
+      ],
+      "summary": "Yakuza: Like a Dragon aka Yakuza 7 is a new game in the Yakuza franchise with an all new cast and new combat style: turn-based!",
+      "url": "https://www.igdb.com/games/yakuza-like-a-dragon",
+      "videos": [
+          {
+              "id": 29699,
+              "game": 36550,
+              "name": "Teaser",
+              "video_id": "M9_L2TA0IEY"
+          },
+          {
+              "id": 29915,
+              "game": 36550,
+              "name": "Trailer",
+              "video_id": "FeZ_Z1diuig"
+          },
+          {
+              "id": 32225,
+              "game": 36550,
+              "name": "Gameplay video",
+              "video_id": "79sDRvm8yk8"
+          }
+      ]
+  },
+  {
+      "id": 75235,
+      "genres": [
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "Ghost of Tsushima",
+      "release_dates": [
+          {
+              "id": 182007,
+              "category": 5,
+              "created_at": 1576713600,
+              "date": 1601424000,
+              "game": 75235,
+              "human": "2020-Q3",
+              "m": 9,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1576713600,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 132328,
+              "game": 75235,
+              "height": 450,
+              "image_id": "hcfpcjiout0cmtttfj5z",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/hcfpcjiout0cmtttfj5z.jpg",
+              "width": 800
+          },
+          {
+              "id": 132329,
+              "game": 75235,
+              "height": 450,
+              "image_id": "ob4pm8jmsutkttmdm5ys",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/ob4pm8jmsutkttmdm5ys.jpg",
+              "width": 800
+          },
+          {
+              "id": 214111,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "towtfurjgbucvoafbaq9",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/towtfurjgbucvoafbaq9.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214112,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "zchu45pjxufkppw5veux",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/zchu45pjxufkppw5veux.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214113,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "opsy0q92riwnnsmvumja",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/opsy0q92riwnnsmvumja.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214114,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "lffd1zevma6zyflxgojh",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/lffd1zevma6zyflxgojh.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214115,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "heyxlphesv7cpuml9ids",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/heyxlphesv7cpuml9ids.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214116,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "lykfms7zl20y2wlkaji7",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/lykfms7zl20y2wlkaji7.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214117,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "ctzhlbj69v5epi2r9l4h",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/ctzhlbj69v5epi2r9l4h.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214118,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "tpgj7ycwworclmurbw0h",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/tpgj7ycwworclmurbw0h.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214119,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "dnvj1xmm95eloumjv6q5",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/dnvj1xmm95eloumjv6q5.jpg",
+              "width": 1920
+          },
+          {
+              "id": 214120,
+              "game": 75235,
+              "height": 1080,
+              "image_id": "zwcxfagpos7elct133ip",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/zwcxfagpos7elct133ip.jpg",
+              "width": 1920
+          }
+      ],
+      "summary": "The year is 1274. Samurai warriors are the legendary defenders of Japan — until the fearsome Mongol Empire invades the island of Tsushima, wreaking havoc and conquering the local population. As one of the last surviving samurai, you rise from the ashes to fight back. But, honorable tactics won’t lead you to victory. You must move beyond your samurai traditions to forge a new way of fighting — the way of the Ghost — as you wage an unconventional war for the freedom of Japan.",
+      "url": "https://www.igdb.com/games/ghost-of-tsushima",
+      "videos": [
+          {
+              "id": 16583,
+              "game": 75235,
+              "name": "PGW17 Trailer",
+              "video_id": "k3CqzUCNDjU"
+          },
+          {
+              "id": 20623,
+              "game": 75235,
+              "name": "E3 2018 Trailer",
+              "video_id": "f_e-yPeD1sM"
+          },
+          {
+              "id": 32903,
+              "game": 75235,
+              "name": "Trailer",
+              "video_id": "Zbq7BnsQhrw"
+          }
+      ]
+  },
+  {
+      "id": 76961,
+      "name": "Patapon 2 Remastered",
+      "release_dates": [
+          {
+              "id": 187216,
+              "category": 0,
+              "created_at": 1580083200,
+              "date": 1580342400,
+              "game": 76961,
+              "human": "2020-Jan-30",
+              "m": 1,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1580083200,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 199244,
+              "game": 76961,
+              "height": 2160,
+              "image_id": "opf7rsrz1zjpfezn031i",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/opf7rsrz1zjpfezn031i.jpg",
+              "width": 3840
+          },
+          {
+              "id": 199245,
+              "game": 76961,
+              "height": 2160,
+              "image_id": "pxtdor4j0r8uafg7dwwh",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/pxtdor4j0r8uafg7dwwh.jpg",
+              "width": 3840
+          },
+          {
+              "id": 199246,
+              "game": 76961,
+              "height": 2160,
+              "image_id": "izjuzuazuyqlk9e9cnw6",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/izjuzuazuyqlk9e9cnw6.jpg",
+              "width": 3840
+          }
+      ],
+      "summary": "Patapon 2 sees the return of the beloved and innovative, rhythm-based 2D action game remastered in 1080p and dynamic 4K* resolution. In Patapon 2, a follow-up to the original that received critical acclaim, players are tasked with leading the colorful Patapons, a brave and noble tribe now in an unfamiliar land, through a series of epic battles against the opposing army and gigantic monsters. In a distinct gameplay twist, action and rhythm are intertwined as players utilize drumbeats to march, attack, and defend, ultimately leading the Patapon tribe to victory.",
+      "url": "https://www.igdb.com/games/patapon-2-remastered",
+      "videos": [
+          {
+              "id": 33359,
+              "game": 76961,
+              "name": "Trailer",
+              "video_id": "w186xFg91_A"
+          }
+      ]
+  },
+  {
+      "id": 103017,
+      "genres": [
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "Yakuza 5 Remastered",
+      "release_dates": [
+          {
+              "id": 166625,
+              "category": 0,
+              "created_at": 1552953600,
+              "date": 1560988800,
+              "game": 103017,
+              "human": "2019-Jun-20",
+              "m": 6,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1552953600,
+              "y": 2019
+          },
+          {
+              "id": 174642,
+              "category": 0,
+              "created_at": 1566345600,
+              "date": 1581379200,
+              "game": 103017,
+              "human": "2020-Feb-11",
+              "m": 2,
+              "platform": 48,
+              "region": 1,
+              "updated_at": 1566345600,
+              "y": 2020
+          },
+          {
+              "id": 174643,
+              "category": 0,
+              "created_at": 1566345600,
+              "date": 1581379200,
+              "game": 103017,
+              "human": "2020-Feb-11",
+              "m": 2,
+              "platform": 48,
+              "region": 2,
+              "updated_at": 1566345600,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 295934,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 1080,
+              "image_id": "sc6cce",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cce.jpg",
+              "width": 1920
+          },
+          {
+              "id": 295935,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 420,
+              "image_id": "sc6ccf",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6ccf.jpg",
+              "width": 680
+          },
+          {
+              "id": 295936,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 420,
+              "image_id": "sc6ccg",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6ccg.jpg",
+              "width": 680
+          },
+          {
+              "id": 295937,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 420,
+              "image_id": "sc6cch",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cch.jpg",
+              "width": 680
+          },
+          {
+              "id": 295938,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 540,
+              "image_id": "sc6cci",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cci.jpg",
+              "width": 960
+          },
+          {
+              "id": 295939,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 1080,
+              "image_id": "sc6ccj",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6ccj.jpg",
+              "width": 1920
+          },
+          {
+              "id": 295940,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 540,
+              "image_id": "sc6cck",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cck.jpg",
+              "width": 960
+          },
+          {
+              "id": 295941,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 540,
+              "image_id": "sc6ccl",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6ccl.jpg",
+              "width": 960
+          },
+          {
+              "id": 295942,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 540,
+              "image_id": "sc6ccm",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6ccm.jpg",
+              "width": 960
+          },
+          {
+              "id": 295943,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 540,
+              "image_id": "sc6ccn",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6ccn.jpg",
+              "width": 960
+          },
+          {
+              "id": 299299,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103017,
+              "height": 563,
+              "image_id": "sc6exv",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6exv.jpg",
+              "width": 1000
+          }
+      ],
+      "summary": "The legendary dragon returns to the criminal underworld of Ryu ga Gotoku. Kazuma Kiryuu, once known as the Dragon of Dojima, was living a quiet life as a taxi driver in Fukuoka after severing all his ties with the underworld. However, at the dawn of the bloody turf war between the Tojo Clan and the Omi Alliance, Kazuma is forced to accept his inescapable fate and returns to a life filled with crime and violence to protect his loved ones. Ryu ga Gotoku 5: Yume, Kanaeshi Mono Remaster continues the epic story of Kazuma Kiryuu and 4 other protagonists, Haruka Sawamura, Taiga Saejima, Tatsuo Shinada and Shun Akiyama. The saga plays out across 5 major Japanese cities - Tokyo, Osaka, Fukuoka, Nagoya and Sapporo. Ryu ga Gotoku 5: Yume, Kanaeshi Mono Remaster also features “Another Drama” which is a series of extensive sub-plots that focus on each protagonist. The battle system and customization system have been enhanced from Yakuza 4 and various mini-games are available in the well-known locales from the series including night clubs and popular CLUB SEGA locations.",
+      "url": "https://www.igdb.com/games/yakuza-5-remastered",
+      "videos": [
+          {
+              "id": 25777,
+              "game": 103017,
+              "name": "Trailer",
+              "video_id": "c7z2QhfTte8"
+          }
+      ]
+  },
+  {
+      "id": 103330,
+      "genres": [
+          {
+              "id": 4,
+              "created_at": 1297555200,
+              "name": "Fighting",
+              "slug": "fighting",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/fighting"
+          },
+          {
+              "id": 12,
+              "created_at": 1297555200,
+              "name": "Role-playing (RPG)",
+              "slug": "role-playing-rpg",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/role-playing-rpg"
+          },
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "Nioh 2",
+      "release_dates": [
+          {
+              "id": 178639,
+              "category": 0,
+              "created_at": 1572480000,
+              "date": 1584057600,
+              "game": 103330,
+              "human": "2020-Mar-13",
+              "m": 3,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1572480000,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 214073,
+              "game": 103330,
+              "height": 733,
+              "image_id": "gksjtycnde8mywkqaqcn",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/gksjtycnde8mywkqaqcn.jpg",
+              "width": 1200
+          },
+          {
+              "id": 338426,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103330,
+              "height": 833,
+              "image_id": "sc794q",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc794q.jpg",
+              "width": 1480
+          },
+          {
+              "id": 338427,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103330,
+              "height": 833,
+              "image_id": "sc794r",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc794r.jpg",
+              "width": 1480
+          },
+          {
+              "id": 338428,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103330,
+              "height": 833,
+              "image_id": "sc794s",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc794s.jpg",
+              "width": 1480
+          },
+          {
+              "id": 338429,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103330,
+              "height": 833,
+              "image_id": "sc794t",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc794t.jpg",
+              "width": 1480
+          },
+          {
+              "id": 338430,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 103330,
+              "height": 576,
+              "image_id": "sc794u",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc794u.jpg",
+              "width": 1024
+          }
+      ],
+      "summary": "Master the lethal arts of the samurai as a mysterious half-human, half-supernatural Yokai warrior, in this challenging action RPG sequel. \nExplore violent Sengoku-era Japan and the deadly Dark Realm, both plagued with grotesque, merciless demons. \n \nUnsheathe your deadly weapons and cut down all enemies in your path using a revamped combat system and the ability to transform into a full Yokai to unleash devastating paranormal powers.",
+      "url": "https://www.igdb.com/games/nioh-2",
+      "videos": [
+          {
+              "id": 20695,
+              "game": 103330,
+              "name": "Teaser",
+              "video_id": "A2WnsyLv5Bo"
+          },
+          {
+              "id": 30209,
+              "game": 103330,
+              "name": "Trailer",
+              "video_id": "fFDnUkiZQZ0"
+          },
+          {
+              "id": 32213,
+              "game": 103330,
+              "name": "Trailer",
+              "video_id": "FJq7nvv_Z6s"
+          },
+          {
+              "id": 32214,
+              "game": 103330,
+              "name": "Trailer",
+              "video_id": "mZ6147sLyrI"
+          }
+      ]
+  },
+  {
+      "id": 107313,
+      "genres": [
+          {
+              "id": 25,
+              "created_at": 1301616000,
+              "name": "Hack and slash/Beat 'em up",
+              "slug": "hack-and-slash-beat-em-up",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/hack-and-slash-beat-em-up"
+          }
+      ],
+      "name": "Ultra Age",
+      "release_dates": [
+          {
+              "id": 184436,
+              "category": 4,
+              "created_at": 1578441600,
+              "date": 1593475200,
+              "game": 107313,
+              "human": "2020-Q2",
+              "m": 6,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1578441600,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 244157,
+              "game": 107313,
+              "height": 338,
+              "image_id": "axceu7fq9wwhqxspcpnv",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/axceu7fq9wwhqxspcpnv.jpg",
+              "width": 600
+          },
+          {
+              "id": 244158,
+              "game": 107313,
+              "height": 337,
+              "image_id": "pizwuv9jpjdbq2lr5a1z",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/pizwuv9jpjdbq2lr5a1z.jpg",
+              "width": 600
+          },
+          {
+              "id": 244159,
+              "game": 107313,
+              "height": 338,
+              "image_id": "cslvtnbuhxt95mhnnqef",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/cslvtnbuhxt95mhnnqef.jpg",
+              "width": 600
+          },
+          {
+              "id": 350733,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 107313,
+              "height": 562,
+              "image_id": "sc7iml",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7iml.jpg",
+              "width": 1000
+          },
+          {
+              "id": 350734,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 107313,
+              "height": 562,
+              "image_id": "sc7imm",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7imm.jpg",
+              "width": 1000
+          },
+          {
+              "id": 350735,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 107313,
+              "height": 562,
+              "image_id": "sc7imn",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7imn.jpg",
+              "width": 1000
+          },
+          {
+              "id": 350736,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 107313,
+              "height": 562,
+              "image_id": "sc7imo",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7imo.jpg",
+              "width": 1000
+          },
+          {
+              "id": 350737,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 107313,
+              "height": 562,
+              "image_id": "sc7imp",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7imp.jpg",
+              "width": 1000
+          },
+          {
+              "id": 350738,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 107313,
+              "height": 562,
+              "image_id": "sc7imq",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc7imq.jpg",
+              "width": 1000
+          }
+      ],
+      "summary": "Korean publisher Intragames and developers Next Stage and Visual Dart have announced the global release of high-speed action roguelike Ultra Age for PlayStation 4 in 2019. It will launch digitally with support for English, Japanese, Chinese (Simplified and Traditional), and Korean language options. \n \nDeveloped on Unreal Engine 4, Ultra Age is a game with “high-quality visuals” and “incredible combo action.”",
+      "url": "https://www.igdb.com/games/ultra-age",
+      "videos": [
+          {
+              "id": 21949,
+              "game": 107313,
+              "name": "Gameplay video",
+              "video_id": "VyrQa-sXzwQ"
+          },
+          {
+              "id": 32886,
+              "game": 107313,
+              "name": "Trailer",
+              "video_id": "YcD_F0JOwOw"
+          }
+      ]
+  },
+  {
+      "id": 113378,
+      "genres": [
+          {
+              "id": 4,
+              "created_at": 1297555200,
+              "name": "Fighting",
+              "slug": "fighting",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/fighting"
+          }
+      ],
+      "name": "Granblue Fantasy: Versus",
+      "release_dates": [
+          {
+              "id": 186368,
+              "category": 0,
+              "created_at": 1579478400,
+              "date": 1581984000,
+              "game": 113378,
+              "human": "2020-Feb-18",
+              "m": 2,
+              "platform": 48,
+              "region": 8,
+              "updated_at": 1579478400,
+              "y": 2020
+          },
+          {
+              "id": 186369,
+              "category": 0,
+              "created_at": 1579478400,
+              "date": 1580947200,
+              "game": 113378,
+              "human": "2020-Feb-06",
+              "m": 2,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1579478400,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 268909,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 113378,
+              "height": 506,
+              "image_id": "sc5rhp",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc5rhp.jpg",
+              "width": 900
+          },
+          {
+              "id": 268910,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 113378,
+              "height": 506,
+              "image_id": "sc5rhq",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc5rhq.jpg",
+              "width": 900
+          },
+          {
+              "id": 268911,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 113378,
+              "height": 506,
+              "image_id": "sc5rhr",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc5rhr.jpg",
+              "width": 900
+          },
+          {
+              "id": 268912,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 113378,
+              "height": 506,
+              "image_id": "sc5rhs",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc5rhs.jpg",
+              "width": 900
+          }
+      ],
+      "summary": "\"Embark on a new fight, O champions of the skies! \n \nTake a ringside seat for this brawltastic work from Cygames and ARC SYSTEM WORKS! An exciting new title in the Granblue Fantasy series is finally revealed! \n \nFeaturing stunning visuals, heart-pounding music, and innovative game mechanics, it’ll usher in a new era of fighting games! Stay tuned!\"",
+      "url": "https://www.igdb.com/games/granblue-fantasy-versus",
+      "videos": [
+          {
+              "id": 23722,
+              "game": 113378,
+              "name": "Trailer",
+              "video_id": "ZQQo9vSj1_A"
+          },
+          {
+              "id": 29144,
+              "game": 113378,
+              "name": "Trailer",
+              "video_id": "zUUJ_cyHSMI"
+          }
+      ]
+  },
+  {
+      "id": 114150,
+      "genres": [
+          {
+              "id": 13,
+              "created_at": 1297555200,
+              "name": "Simulator",
+              "slug": "simulator",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/simulator"
+          },
+          {
+              "id": 34,
+              "created_at": 1571788800,
+              "name": "Visual Novel",
+              "slug": "visual-novel",
+              "updated_at": 1571788800,
+              "url": "https://www.igdb.com/genres/visual-novel"
+          }
+      ],
+      "name": "Date A Live: Ren Dystopia",
+      "release_dates": [
+          {
+              "id": 176599,
+              "category": 2,
+              "created_at": 1569715200,
+              "date": 1609372800,
+              "game": 114150,
+              "human": "2020",
+              "m": 12,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1569715200,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 291331,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114150,
+              "height": 540,
+              "image_id": "sc68sj",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc68sj.jpg",
+              "width": 960
+          },
+          {
+              "id": 291332,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114150,
+              "height": 540,
+              "image_id": "sc68sk",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc68sk.jpg",
+              "width": 960
+          },
+          {
+              "id": 291333,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114150,
+              "height": 540,
+              "image_id": "sc68sl",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc68sl.jpg",
+              "width": 960
+          },
+          {
+              "id": 291334,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114150,
+              "height": 540,
+              "image_id": "sc68sm",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc68sm.jpg",
+              "width": 960
+          },
+          {
+              "id": 291335,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114150,
+              "height": 540,
+              "image_id": "sc68sn",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc68sn.jpg",
+              "width": 960
+          }
+      ],
+      "summary": "This game features a new original story, together with a new original game character named Ren (蓮). The seventh Spirit, Natsumi, is also confirmed to appear in the game.",
+      "url": "https://www.igdb.com/games/date-a-live-ren-dystopia",
+      "videos": [
+          {
+              "id": 25343,
+              "game": 114150,
+              "name": "Trailer",
+              "video_id": "YArjx1LNjwg"
+          }
+      ]
+  },
+  {
+      "id": 114283,
+      "genres": [
+          {
+              "id": 12,
+              "created_at": 1297555200,
+              "name": "Role-playing (RPG)",
+              "slug": "role-playing-rpg",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/role-playing-rpg"
+          },
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "Persona 5 Royal",
+      "release_dates": [
+          {
+              "id": 168747,
+              "category": 0,
+              "created_at": 1556150400,
+              "date": 1572480000,
+              "game": 114283,
+              "human": "2019-Oct-31",
+              "m": 10,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1556150400,
+              "y": 2019
+          },
+          {
+              "id": 180874,
+              "category": 0,
+              "created_at": 1575331200,
+              "date": 1585612800,
+              "game": 114283,
+              "human": "2020-Mar-31",
+              "m": 3,
+              "platform": 48,
+              "region": 7,
+              "updated_at": 1575331200,
+              "y": 2020
+          },
+          {
+              "id": 180875,
+              "category": 0,
+              "created_at": 1575331200,
+              "date": 1585612800,
+              "game": 114283,
+              "human": "2020-Mar-31",
+              "m": 3,
+              "platform": 48,
+              "region": 1,
+              "updated_at": 1575331200,
+              "y": 2020
+          },
+          {
+              "id": 180876,
+              "category": 0,
+              "created_at": 1575331200,
+              "date": 1585612800,
+              "game": 114283,
+              "human": "2020-Mar-31",
+              "m": 3,
+              "platform": 48,
+              "region": 2,
+              "updated_at": 1575331200,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 321040,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 1080,
+              "image_id": "sc6vps",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vps.jpg",
+              "width": 1920
+          },
+          {
+              "id": 321041,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 1080,
+              "image_id": "sc6vpt",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpt.jpg",
+              "width": 1920
+          },
+          {
+              "id": 321042,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vpu",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpu.jpg",
+              "width": 600
+          },
+          {
+              "id": 321043,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vpv",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpv.jpg",
+              "width": 600
+          },
+          {
+              "id": 321044,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vpw",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpw.jpg",
+              "width": 600
+          },
+          {
+              "id": 321045,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vpx",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpx.jpg",
+              "width": 600
+          },
+          {
+              "id": 321046,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vpy",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpy.jpg",
+              "width": 600
+          },
+          {
+              "id": 321047,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vpz",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vpz.jpg",
+              "width": 600
+          },
+          {
+              "id": 321048,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vq0",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vq0.jpg",
+              "width": 600
+          },
+          {
+              "id": 321049,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vq1",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vq1.jpg",
+              "width": 600
+          },
+          {
+              "id": 321050,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 114283,
+              "height": 338,
+              "image_id": "sc6vq2",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6vq2.jpg",
+              "width": 600
+          }
+      ],
+      "summary": "An enhanced version of Persona 5 with some new characters and a third semester added to the game, set to be released Internationally in 2020.",
+      "url": "https://www.igdb.com/games/persona-5-royal",
+      "videos": [
+          {
+              "id": 26791,
+              "game": 114283,
+              "name": "Teaser",
+              "video_id": "6sEjfVVTScg"
+          },
+          {
+              "id": 26792,
+              "game": 114283,
+              "name": "Japanese trailer",
+              "video_id": "GJzcSKyCzZs"
+          },
+          {
+              "id": 27915,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "o9QjlLdYK5I"
+          },
+          {
+              "id": 28407,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "YP4__qUJWfM"
+          },
+          {
+              "id": 29046,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "lu_Pj0wNyqk"
+          },
+          {
+              "id": 29047,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "eokDJhLtccU"
+          },
+          {
+              "id": 29048,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "ABbcqh0t2rs"
+          },
+          {
+              "id": 29049,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "SVNcmXopUeo"
+          },
+          {
+              "id": 29050,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "2iHSF4vwFBs"
+          },
+          {
+              "id": 29051,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "QflU-Gf_Myk"
+          },
+          {
+              "id": 29052,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "SwPL93ht__k"
+          },
+          {
+              "id": 29053,
+              "game": 114283,
+              "name": "Trailer",
+              "video_id": "IR_7H_zzU7Y"
+          }
+      ]
+  },
+  {
+      "id": 116559,
+      "genres": [
+          {
+              "id": 12,
+              "created_at": 1297555200,
+              "name": "Role-playing (RPG)",
+              "slug": "role-playing-rpg",
+              "updated_at": 1323216000,
+              "url": "https://www.igdb.com/genres/role-playing-rpg"
+          },
+          {
+              "id": 31,
+              "created_at": 1323561600,
+              "name": "Adventure",
+              "slug": "adventure",
+              "updated_at": 1323561600,
+              "url": "https://www.igdb.com/genres/adventure"
+          }
+      ],
+      "name": "Persona 5 Royal Limited Edition",
+      "release_dates": [
+          {
+              "id": 168688,
+              "category": 0,
+              "created_at": 1556064000,
+              "date": 1572480000,
+              "game": 116559,
+              "human": "2019-Oct-31",
+              "m": 10,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1556064000,
+              "y": 2019
+          },
+          {
+              "id": 168743,
+              "category": 2,
+              "created_at": 1556150400,
+              "date": 1609372800,
+              "game": 116559,
+              "human": "2020",
+              "m": 12,
+              "platform": 48,
+              "region": 2,
+              "updated_at": 1556150400,
+              "y": 2020
+          },
+          {
+              "id": 168744,
+              "category": 2,
+              "created_at": 1556150400,
+              "date": 1609372800,
+              "game": 116559,
+              "human": "2020",
+              "m": 12,
+              "platform": 48,
+              "region": 1,
+              "updated_at": 1556150400,
+              "y": 2020
+          },
+          {
+              "id": 168745,
+              "category": 2,
+              "created_at": 1556150400,
+              "date": 1609372800,
+              "game": 116559,
+              "human": "2020",
+              "m": 12,
+              "platform": 48,
+              "region": 7,
+              "updated_at": 1556150400,
+              "y": 2020
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 299228,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116559,
+              "height": 800,
+              "image_id": "sc6evw",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6evw.jpg",
+              "width": 1200
+          },
+          {
+              "id": 299229,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116559,
+              "height": 450,
+              "image_id": "sc6evx",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6evx.jpg",
+              "width": 800
+          }
+      ],
+      "summary": "A limited edition version Persona 5 Royal, called Persona 5 The Royal in Japan, so far only announced on the Japanese website for the game. \nExpected to be announced internationally closer to the 2020 release dates given for the base game.",
+      "url": "https://www.igdb.com/games/persona-5-royal-limited-edition",
+      "videos": [
+          {
+              "id": 25732,
+              "game": 116559,
+              "name": "Teaser",
+              "video_id": "ygyz3Mqjh0k"
+          },
+          {
+              "id": 26778,
+              "game": 116559,
+              "name": "Trailer",
+              "video_id": "GJzcSKyCzZs"
+          }
+      ]
+  },
+  {
+      "id": 116796,
+      "name": "Project Sakura Wars - Limited Edition",
+      "release_dates": [
+          {
+              "id": 167371,
+              "category": 4,
+              "created_at": 1554076800,
+              "date": 1593475200,
+              "game": 116796,
+              "human": "2020-Q2",
+              "m": 6,
+              "platform": 48,
+              "region": 2,
+              "updated_at": 1554076800,
+              "y": 2020
+          },
+          {
+              "id": 167372,
+              "category": 4,
+              "created_at": 1554076800,
+              "date": 1593475200,
+              "game": 116796,
+              "human": "2020-Q2",
+              "m": 6,
+              "platform": 48,
+              "region": 1,
+              "updated_at": 1554076800,
+              "y": 2020
+          },
+          {
+              "id": 183590,
+              "category": 0,
+              "created_at": 1577750400,
+              "date": 1576108800,
+              "game": 116796,
+              "human": "2019-Dec-12",
+              "m": 12,
+              "platform": 48,
+              "region": 5,
+              "updated_at": 1577750400,
+              "y": 2019
+          }
+      ],
+      "screenshots": [
+          {
+              "id": 296704,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxs",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxs.jpg",
+              "width": 600
+          },
+          {
+              "id": 296705,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxt",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxt.jpg",
+              "width": 600
+          },
+          {
+              "id": 296706,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxu",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxu.jpg",
+              "width": 600
+          },
+          {
+              "id": 296707,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxv",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxv.jpg",
+              "width": 600
+          },
+          {
+              "id": 296708,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxw",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxw.jpg",
+              "width": 600
+          },
+          {
+              "id": 296709,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxx",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxx.jpg",
+              "width": 600
+          },
+          {
+              "id": 296710,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxy",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxy.jpg",
+              "width": 600
+          },
+          {
+              "id": 296711,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cxz",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cxz.jpg",
+              "width": 600
+          },
+          {
+              "id": 296712,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cy0",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cy0.jpg",
+              "width": 600
+          },
+          {
+              "id": 296713,
+              "alpha_channel": false,
+              "animated": false,
+              "game": 116796,
+              "height": 338,
+              "image_id": "sc6cy1",
+              "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc6cy1.jpg",
+              "width": 600
+          }
+      ],
+      "summary": "One of Sega’s greatest franchises is set to take the west by storm when Project Sakura Wars (working title) launches for PlayStation 4 in North America and Europe in spring 2020! A cultural phenomenon in Japan, the long-running series defined the JRPG / romance genre with its memorable characters, masterful writing, and sublime music. Now, a completely new entry is set to grace our shores.",
+      "url": "https://www.igdb.com/games/project-sakura-wars-limited-edition",
+      "videos": [
+          {
+              "id": 26002,
+              "game": 116796,
+              "name": "Trailer",
+              "video_id": "6YigjqimoKk"
+          }
+      ]
   }
 ]
