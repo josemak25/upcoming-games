@@ -1,17 +1,31 @@
 import styled from "styled-components";
-import { colors, fonts } from "../../constants";
+import { Platform } from "react-native";
+import { colors } from "../../constants";
 
 export const Container = styled.View`
   width: 100%;
-  height: 150%;
+  ${Platform.select({
+    ios: {
+      height: "110px"
+    },
+    android: {
+      height: "100px"
+    }
+  })};
   justify-content: flex-end;
   padding: 15px 0px;
   background-color: ${colors.ICON_DARK_COLOR};
 `;
 
 export const HeaderContents = styled.View`
-  width: 100%;
-  height: 60%;
+  ${Platform.select({
+    ios: {
+      height: "65%"
+    },
+    android: {
+      height: "70%"
+    }
+  })};
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
