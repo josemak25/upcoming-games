@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "../../components/Header";
+
 import { Container, PleaseDeleteMe } from "./styles";
 
 export default function Details() {
@@ -8,3 +10,7 @@ export default function Details() {
     </Container>
   );
 }
+
+Details.navigationOptions = ({ navigation }) => ({
+  header: () => <Header />
+});

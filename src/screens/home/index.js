@@ -3,7 +3,6 @@ import { FlatList } from "react-native";
 import Game from "../../components/Game";
 import Header from "../../components/Header";
 import LoadingGames from "../../components/LoadingGames";
-import temp from "../../database/temp.json";
 
 import { StoreContext, loadGames } from "../../store";
 
@@ -20,10 +19,12 @@ export default function Home({ navigation }) {
     <Container>
       <FlatList
         data={store.games}
-        renderItem={({ item }) => <Game {...item} />}
+        renderItem={({ item }) => (
+          <Game {...item} navigate={navigation.navigate} />
+        )}
         keyExtractor={game => `${game.id}`}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 60 }}
+        contentContainerStyle={{ paddingBottom: 0 }}
       />
     </Container>
   ) : (

@@ -18,9 +18,7 @@ import {
 } from "./styles";
 
 export default function Game({ name, release_dates, genres, screenshots }) {
-  const [state, setState] = useState({
-    favoriteClicked: false
-  });
+  const [state, setState] = useState({ favoriteClicked: false });
 
   const { y: year } = release_dates[release_dates.length - 1];
 
