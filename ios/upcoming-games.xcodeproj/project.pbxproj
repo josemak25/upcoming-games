@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02267D65507F74D2761580AF /* libPods-upcoming-games.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B154FF3DBA3D3396A0DC6B8 /* libPods-upcoming-games.a */; };
 		B501732B1DC01252003445D9 /* EXShell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501732A1DC01252003445D9 /* EXShell.plist */; };
 		B56386491DB9693800A0598C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56386481DB9693800A0598C /* AppDelegate.m */; };
 		B56386511DB9693800A0598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56386501DB9693800A0598C /* Assets.xcassets */; };
@@ -18,12 +19,11 @@
 		B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */; };
 		B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047E1F3A684600E91581 /* shell-app-manifest.json */; };
 		B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047F1F3A684600E91581 /* shell-app.bundle */; };
-		BBD6384F5E097622E4C10C4F /* libPods-upcoming-games.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27722E30D013F108545A49D5 /* libPods-upcoming-games.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27722E30D013F108545A49D5 /* libPods-upcoming-games.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-upcoming-games.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F8F449FEBDCD193FBF2BE3A /* Pods-upcoming-games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.debug.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.debug.xcconfig"; sourceTree = "<group>"; };
+		1B154FF3DBA3D3396A0DC6B8 /* libPods-upcoming-games.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-upcoming-games.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		209ECBEE25724C1501C0FD5F /* Pods-upcoming-games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.release.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.release.xcconfig"; sourceTree = "<group>"; };
 		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
 		B56386411DB9693800A0598C /* upcoming-games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "upcoming-games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56386471DB9693800A0598C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXBuildConstants.plist; sourceTree = "<group>"; };
 		B5DB047E1F3A684600E91581 /* shell-app-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shell-app-manifest.json"; sourceTree = "<group>"; };
 		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
-		FA0954D94CB42BB90B7C09C6 /* Pods-upcoming-games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.release.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.release.xcconfig"; sourceTree = "<group>"; };
+		BF803441AB75F7BE277E85A4 /* Pods-upcoming-games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.debug.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,18 +46,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD6384F5E097622E4C10C4F /* libPods-upcoming-games.a in Frameworks */,
+				02267D65507F74D2761580AF /* libPods-upcoming-games.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A62AFCF85AAF58225FB0BF99 /* Pods */ = {
+		0CA2C19C9F7503810F1FEAD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F8F449FEBDCD193FBF2BE3A /* Pods-upcoming-games.debug.xcconfig */,
-				FA0954D94CB42BB90B7C09C6 /* Pods-upcoming-games.release.xcconfig */,
+				BF803441AB75F7BE277E85A4 /* Pods-upcoming-games.debug.xcconfig */,
+				209ECBEE25724C1501C0FD5F /* Pods-upcoming-games.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -68,8 +68,8 @@
 			children = (
 				B56386431DB9693800A0598C /* upcoming-games */,
 				B56386421DB9693800A0598C /* Products */,
-				A62AFCF85AAF58225FB0BF99 /* Pods */,
-				E783158687B57FF1D8274F34 /* Frameworks */,
+				0CA2C19C9F7503810F1FEAD9 /* Pods */,
+				FA79DE0B517EB07BA0DE61EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,10 +109,10 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
-		E783158687B57FF1D8274F34 /* Frameworks */ = {
+		FA79DE0B517EB07BA0DE61EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27722E30D013F108545A49D5 /* libPods-upcoming-games.a */,
+				1B154FF3DBA3D3396A0DC6B8 /* libPods-upcoming-games.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,13 +124,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "upcoming-games" */;
 			buildPhases = (
-				7C5F4A66F15ACA84C82D6457 /* [CP] Check Pods Manifest.lock */,
+				D37A3BD9FA6C43C7777EF1BC /* [CP] Check Pods Manifest.lock */,
 				B5722AD01DFB7E3F0084848F /* Prepare Expo */,
 				B563863D1DB9693800A0598C /* Sources */,
 				B563863E1DB9693800A0598C /* Frameworks */,
 				B563863F1DB9693800A0598C /* Resources */,
 				19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */,
-				DE41EFE3D743154EC57B1138 /* [CP] Copy Pods Resources */,
+				9667050F780DF323A5DD4B13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,43 +209,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -eo pipefail\n\nif [ \"$CONFIGURATION\" == \"Debug\" ]; then\n  echo \"Skipping asset bundling in debug mode.\"\n  exit 0\nfi\n\npushd \"${SRCROOT}/..\"\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\ndest=\"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\nexpo bundle-assets --platform ios --dest \"$dest\"\npopd\n";
 		};
-		7C5F4A66F15ACA84C82D6457 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-upcoming-games-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B5722AD01DFB7E3F0084848F /* Prepare Expo */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Prepare Expo";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "set -eo pipefail\n\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\nexpo prepare-detached-build --platform ios \"${SRCROOT}/..\"\n";
-		};
-		DE41EFE3D743154EC57B1138 /* [CP] Copy Pods Resources */ = {
+		9667050F780DF323A5DD4B13 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,6 +233,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-upcoming-games/Pods-upcoming-games-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5722AD01DFB7E3F0084848F /* Prepare Expo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Expo";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -eo pipefail\n\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\nexpo prepare-detached-build --platform ios \"${SRCROOT}/..\"\n";
+		};
+		D37A3BD9FA6C43C7777EF1BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-upcoming-games-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -390,7 +390,7 @@
 		};
 		B56386591DB9693800A0598C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F8F449FEBDCD193FBF2BE3A /* Pods-upcoming-games.debug.xcconfig */;
+			baseConfigurationReference = BF803441AB75F7BE277E85A4 /* Pods-upcoming-games.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8D8QTF339;
@@ -404,7 +404,7 @@
 		};
 		B563865A1DB9693800A0598C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA0954D94CB42BB90B7C09C6 /* Pods-upcoming-games.release.xcconfig */;
+			baseConfigurationReference = 209ECBEE25724C1501C0FD5F /* Pods-upcoming-games.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8D8QTF339;
