@@ -17,12 +17,19 @@ import {
   GameGenres
 } from "./styles";
 
-export default function Game({ name, release_dates, genres, screenshots }) {
+export default function Game({
+  name,
+  release_dates,
+  genres,
+  screenshots,
+  navigate
+}) {
   const [state, setState] = useState({ favoriteClicked: false });
 
   const { y: year } = release_dates[release_dates.length - 1];
 
-  const handleGame = () => {};
+  const handleGame = () => navigate("DetailScreen");
+
   const handleFavorite = () => {};
 
   return (
