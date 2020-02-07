@@ -19,8 +19,8 @@ export default function Home({ navigation }) {
     <Container>
       <FlatList
         data={store.games}
-        renderItem={({ item }) => (
-          <Game {...item} navigate={navigation.navigate} />
+        renderItem={({ item, index }) => (
+          <Game {...item} gameIndex={index} navigate={navigation.navigate} />
         )}
         keyExtractor={game => `${game.id}`}
         showsVerticalScrollIndicator={false}
