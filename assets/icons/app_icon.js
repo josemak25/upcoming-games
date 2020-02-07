@@ -3,7 +3,7 @@ import Svg, { Path } from "react-native-svg";
 
 export default function AppIcon(props) {
   return (
-    <Svg width="1em" height="1em" viewBox="0 0 294.474 341.479" {...props}>
+    <Svg width="80%" height="80%" viewBox="0 0 294.474 341.479" {...props}>
       <Path
         data-name="Path 79"
         d="M0 170.672L99.881 109l104.593 61.672v112.574L99.881 341.48 0 283.246z"

@@ -14,12 +14,12 @@ export const GameDetails = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 0px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 export const GameTexts = styled.View`
-  height: 100%;
-  justify-content: space-between;
+  width: 80%;
+  justify-content: space-evenly;
 `;
 
 export const GameTextsBottom = styled.View`
