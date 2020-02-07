@@ -22,13 +22,14 @@ export default function Game({
   release_dates,
   genres,
   screenshots,
-  navigate
+  navigate,
+  gameIndex
 }) {
   const [state, setState] = useState({ favoriteClicked: false });
 
   const { y: year } = release_dates[release_dates.length - 1];
 
-  const handleGame = () => navigate("DetailScreen");
+  const handleGame = () => navigate("DetailScreen", { gameIndex });
 
   const handleFavorite = () => {};
 
