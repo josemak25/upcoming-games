@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Carousel from "react-native-snap-carousel";
 import { Dimensions, ScrollView } from "react-native";
 import { StoreContext } from "../../store";
 
 import renderScreenshots from "./renderScreenshots";
 import renderTrailers from "./renderTrailers";
+import Pagination from "./pagination";
 
 import CancelIcon from "../../../assets/icons/cancel";
 import boxShadow from "../../utils/boxShadow";
@@ -35,11 +36,16 @@ import {
 export default function Details({ navigation }) {
   const gameIndex = navigation.getParam("gameIndex");
 
+  const [paginate, setPaginate] = useState(0);
+
   const [{ games }] = useContext(StoreContext);
   const { screenshots, name, genres, summary } = games[gameIndex];
 
   return (
-    <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+    <ScrollView
+      contentContainerStyle={{ flexGrow: 1 }}
+      showsVerticalScrollIndicator={false}
+    >
       <Container>
         <Screenshot>
           <Carousel
@@ -50,12 +56,13 @@ export default function Details({ navigation }) {
             inactiveSlideScale={1}
             inactiveSlideOpacity={1}
             shouldOptimizeUpdates={true}
-            loop={true}
             lockScrollWhileSnapping={true}
+            onSnapToItem={scrollIndex => setPaginate(scrollIndex)}
           />
           <BackButton activeOpacity={0.5} onPress={() => navigation.goBack()}>
             <CancelIcon />
           </BackButton>
+          <Pagination {...{ paginate, screenshots }} />
         </Screenshot>
 
         <GameDetailsContainer>
