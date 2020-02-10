@@ -32,6 +32,17 @@ export const BackButton = styled.TouchableOpacity`
   opacity: 0.8;
 `;
 
+export const PaginationContainer = styled.View`
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  right: 35px;
+  top: 75%;
+`;
+
 export const GameDetailsContainer = styled.View`
   width: 85%;
   bottom: 8%;
