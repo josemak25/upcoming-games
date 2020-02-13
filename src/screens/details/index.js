@@ -39,7 +39,7 @@ export default function Details({ navigation }) {
   const [paginate, setPaginate] = useState(0);
 
   const [{ games }] = useContext(StoreContext);
-  const { screenshots, name, genres, summary } = games[gameIndex];
+  const { screenshots, name, genres, summary, videos } = games[gameIndex];
 
   return (
     <ScrollView
@@ -113,7 +113,7 @@ export default function Details({ navigation }) {
             </GameDetailsTitle>
             <GameTrailerContainer>
               <Carousel
-                data={screenshots}
+                data={videos}
                 renderItem={renderTrailers}
                 sliderWidth={sliderWidth - 60}
                 sliderHeight={sliderWidth + 20}

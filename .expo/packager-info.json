@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 22484,
-  "expoServerNgrokUrl": "https://fj-cxv.josemak25.upcoming-games.exp.direct",
-  "packagerNgrokUrl": "https://packager.fj-cxv.josemak25.upcoming-games.exp.direct",
-  "ngrokPid": 22493,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }
