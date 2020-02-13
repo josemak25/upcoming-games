@@ -102,6 +102,9 @@ PODS:
     - Folly (= 2018.10.22.00)
     - RCTRequired (= 0.61.4)
     - React-Core (= 0.61.4)
+  - RCTYouTube (2.0.0):
+    - React
+    - YoutubePlayer-in-WKWebView (~> 0.3.1)
   - React (0.61.4):
     - React-Core (= 0.61.4)
     - React-Core/DevSupport (= 0.61.4)
@@ -313,6 +316,7 @@ PODS:
   - UMSensorsInterface (5.0.0)
   - UMTaskManagerInterface (5.0.0)
   - Yoga (1.14.0)
+  - YoutubePlayer-in-WKWebView (0.3.4)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -334,6 +338,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
+  - RCTYouTube (from `../node_modules/react-native-youtube`)
   - React (from `../node_modules/react-native/`)
   - React-Core (from `../node_modules/react-native/`)
   - React-Core/DevSupport (from `../node_modules/react-native/`)
@@ -381,6 +386,7 @@ SPEC REPOS:
     - GoogleMaps
     - JKBigInteger2
     - lottie-ios
+    - YoutubePlayer-in-WKWebView
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -433,6 +439,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
     :path: "../node_modules/react-native/Libraries/TypeSafety"
+  RCTYouTube:
+    :path: "../node_modules/react-native-youtube"
   React:
     :path: "../node_modules/react-native/"
   React-Core:
@@ -543,6 +551,7 @@ SPEC CHECKSUMS:
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   RCTRequired: f3b3fb6f4723e8e52facb229d0c75fdc76773849
   RCTTypeSafety: 2ec60de6abb1db050b56ecc4b60188026078fd10
+  RCTYouTube: 57458fe8653bb696b7d7585326d735d01b871af8
   React: 10e0130b57e55a7cd8c3dee37c1261102ce295f4
   React-Core: 636212410772d05f3a1eb79d965df2962ca1c70b
   React-CoreModules: 6f70d5e41919289c582f88c9ad9923fe5c87400a
@@ -574,7 +583,8 @@ SPEC CHECKSUMS:
   UMSensorsInterface: d708a892ef1500bdd9fc3ff03f7836c66d1634d3
   UMTaskManagerInterface: a98e37a576a5220bf43b8faf33cfdc129d2f441d
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
+  YoutubePlayer-in-WKWebView: af2f5929fc78882d94bfdfeea999b661b78d9717
 
-PODFILE CHECKSUM: ad58968ef04d3586fb967348203597b19f8807ad
+PODFILE CHECKSUM: 295e6a4ef5db83c6193da6558f1ca8c1f42ac77b
 
 COCOAPODS: 1.8.4

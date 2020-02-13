@@ -1,5 +1,7 @@
 import React from "react";
-import { ImageBackground, Platform } from "react-native";
+import { Platform } from "react-native";
+import YouTube from "react-native-youtube";
+
 import PlayIcon from "../../../assets/icons/play";
 import boxShadow from "../../utils/boxShadow";
 
@@ -7,7 +9,11 @@ import { colors } from "../../constants";
 import { PlayTrailer, TrailerContainer } from "./styles";
 
 export default function Trailers({ item }) {
-  const imageURI = `https:${item.url.replace("t_thumb", "t_screenshot_huge")}`;
+  const { video_id } = item;
+
+  const onFullScreen = fullScreen => {
+    console.log("fullscreen ", fullScreen);
+  };
 
   return (
     <TrailerContainer
@@ -23,20 +29,20 @@ export default function Trailers({ item }) {
         }
       })}
     >
-      <ImageBackground
-        source={{ uri: imageURI }}
-        style={{
-          flex: 1,
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-        imageStyle={{ borderRadius: 15 }}
-        resizeMode="cover"
-      >
-        <PlayTrailer>
+      {/* 
+        <PlayTrailer onPress={() => console.log("PLAY GAME TRAILER")}>
           <PlayIcon />
         </PlayTrailer>
-      </ImageBackground>
+       */}
+
+      <YouTube
+        videoId={video_id}
+        onReady={e => console.log("READY")}
+        onError={e => this.setState({ error: e.error })}
+        style={{ height: "100%", borderRadius: 15 }}
+        play // control playback of video with true/false
+        fullscreen
+      />
     </TrailerContainer>
   );
 }
