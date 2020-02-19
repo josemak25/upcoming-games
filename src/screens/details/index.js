@@ -4,7 +4,7 @@ import { Dimensions, ScrollView } from "react-native";
 import { StoreContext } from "../../store";
 
 import renderScreenshots from "./renderScreenshots";
-import renderTrailers from "./renderTrailers";
+import RenderTrailers from "./renderTrailers";
 import Pagination from "./pagination";
 
 import CancelIcon from "../../../assets/icons/cancel";
@@ -114,14 +114,12 @@ export default function Details({ navigation }) {
             <GameTrailerContainer>
               <Carousel
                 data={videos}
-                renderItem={renderTrailers}
+                renderItem={props => <RenderTrailers {...props} />}
                 sliderWidth={sliderWidth - 60}
                 sliderHeight={sliderWidth + 20}
                 itemWidth={sliderWidth - 120}
-                loop={true}
                 inactiveSlideScale={0.9}
                 shouldOptimizeUpdates={true}
-                lockScrollWhileSnapping={true}
               />
             </GameTrailerContainer>
           </GameGenreContainer>

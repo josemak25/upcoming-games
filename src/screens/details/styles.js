@@ -155,6 +155,8 @@ export const TrailerContainer = styled.View`
   width: 100%;
   height: 100%;
   border-radius: ${15}px;
+  align-items: center;
+  justify-content: center;
   ${Platform.select({
     android: {
       backgroundColor: "#e4e4e4",
@@ -174,4 +176,13 @@ export const PlayTrailer = styled.TouchableOpacity`
   background-color: ${colors.BACKGROUND_LIGHT_COLOR};
   border-radius: ${100 / 2}px;
   padding-left: 10px;
+`;
+
+export const LoadingTrailer = styled.View`
+  width: 100%;
+  height: 100%;
+  background-color: ${colors.BACKGROUND_LIGHT_COLOR};
+  justify-content: center;
+  align-items: center;
+  border-radius: ${15}px;
 `;

@@ -42,19 +42,19 @@ export default function Pagination({ paginate, screenshots }) {
   const startAnimation = activePosition => {
     Animated.timing(animation.opacity, {
       toValue: 0,
-      duration: 300,
+      duration: 100,
       easing: Easing.ease,
       useNativeDriver: true
     }).start(() => {
       Animated.timing(animation.translateX, {
         toValue: animation.dotPositions[activePosition],
-        duration: 300,
+        duration: 100,
         easing: Easing.back(),
         useNativeDriver: true
       }).start(() => {
         Animated.timing(animation.opacity, {
           toValue: 1,
-          duration: 300,
+          duration: 100,
           easing: Easing.ease,
           useNativeDriver: true
         }).start();
