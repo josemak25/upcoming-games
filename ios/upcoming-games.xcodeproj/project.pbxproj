@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C2B5F54544E9A1BD41B2273 /* libPods-upcoming-games.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CF91AF227BB71A11A777EE /* libPods-upcoming-games.a */; };
+		3837D2D97E83C9A4FCC4EECA /* libPods-upcoming-games.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0D0D34F1593CF2F0EDC28A /* libPods-upcoming-games.a */; };
 		B501732B1DC01252003445D9 /* EXShell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501732A1DC01252003445D9 /* EXShell.plist */; };
 		B56386491DB9693800A0598C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56386481DB9693800A0598C /* AppDelegate.m */; };
 		B56386511DB9693800A0598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56386501DB9693800A0598C /* Assets.xcassets */; };
@@ -22,9 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33CF91AF227BB71A11A777EE /* libPods-upcoming-games.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-upcoming-games.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40E9BE8E4D8B5F20C35D66D7 /* Pods-upcoming-games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.release.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.release.xcconfig"; sourceTree = "<group>"; };
-		56EBFBA08F4709C02249ABCF /* Pods-upcoming-games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.debug.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.debug.xcconfig"; sourceTree = "<group>"; };
+		2B0D0D34F1593CF2F0EDC28A /* libPods-upcoming-games.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-upcoming-games.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7650C7707B7FD3A48472E1CF /* Pods-upcoming-games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.debug.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.debug.xcconfig"; sourceTree = "<group>"; };
 		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
 		B56386411DB9693800A0598C /* upcoming-games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "upcoming-games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56386471DB9693800A0598C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXBuildConstants.plist; sourceTree = "<group>"; };
 		B5DB047E1F3A684600E91581 /* shell-app-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shell-app-manifest.json"; sourceTree = "<group>"; };
 		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
+		F13E8499D82E1EDDE99A54A2 /* Pods-upcoming-games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upcoming-games.release.xcconfig"; path = "Target Support Files/Pods-upcoming-games/Pods-upcoming-games.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,29 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C2B5F54544E9A1BD41B2273 /* libPods-upcoming-games.a in Frameworks */,
+				3837D2D97E83C9A4FCC4EECA /* libPods-upcoming-games.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DE8906A2187A0A1CDBB3FFA /* Frameworks */ = {
+		19AD18415D3A2B1648CCC843 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33CF91AF227BB71A11A777EE /* libPods-upcoming-games.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A0695CAC4B2637F8FEA687B4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				56EBFBA08F4709C02249ABCF /* Pods-upcoming-games.debug.xcconfig */,
-				40E9BE8E4D8B5F20C35D66D7 /* Pods-upcoming-games.release.xcconfig */,
+				7650C7707B7FD3A48472E1CF /* Pods-upcoming-games.debug.xcconfig */,
+				F13E8499D82E1EDDE99A54A2 /* Pods-upcoming-games.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6E85A8AA1EE03C2B0BD69955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D0D34F1593CF2F0EDC28A /* libPods-upcoming-games.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B56386381DB9693800A0598C = {
@@ -76,8 +76,8 @@
 			children = (
 				B56386431DB9693800A0598C /* upcoming-games */,
 				B56386421DB9693800A0598C /* Products */,
-				A0695CAC4B2637F8FEA687B4 /* Pods */,
-				1DE8906A2187A0A1CDBB3FFA /* Frameworks */,
+				19AD18415D3A2B1648CCC843 /* Pods */,
+				6E85A8AA1EE03C2B0BD69955 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,13 +124,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "upcoming-games" */;
 			buildPhases = (
-				66FBD460849A545B3E551333 /* [CP] Check Pods Manifest.lock */,
+				060552DF739F4A10F4C7205C /* [CP] Check Pods Manifest.lock */,
 				B5722AD01DFB7E3F0084848F /* Prepare Expo */,
 				B563863D1DB9693800A0598C /* Sources */,
 				B563863E1DB9693800A0598C /* Frameworks */,
 				B563863F1DB9693800A0598C /* Resources */,
 				19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */,
-				4943561D1E7AD6B8589D6794 /* [CP] Copy Pods Resources */,
+				46EBD88C27AE396C68699B01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,49 +195,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle Expo Assets";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -eo pipefail\n\nif [ \"$CONFIGURATION\" == \"Debug\" ]; then\n  echo \"Skipping asset bundling in debug mode.\"\n  exit 0\nfi\n\npushd \"${SRCROOT}/..\"\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\ndest=\"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\nexpo bundle-assets --platform ios --dest \"$dest\"\npopd\n";
-		};
-		4943561D1E7AD6B8589D6794 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-upcoming-games/Pods-upcoming-games-resources.sh",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/api.amplitude.com.der",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaCA.der",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaDomainValidationCA.der",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/api.amplitude.com.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoCaLimitedRsaCertificationAuthority.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaCA.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-upcoming-games/Pods-upcoming-games-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		66FBD460849A545B3E551333 /* [CP] Check Pods Manifest.lock */ = {
+		060552DF739F4A10F4C7205C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,6 +215,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle Expo Assets";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eo pipefail\n\nif [ \"$CONFIGURATION\" == \"Debug\" ]; then\n  echo \"Skipping asset bundling in debug mode.\"\n  exit 0\nfi\n\npushd \"${SRCROOT}/..\"\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\ndest=\"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\nexpo bundle-assets --platform ios --dest \"$dest\"\npopd\n";
+		};
+		46EBD88C27AE396C68699B01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-upcoming-games/Pods-upcoming-games-resources.sh",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/api.amplitude.com.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaCA.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaDomainValidationCA.der",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/api.amplitude.com.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoCaLimitedRsaCertificationAuthority.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-upcoming-games/Pods-upcoming-games-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5722AD01DFB7E3F0084848F /* Prepare Expo */ = {
@@ -392,7 +390,7 @@
 		};
 		B56386591DB9693800A0598C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56EBFBA08F4709C02249ABCF /* Pods-upcoming-games.debug.xcconfig */;
+			baseConfigurationReference = 7650C7707B7FD3A48472E1CF /* Pods-upcoming-games.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8D8QTF339;
@@ -406,7 +404,7 @@
 		};
 		B563865A1DB9693800A0598C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40E9BE8E4D8B5F20C35D66D7 /* Pods-upcoming-games.release.xcconfig */;
+			baseConfigurationReference = F13E8499D82E1EDDE99A54A2 /* Pods-upcoming-games.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8D8QTF339;
