@@ -2,7 +2,7 @@ import 'styled-components';
 
 // All app colors
 enum COLORS {
-  DARK_BG_COLOR = '#e9e9f4',
+  DARK_BG_COLOR = '#E6ECF0',
   WHITE_BG_COLOR = '#FFFFFF',
   BLACK_FONT_COLOR = '#000000',
   WHITE_FONT_COLOR = '#FFFFFF',

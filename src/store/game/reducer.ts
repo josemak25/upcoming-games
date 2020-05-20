@@ -1,10 +1,11 @@
 import { GAME_TYPES, GameAction, GameInitialState } from './types';
-import { dummyGames } from '../../libs/games.json';
+import dummyGames from '../../libs/games.json';
 
 export const gameInitialState: GameInitialState = {
   isLoading: false,
   error: null,
-  games: [...dummyGames]
+  //@ts-ignore remove this when using real data
+  games: []
 };
 
 export default function gameReducer(

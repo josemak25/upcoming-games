@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicator } from 'react-native';
+import { ActivityIndicator, Platform } from 'react-native';
 import { useThemeContext } from '../../theme';
 
 import { Container } from './styles';
@@ -9,7 +9,10 @@ export default function LoadingGames() {
 
   return (
     <Container>
-      <ActivityIndicator size="large" color={colors.ACTION_BG_COLOR} />
+      <ActivityIndicator
+        size={Platform.OS === 'ios' ? 'large' : 45}
+        color={colors.ACTION_BG_COLOR}
+      />
     </Container>
   );
 }
