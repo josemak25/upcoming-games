@@ -23,7 +23,11 @@ export default function BottomNavigator() {
         component={Screens.HomeScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
-            <HomeIcon fillColor={color} isFocused={focused} />
+            <HomeIcon
+              fillColor={color}
+              isFocused={focused}
+              style={{ paddingTop: 35 }}
+            />
           )
         }}
       />
@@ -32,7 +36,11 @@ export default function BottomNavigator() {
         component={Screens.SearchScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
-            <SearchIcon fillColor={color} isFocused={focused} />
+            <SearchIcon
+              fillColor={color}
+              isFocused={focused}
+              style={{ paddingTop: 35 }}
+            />
           )
         }}
       />
@@ -41,7 +49,13 @@ export default function BottomNavigator() {
         component={Screens.BookmarkScreen}
         options={{
           tabBarIcon: ({ color, focused }) => {
-            return <BookmarkIcon fillColor={color} isFocused={focused} />;
+            return (
+              <BookmarkIcon
+                fillColor={color}
+                isFocused={focused}
+                style={{ paddingTop: 35 }}
+              />
+            );
           }
         }}
       />
