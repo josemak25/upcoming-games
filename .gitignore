@@ -74,3 +74,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# jest test coverage
+coverage/
