@@ -4,7 +4,7 @@ platform :ios, '10.0'
 target 'upcoming-games' do
   pod 'ExpoKit',
     :git => "http://github.com/expo/expo.git",
-    :tag => "ios/2.14.3",
+    :tag => "ios/2.14.6",
     :subspecs => [
       "Core"
     ],
@@ -18,6 +18,10 @@ target 'upcoming-games' do
       'expo-bluetooth',
       'expo-in-app-purchases',
       'expo-payments-stripe',
+      'expo-notifications',
+      'expo-splash-screen',
+      'expo-image',
+      'expo-updates',
     ],
   )
 

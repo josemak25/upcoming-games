@@ -4,7 +4,7 @@ PODS:
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
-  - Crashlytics (3.13.4):
+  - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - DoubleConversion (1.1.6)
   - EXAppLoaderProvider (8.0.0)
@@ -33,7 +33,7 @@ PODS:
   - ExpoKit/Core (36.0.0):
     - Amplitude-iOS (~> 4.7.1)
     - CocoaLumberjack (~> 3.5.3)
-    - Crashlytics (~> 3.13.4)
+    - Crashlytics (~> 3.14.0)
     - Google-Maps-iOS-Utils (~> 2.1.0)
     - GoogleMaps (~> 3.3)
     - JKBigInteger2 (= 0.0.5)
@@ -294,7 +294,7 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
     - ReactCommon/jscallinvoker (= 0.61.4)
-  - RealmJS (4.0.0-beta.0):
+  - RealmJS (6.0.1):
     - GCDWebServer
     - React
   - UMBarCodeScannerInterface (5.0.0)
@@ -325,7 +325,7 @@ DEPENDENCIES:
   - EXLinearGradient (from `../node_modules/expo-linear-gradient/ios`)
   - EXLocation (from `../node_modules/expo-location/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
-  - ExpoKit/Core (from `http://github.com/expo/expo.git`, tag `ios/2.14.3`)
+  - ExpoKit/Core (from `http://github.com/expo/expo.git`, tag `ios/2.14.6`)
   - EXSQLite (from `../node_modules/expo-sqlite/ios`)
   - EXWebBrowser (from `../node_modules/expo-web-browser/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -414,7 +414,7 @@ EXTERNAL SOURCES:
     path: "../node_modules/expo-permissions/ios"
   ExpoKit:
     :git: http://github.com/expo/expo.git
-    :tag: ios/2.14.3
+    :tag: ios/2.14.6
   EXSQLite:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-sqlite/ios"
@@ -511,13 +511,13 @@ EXTERNAL SOURCES:
 CHECKOUT OPTIONS:
   ExpoKit:
     :git: http://github.com/expo/expo.git
-    :tag: ios/2.14.3
+    :tag: ios/2.14.6
 
 SPEC CHECKSUMS:
   Amplitude-iOS: a0347ab05f2d196e6bbb22cc6f62eea33b5a035b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
-  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   EXAppLoaderProvider: ebdb6bc2632c1ccadbe49f5e4104d8d690969c49
   EXConstants: 4051b16c17ef3defa03c541d42811dc92b249146
@@ -528,7 +528,7 @@ SPEC CHECKSUMS:
   EXLinearGradient: 75f302f9d6484267a3f6d3252df2e7a5f00e716a
   EXLocation: 3c75d012ca92eed94d4338778d79c49d1252393a
   EXPermissions: 9bc08859a675d291e89be9a0870155c27c16ac35
-  ExpoKit: b966bbd05ef8415d77939e4d2b7520a6f6ef268c
+  ExpoKit: 63e55980bbb7613fa54b9bfcf699e775a4b1ca87
   EXSQLite: 220226a354912b100dfe913f5fe6f31762c8927e
   EXWebBrowser: db32607359fb7b55b7b7b91df32dd3d8355bb3b7
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
@@ -560,7 +560,7 @@ SPEC CHECKSUMS:
   React-RCTText: 21934e0a51d522abcd0a275407e80af45d6fd9ec
   React-RCTVibration: 0f76400ee3cec6edb9c125da49fed279340d145a
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
-  RealmJS: b20b8fb5d9df60ec489d910436471ee6e333032d
+  RealmJS: cf6501f27894264dac14a97de49ad8499f31af11
   UMBarCodeScannerInterface: 3802c8574ef119c150701d679ab386e2266d6a54
   UMCameraInterface: 985d301f688ed392f815728f0dd906ca34b7ccb1
   UMConstantsInterface: bda5f8bd3403ad99e663eb3c4da685d063c5653c
@@ -575,6 +575,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: a98e37a576a5220bf43b8faf33cfdc129d2f441d
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: ad58968ef04d3586fb967348203597b19f8807ad
+PODFILE CHECKSUM: 10fb4512db74990572d16551cbbffda182b3ec66
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
