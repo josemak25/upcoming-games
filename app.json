@@ -1,14 +1,11 @@
 {
   "expo": {
-    "name": "upcoming Games",
-    "slug": "upcomingGames",
+    "name": "Upcoming Games",
+    "slug": "UpcomingGames",
     "privacy": "public",
     "sdkVersion": "36.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "version": "1.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -19,9 +16,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "** / *"
-    ],
+    "assetBundlePatterns": ["** / *"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "upcomingGames",
@@ -31,8 +26,8 @@
     "entryPoint": "node_modules/expo/AppEntry.js",
     "isDetached": true,
     "detach": {
-      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.14.3-sdk36.0.0-00f587c0-b8c9-4b6b-88f6-2ccd4f20dc9c.tar.gz",
-      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.14.2-sdk36.0.0-51bb3c16-c2a5-4797-b721-4091ed00e53a.tar.gz"
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.14.6-sdk36.0.0-8ea388d1-463b-4e91-bbf7-2d95d0174c96.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.14.2-sdk36.0.0-ce7e16db-fd5d-4fdd-bdeb-701ba94a04d1.tar.gz"
     },
     "scheme": "expf71e353ae35e4883877c6b061de31caa",
     "android": {

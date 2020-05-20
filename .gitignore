@@ -46,6 +46,12 @@ database/app.realm.lock
 database/app.realm.note
 
 
+# IOS AND ANDROID FOLDER CHNAGES
+#
+ios/
+ios.real/
+android/
+
 # BUCK
 buck-out/
 \.buckd/
