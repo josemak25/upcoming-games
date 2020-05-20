@@ -1,11 +1,11 @@
 import React from 'react';
 import { FlatList } from 'react-native';
+import { NavigationInterface } from '../types';
+import { useStoreContext } from '../../store';
 import Game from './game_card';
 import LoadingGames from '../../components/LoadingGames';
-import { NavigationInterface } from '../types';
 
 import { Container } from './styles';
-import { useStoreContext } from '../../store';
 
 interface HomeScreenProps extends NavigationInterface {
   testID?: string;
@@ -19,13 +19,18 @@ export default function HomeScreen(props: HomeScreenProps) {
   return !gameState.isLoading ? (
     <Container>
       <FlatList
+        ListEmptyComponent={LoadingGames}
         data={gameState.games}
         renderItem={({ item, index }) => (
           <Game {...item} gameIndex={index} {...props} />
         )}
         keyExtractor={game => `${game.id}`}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 0 }}
+        style={{ width: '100%' }}
+        contentContainerStyle={{
+          flexGrow: 1,
+          paddingBottom: 10
+        }}
       />
     </Container>
   ) : (
