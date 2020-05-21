@@ -18,6 +18,7 @@ enum FONTS {
   LARGE_SIZE = 18,
   NOTOSANS_REGULAR = 'notosans-regular',
   NOTOSANS_BOLD = 'notosans-bold',
+  BEAUTY_MOUNTAINS = 'beauty-mountains',
   FONT_WEIGHT_LIGHT = 200,
   FONT_WEIGHT_MEDIUM = 600,
   FONT_WEIGHT_HEAVY = 800
@@ -43,6 +44,7 @@ declare module 'styled-components' {
       LARGE_SIZE: number;
       NOTOSANS_REGULAR: string;
       NOTOSANS_BOLD: string;
+      BEAUTY_MOUNTAINS: string;
       FONT_WEIGHT_LIGHT: number;
       FONT_WEIGHT_MEDIUM: number;
       FONT_WEIGHT_HEAVY: number;
