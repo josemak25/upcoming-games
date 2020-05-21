@@ -4,6 +4,7 @@ import { useThemeContext } from '../../theme';
 import { useSafeArea } from 'react-native-safe-area-context';
 
 import { Container, HeaderLeft, HeaderRight, HeaderBackTitle } from './styles';
+import { Platform } from 'react-native';
 
 type HeaderProps = {
   title?: React.ElementType;
@@ -34,7 +35,10 @@ export default function Header(props: HeaderProps) {
       style={[
         {
           paddingTop: Math.floor(HEADER_TOP_PADDING),
-          height: Math.floor(HEADER_TOP_PADDING + 60)
+          height:
+            Platform.OS === 'ios'
+              ? Math.floor(HEADER_TOP_PADDING + 50)
+              : Math.floor(HEADER_TOP_PADDING + 60)
         },
         boxShadow({
           elevation: 3,
