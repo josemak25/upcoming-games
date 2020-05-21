@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import Animated, { Easing } from 'react-native-reanimated';
 import applyScale from '../../utils/applyScale';
+import ContentLoader from 'react-native-skeleton-content';
 
 import { Image } from './styles';
 
@@ -25,9 +26,10 @@ type ResponsiveImageProps = {
 };
 
 export default function ResponsiveImage(props: ResponsiveImageProps) {
-  const [animation] = useState({
+  const [animation, setAnimation] = useState({
     imageOpacity: new Animated.Value(0),
-    thumbnailOpacity: new Animated.Value(0)
+    thumbnailOpacity: new Animated.Value(0),
+    hideContentLoader: true
   });
 
   const width = applyScale(props.width) || 250;
@@ -36,12 +38,14 @@ export default function ResponsiveImage(props: ResponsiveImageProps) {
 
   const thumbnailFadeDuration = props.thumbnailFadeDuration || 250;
   const imageFadeDuration = props.imageFadeDuration || 250;
-  const thumbnailBlurRadius = props.thumbnailBlurRadius || 10;
+  const thumbnailBlurRadius = props.thumbnailBlurRadius || 3;
   const thumbnailSource = props.thumbnailSource || props.imageUrl;
 
   const onlineImage = { uri: props.imageUrl, cache: 'force-cache' };
 
   const onLoadThumbnail = () => {
+    setAnimation({ ...animation, hideContentLoader: false });
+
     Animated.timing(animation.thumbnailOpacity, {
       toValue: 1,
       duration: thumbnailFadeDuration,
@@ -60,12 +64,27 @@ export default function ResponsiveImage(props: ResponsiveImageProps) {
 
   return (
     <Fragment>
+      <ContentLoader
+        isLoading={animation.hideContentLoader}
+        containerStyle={{
+          width: applyScale(width),
+          height: applyScale(height)
+        }}
+        layout={[
+          {
+            width: applyScale(width),
+            height: applyScale(height),
+            ...props.style
+          }
+        ]}
+      />
+
       <ProgressiveImage
         style={[{ width, height, resizeMode }, props.style]}
         source={{ uri: thumbnailSource, cache: 'force-cache' }}
         onLoadStart={props.onLoadStart}
         onProgress={props.onLoadStart}
-        onLoad={() => onLoadThumbnail}
+        onLoad={onLoadThumbnail}
         onError={props.onError}
         onLoadEnd={props.onLoadEnd}
         blurRadius={thumbnailBlurRadius}
