@@ -8,7 +8,7 @@ export const userInitialState: UserInitialState = {
     name: 'Elaine Marshall',
     phone: '09032426735',
     email: 'JamesB@gmail.com',
-    avatar: 'https://bit.ly/2WldiMc'
+    avatar: `https://drive.google.com/uc?view=&id=1qf_CrXBM8-7B_74INxwq3R1H4GCheGXi`
   }
 };
 
