@@ -11,7 +11,7 @@ interface DetailScreenProp extends NavigationInterface {
 export default function DetailScreen(props: DetailScreenProp) {
   return (
     <Container>
-      <Button title="detail screen" />
+      <Button title="detail screen" onPress={props.navigation.goBack} />
     </Container>
   );
 }

@@ -31,6 +31,9 @@ export default function AppLoading({ setIsAppReady }) {
       },
       {
         'notosans-bold': require('../../../assets/fonts/NotoSans-Bold.ttf')
+      },
+      {
+        'beauty-mountains': require('../../../assets/fonts/BeautyMountains.ttf')
       }
     ]);
 

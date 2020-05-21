@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import database from './database';
 import Router from './router';
 import { StoreProvider } from './store';
@@ -13,7 +14,9 @@ export default function AppRouter() {
   return (
     <StoreProvider>
       <ThemeProvider>
-        <Router />
+        <SafeAreaProvider>
+          <Router />
+        </SafeAreaProvider>
       </ThemeProvider>
     </StoreProvider>
   );

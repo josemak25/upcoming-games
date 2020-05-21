@@ -5,7 +5,7 @@ export const gameInitialState: GameInitialState = {
   isLoading: false,
   error: null,
   //@ts-ignore remove this when using real data
-  games: []
+  games: [...dummyGames]
 };
 
 export default function gameReducer(

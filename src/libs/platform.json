@@ -1,0 +1,1463 @@
+[
+  {
+    "id": 140,
+    "name": "AY-3-8500",
+    "platform_logo": {
+      "id": 127,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 188,
+      "image_id": "yjdciw0jagvnmvzhhubs",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/yjdciw0jagvnmvzhhubs.jpg",
+      "width": 350
+    }
+  },
+  {
+    "id": 51,
+    "abbreviation": "fds",
+    "alternative_name": "Famicom Disk System",
+    "generation": 3,
+    "name": "Family Computer Disk System",
+    "platform_logo": {
+      "id": 299,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8b",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8b.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 5,
+    "abbreviation": "Wii",
+    "alternative_name": "Revolution",
+    "generation": 7,
+    "name": "Wii",
+    "platform_logo": {
+      "id": 326,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 454,
+      "image_id": "pl92",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl92.jpg",
+      "width": 576
+    }
+  },
+  {
+    "id": 7,
+    "abbreviation": "PS1",
+    "generation": 5,
+    "name": "PlayStation",
+    "platform_logo": {
+      "id": 278,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7q",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7q.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 69,
+    "abbreviation": "bbcmicro",
+    "name": "BBC Microcomputer System",
+    "platform_logo": {
+      "id": 294,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 2252,
+      "image_id": "pl86",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl86.jpg",
+      "width": 2252
+    }
+  },
+  {
+    "id": 4,
+    "abbreviation": "N64",
+    "alternative_name": "N64",
+    "generation": 5,
+    "name": "Nintendo 64",
+    "platform_logo": {
+      "id": 260,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1291,
+      "image_id": "pl78",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl78.jpg",
+      "width": 1291
+    }
+  },
+  {
+    "id": 3,
+    "abbreviation": "Linux",
+    "alternative_name": "GNU/Linux",
+    "name": "Linux",
+    "platform_logo": {
+      "id": 33,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 742,
+      "image_id": "lyn1jv2cu6hjoaikatdv",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/lyn1jv2cu6hjoaikatdv.jpg",
+      "width": 1344
+    }
+  },
+  {
+    "id": 72,
+    "abbreviation": "Ouya",
+    "generation": 8,
+    "name": "Ouya",
+    "platform_logo": {
+      "id": 236,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6k",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6k.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 71,
+    "abbreviation": "vic-20",
+    "name": "Commodore VIC-20",
+    "platform_logo": {
+      "id": 313,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8p",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8p.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 124,
+    "name": "SwanCrystal",
+    "platform_logo": {
+      "id": 319,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8v",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8v.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 9,
+    "abbreviation": "PS3",
+    "generation": 7,
+    "name": "PlayStation 3",
+    "platform_logo": {
+      "id": 79,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 269,
+      "image_id": "tuyy1nrqodtmbqajp4jg",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/tuyy1nrqodtmbqajp4jg.jpg",
+      "width": 640
+    }
+  },
+  {
+    "id": 13,
+    "abbreviation": "DOS",
+    "name": "PC DOS",
+    "platform_logo": {
+      "id": 38,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "sqgw6vespav1buezgjjn",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/sqgw6vespav1buezgjjn.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 115,
+    "name": "Apple IIGS",
+    "platform_logo": {
+      "id": 295,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl87",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl87.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 19,
+    "abbreviation": "SNES",
+    "alternative_name": "SNES, Super Nintendo",
+    "generation": 4,
+    "name": "Super Nintendo Entertainment System (SNES)",
+    "platform_logo": {
+      "id": 106,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 400,
+      "image_id": "ifw2tvdkynyxayquiyk4",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/ifw2tvdkynyxayquiyk4.jpg",
+      "width": 500
+    }
+  },
+  {
+    "id": 62,
+    "abbreviation": "Jaguar",
+    "generation": 5,
+    "name": "Atari Jaguar",
+    "platform_logo": {
+      "id": 286,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7y",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7y.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 32,
+    "abbreviation": "Saturn",
+    "alternative_name": "JVC Saturn, Hi-Saturn, Samsung Saturn, V-Saturn",
+    "generation": 5,
+    "name": "Sega Saturn",
+    "platform_logo": {
+      "id": 49,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 170,
+      "image_id": "hrmqljpwunky1all3v78",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/hrmqljpwunky1all3v78.jpg",
+      "width": 210
+    }
+  },
+  {
+    "id": 57,
+    "abbreviation": "WonderSwan",
+    "generation": 5,
+    "name": "WonderSwan",
+    "platform_logo": {
+      "id": 263,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7b",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7b.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 75,
+    "abbreviation": "Apple][",
+    "alternative_name": "apple ][",
+    "name": "Apple II",
+    "platform_logo": {
+      "id": 315,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8r",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8r.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 37,
+    "abbreviation": "3DS",
+    "alternative_name": "3DS",
+    "generation": 8,
+    "name": "Nintendo 3DS",
+    "platform_logo": {
+      "id": 240,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6o",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6o.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 29,
+    "abbreviation": "Genesis",
+    "alternative_name": "Sega Genesis",
+    "generation": 4,
+    "name": "Sega Mega Drive/Genesis",
+    "platform_logo": {
+      "id": 293,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl85",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl85.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 38,
+    "abbreviation": "PSP",
+    "alternative_name": "PSP",
+    "generation": 7,
+    "name": "PlayStation Portable",
+    "platform_logo": {
+      "id": 214,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 231,
+      "image_id": "pl5y",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl5y.jpg",
+      "width": 753
+    }
+  },
+  {
+    "id": 123,
+    "generation": 5,
+    "name": "WonderSwan Color",
+    "platform_logo": {
+      "id": 261,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl79",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl79.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 27,
+    "abbreviation": "MSX",
+    "name": "MSX",
+    "platform_logo": {
+      "id": 307,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8j",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8j.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 61,
+    "abbreviation": "Lynx",
+    "generation": 4,
+    "name": "Atari Lynx",
+    "platform_logo": {
+      "id": 290,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl82",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl82.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 24,
+    "abbreviation": "GBA",
+    "alternative_name": "GBA",
+    "generation": 6,
+    "name": "Game Boy Advance",
+    "platform_logo": {
+      "id": 255,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl73",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl73.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 68,
+    "abbreviation": "colecovision",
+    "generation": 2,
+    "name": "ColecoVision",
+    "platform_logo": {
+      "id": 311,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8n",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8n.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 136,
+    "generation": 4,
+    "name": "Neo Geo CD",
+    "platform_logo": {
+      "id": 281,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7t",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7t.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 138,
+    "generation": 2,
+    "name": "VC 4000",
+    "platform_logo": {
+      "id": 134,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 247,
+      "image_id": "phikgyfmv1fevj2jhzr5",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/phikgyfmv1fevj2jhzr5.jpg",
+      "width": 450
+    }
+  },
+  {
+    "id": 120,
+    "generation": 5,
+    "name": "Neo Geo Pocket Color",
+    "platform_logo": {
+      "id": 269,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7h",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7h.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 121,
+    "name": "Sharp X68000",
+    "platform_logo": {
+      "id": 306,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8i",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8i.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 30,
+    "abbreviation": "Sega32",
+    "generation": 4,
+    "name": "Sega 32X",
+    "platform_logo": {
+      "id": 279,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7r",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7r.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 166,
+    "name": "Pokémon mini",
+    "platform_logo": {
+      "id": 267,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7f",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7f.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 33,
+    "abbreviation": "Game Boy",
+    "generation": 4,
+    "name": "Game Boy",
+    "platform_logo": {
+      "id": 274,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7m",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7m.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 12,
+    "abbreviation": "X360",
+    "alternative_name": "xbx360",
+    "generation": 7,
+    "name": "Xbox 360",
+    "platform_logo": {
+      "id": 250,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6y",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6y.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 127,
+    "generation": 2,
+    "name": "Fairchild Channel F",
+    "platform_logo": {
+      "id": 316,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8s",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8s.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 44,
+    "abbreviation": "zod",
+    "name": "Tapwave Zodiac",
+    "platform_logo": {
+      "id": 46,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 99,
+      "image_id": "lfsdnlko80ftakbugceu",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/lfsdnlko80ftakbugceu.jpg",
+      "width": 400
+    }
+  },
+  {
+    "id": 240,
+    "generation": 7,
+    "name": "Zeebo",
+    "platform_logo": {
+      "id": 429,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 288,
+      "image_id": "plbx",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/plbx.jpg",
+      "width": 1041
+    }
+  },
+  {
+    "id": 53,
+    "abbreviation": "MSX2",
+    "name": "MSX2",
+    "platform_logo": {
+      "id": 308,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8k",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8k.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 45,
+    "abbreviation": "psn",
+    "alternative_name": "PSN",
+    "name": "PlayStation Network",
+    "platform_logo": {
+      "id": 321,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8x",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8x.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 139,
+    "generation": 2,
+    "name": "1292 Advanced Programmable Video System",
+    "platform_logo": {
+      "id": 136,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 689,
+      "image_id": "yfdqsudagw0av25dawjr",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/yfdqsudagw0av25dawjr.jpg",
+      "width": 1280
+    }
+  },
+  {
+    "id": 23,
+    "abbreviation": "DC",
+    "generation": 6,
+    "name": "Dreamcast",
+    "platform_logo": {
+      "id": 270,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7i",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7i.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 36,
+    "abbreviation": "xla",
+    "name": "Xbox Live Arcade",
+    "platform_logo": {
+      "id": 19,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 230,
+      "image_id": "gd3cpiithvod9arhfkbt",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/gd3cpiithvod9arhfkbt.jpg",
+      "width": 500
+    }
+  },
+  {
+    "id": 164,
+    "name": "Daydream",
+    "platform_logo": {
+      "id": 160,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 760,
+      "image_id": "lwbdsvaveyxmuwnsga7g",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/lwbdsvaveyxmuwnsga7g.jpg",
+      "width": 1024
+    }
+  },
+  {
+    "id": 18,
+    "abbreviation": "NES",
+    "alternative_name": "NES",
+    "generation": 3,
+    "name": "Nintendo Entertainment System (NES)",
+    "platform_logo": {
+      "id": 229,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6d",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6d.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 135,
+    "name": "Hyper Neo Geo 64",
+    "platform_logo": {
+      "id": 117,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 246,
+      "image_id": "ubf1qgytr069wm0ikh0z",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/ubf1qgytr069wm0ikh0z.jpg",
+      "width": 640
+    }
+  },
+  {
+    "id": 134,
+    "name": "Acorn Electron",
+    "platform_logo": {
+      "id": 301,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8d",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8d.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 117,
+    "name": "Philips CD-i",
+    "platform_logo": {
+      "id": 288,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl80",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl80.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 159,
+    "generation": 7,
+    "name": "Nintendo DSi",
+    "platform_logo": {
+      "id": 246,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6u",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6u.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 67,
+    "abbreviation": "intellivision",
+    "generation": 2,
+    "name": "Intellivision",
+    "platform_logo": {
+      "id": 312,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8o",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8o.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 163,
+    "abbreviation": "Steam VR",
+    "name": "SteamVR",
+    "platform_logo": {
+      "id": 159,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 785,
+      "image_id": "ipbdzzx7z3rwuzm9big4",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/ipbdzzx7z3rwuzm9big4.jpg",
+      "width": 785
+    }
+  },
+  {
+    "id": 74,
+    "abbreviation": "Win Phone",
+    "alternative_name": "WP",
+    "name": "Windows Phone",
+    "platform_logo": {
+      "id": 363,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pla3",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pla3.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 162,
+    "abbreviation": "Oculus VR",
+    "name": "Oculus VR",
+    "platform_logo": {
+      "id": 158,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 362,
+      "image_id": "pivaofe9ll2b8cqfvvbu",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pivaofe9ll2b8cqfvvbu.jpg",
+      "width": 447
+    }
+  },
+  {
+    "id": 21,
+    "abbreviation": "NGC",
+    "alternative_name": "Dolphin",
+    "generation": 6,
+    "name": "Nintendo GameCube",
+    "platform_logo": {
+      "id": 262,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7a",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7a.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 92,
+    "abbreviation": "steam",
+    "name": "SteamOS",
+    "platform_logo": {
+      "id": 234,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6i",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6i.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 169,
+    "alternative_name": "Project Scarlett",
+    "name": "Xbox Series X",
+    "platform_logo": {
+      "id": 327,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 800,
+      "image_id": "pl93",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl93.jpg",
+      "width": 1200
+    }
+  },
+  {
+    "id": 60,
+    "abbreviation": "Atari7800",
+    "alternative_name": "Atari 7800 ProSystem",
+    "generation": 3,
+    "name": "Atari 7800",
+    "platform_logo": {
+      "id": 303,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8f",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8f.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 77,
+    "abbreviation": "x1",
+    "name": "Sharp X1",
+    "platform_logo": {
+      "id": 297,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl89",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl89.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 42,
+    "abbreviation": "NGage",
+    "generation": 6,
+    "name": "N-Gage",
+    "platform_logo": {
+      "id": 258,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl76",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl76.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 170,
+    "abbreviation": "Stadia",
+    "alternative_name": "Stadia",
+    "name": "Google Stadia",
+    "platform_logo": {
+      "id": 328,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl94",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl94.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 66,
+    "abbreviation": "Atari5200",
+    "alternative_name": "Atari 5200 SuperSystem",
+    "generation": 2,
+    "name": "Atari 5200",
+    "platform_logo": {
+      "id": 304,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8g",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8g.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 6,
+    "abbreviation": "PC",
+    "alternative_name": "mswin",
+    "name": "PC (Microsoft Windows)",
+    "platform_logo": {
+      "id": 203,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 1024,
+      "image_id": "irwvwpl023f8y19tidgq",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/irwvwpl023f8y19tidgq.jpg",
+      "width": 1024
+    }
+  },
+  {
+    "id": 99,
+    "abbreviation": "famicom",
+    "alternative_name": "Famicom",
+    "generation": 3,
+    "name": "Family Computer (FAMICOM)",
+    "platform_logo": {
+      "id": 277,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7p",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7p.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 79,
+    "abbreviation": "neogeomvs",
+    "alternative_name": "Neo Geo Multi Video System",
+    "name": "Neo Geo MVS",
+    "platform_logo": {
+      "id": 70,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 412,
+      "image_id": "cbhfilmhdgwdql8nzsy0",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/cbhfilmhdgwdql8nzsy0.jpg",
+      "width": 412
+    }
+  },
+  {
+    "id": 11,
+    "abbreviation": "XBOX",
+    "generation": 6,
+    "name": "Xbox",
+    "platform_logo": {
+      "id": 266,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7e",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7e.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 130,
+    "abbreviation": "Switch",
+    "alternative_name": "NX",
+    "generation": 8,
+    "name": "Nintendo Switch",
+    "platform_logo": {
+      "id": 227,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6b",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6b.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 119,
+    "generation": 5,
+    "name": "Neo Geo Pocket",
+    "platform_logo": {
+      "id": 219,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 2580,
+      "image_id": "pl63",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl63.jpg",
+      "width": 3630
+    }
+  },
+  {
+    "id": 20,
+    "abbreviation": "NDS",
+    "alternative_name": "DS",
+    "generation": 7,
+    "name": "Nintendo DS",
+    "platform_logo": {
+      "id": 245,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6t",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6t.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 84,
+    "abbreviation": "sg1000",
+    "alternative_name": "Sega Game 1000",
+    "generation": 3,
+    "name": "SG-1000",
+    "platform_logo": {
+      "id": 223,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 2280,
+      "image_id": "pl67",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl67.jpg",
+      "width": 3780
+    }
+  },
+  {
+    "id": 25,
+    "abbreviation": "ACPC",
+    "alternative_name": "Colour Personal Computer",
+    "name": "Amstrad CPC",
+    "platform_logo": {
+      "id": 114,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 511,
+      "image_id": "nlizydzqnuzvzfdapqoj",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/nlizydzqnuzvzfdapqoj.jpg",
+      "width": 1040
+    }
+  },
+  {
+    "id": 122,
+    "name": "Nuon",
+    "platform_logo": {
+      "id": 268,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7g",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7g.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 87,
+    "abbreviation": "virtualboy",
+    "generation": 5,
+    "name": "Virtual Boy",
+    "platform_logo": {
+      "id": 280,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7s",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7s.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 34,
+    "abbreviation": "Android",
+    "alternative_name": "Infocusa3",
+    "name": "Android",
+    "platform_logo": {
+      "id": 195,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 1200,
+      "image_id": "vatwzmo04uazwajipqjt",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/vatwzmo04uazwajipqjt.jpg",
+      "width": 1200
+    }
+  },
+  {
+    "id": 46,
+    "abbreviation": "Vita",
+    "alternative_name": "PS Vita",
+    "generation": 8,
+    "name": "PlayStation Vita",
+    "platform_logo": {
+      "id": 232,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6g",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6g.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 153,
+    "name": "Dragon 32/64",
+    "platform_logo": {
+      "id": 302,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1016,
+      "image_id": "pl8e",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8e.jpg",
+      "width": 1016
+    }
+  },
+  {
+    "id": 89,
+    "abbreviation": "microvision",
+    "generation": 2,
+    "name": "Microvision",
+    "platform_logo": {
+      "id": 314,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8q",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8q.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 8,
+    "abbreviation": "PS2",
+    "alternative_name": "PS2",
+    "generation": 6,
+    "name": "PlayStation 2",
+    "platform_logo": {
+      "id": 254,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl72",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl72.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 14,
+    "abbreviation": "Mac",
+    "alternative_name": "Mac OS",
+    "name": "Mac",
+    "platform_logo": {
+      "id": 100,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1024,
+      "image_id": "jl4t4o64uv2gizj2dxsy",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/jl4t4o64uv2gizj2dxsy.jpg",
+      "width": 1024
+    }
+  },
+  {
+    "id": 73,
+    "abbreviation": "blackberry",
+    "name": "BlackBerry OS",
+    "platform_logo": {
+      "id": 40,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 174,
+      "image_id": "bezbkk17hk0uobdkhjcv",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/bezbkk17hk0uobdkhjcv.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 39,
+    "abbreviation": "iOS",
+    "name": "iOS",
+    "platform_logo": {
+      "id": 248,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6w",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6w.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 150,
+    "name": "Turbografx-16/PC Engine CD",
+    "platform_logo": {
+      "id": 291,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl83",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl83.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 15,
+    "abbreviation": "C64",
+    "name": "Commodore C64/128",
+    "platform_logo": {
+      "id": 300,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8c",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8c.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 70,
+    "abbreviation": "vectrex",
+    "generation": 2,
+    "name": "Vectrex",
+    "platform_logo": {
+      "id": 305,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8h",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8h.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 133,
+    "alternative_name": "Magnavox Odyssey²",
+    "name": "Philips Videopac G7000",
+    "platform_logo": {
+      "id": 112,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 2560,
+      "image_id": "fqwnmmpanb5se6ebccm3",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/fqwnmmpanb5se6ebccm3.jpg",
+      "width": 4272
+    }
+  },
+  {
+    "id": 113,
+    "name": "OnLive Game System",
+    "platform_logo": {
+      "id": 320,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8w",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8w.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 22,
+    "abbreviation": "GBC",
+    "generation": 5,
+    "name": "Game Boy Color",
+    "platform_logo": {
+      "id": 273,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7l",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7l.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 94,
+    "abbreviation": "C+4",
+    "name": "Commodore Plus/4",
+    "platform_logo": {
+      "id": 310,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8m",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8m.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 239,
+    "name": "Blu-ray Player",
+    "platform_logo": {
+      "id": 427,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 432,
+      "image_id": "plbv",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/plbv.jpg",
+      "width": 800
+    }
+  },
+  {
+    "id": 78,
+    "abbreviation": "segacd",
+    "alternative_name": "Mega CD",
+    "generation": 4,
+    "name": "Sega CD",
+    "platform_logo": {
+      "id": 284,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7w",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7w.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 238,
+    "alternative_name": "Digital Versatile Disc Player",
+    "name": "DVD Player",
+    "platform_logo": {
+      "id": 426,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 261,
+      "image_id": "plbu",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/plbu.jpg",
+      "width": 512
+    }
+  },
+  {
+    "id": 80,
+    "abbreviation": "neogeoaes",
+    "alternative_name": "AES",
+    "generation": 4,
+    "name": "Neo Geo AES",
+    "platform_logo": {
+      "id": 69,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 412,
+      "image_id": "hamfdrgnhenxb2d9g8mh",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/hamfdrgnhenxb2d9g8mh.jpg",
+      "width": 412
+    }
+  },
+  {
+    "id": 160,
+    "name": "Nintendo eShop",
+    "platform_logo": {
+      "id": 201,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 168,
+      "image_id": "i7rzuavynmvjg9lejav6",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/i7rzuavynmvjg9lejav6.jpg",
+      "width": 288
+    }
+  },
+  {
+    "id": 114,
+    "generation": 5,
+    "name": "Amiga CD32",
+    "platform_logo": {
+      "id": 283,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7v",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7v.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 50,
+    "abbreviation": "3DO",
+    "generation": 5,
+    "name": "3DO Interactive Multiplayer",
+    "platform_logo": {
+      "id": 282,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7u",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7u.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 158,
+    "alternative_name": "Commodore Dynamic Total Vision",
+    "name": "Commodore CDTV",
+    "platform_logo": {
+      "id": 292,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl84",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl84.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 142,
+    "generation": 1,
+    "name": "PC-50X Family",
+    "platform_logo": {
+      "id": 131,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 95,
+      "image_id": "vckflbrulcehb6qiap6n",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/vckflbrulcehb6qiap6n.jpg",
+      "width": 110
+    }
+  },
+  {
+    "id": 41,
+    "abbreviation": "WiiU",
+    "generation": 8,
+    "name": "Wii U",
+    "platform_logo": {
+      "id": 239,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6n",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6n.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 64,
+    "abbreviation": "SMS",
+    "alternative_name": "SMS",
+    "generation": 3,
+    "name": "Sega Master System",
+    "platform_logo": {
+      "id": 298,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl8a",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl8a.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 47,
+    "abbreviation": "VC",
+    "name": "Virtual Console (Nintendo)",
+    "platform_logo": {
+      "id": 202,
+      "alpha_channel": false,
+      "animated": false,
+      "height": 260,
+      "image_id": "roart4jtjdwpczg0itra",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/roart4jtjdwpczg0itra.jpg",
+      "width": 479
+    }
+  },
+  {
+    "id": 137,
+    "generation": 8,
+    "name": "New Nintendo 3DS",
+    "platform_logo": {
+      "id": 235,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl6j",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl6j.jpg",
+      "width": 1000
+    }
+  },
+  {
+    "id": 35,
+    "abbreviation": "Game Gear",
+    "generation": 4,
+    "name": "Sega Game Gear",
+    "platform_logo": {
+      "id": 287,
+      "alpha_channel": true,
+      "animated": false,
+      "height": 1000,
+      "image_id": "pl7z",
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/pl7z.jpg",
+      "width": 1000
+    }
+  }
+]

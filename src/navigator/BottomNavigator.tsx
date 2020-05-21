@@ -31,6 +31,7 @@ export default function BottomNavigator() {
           )
         }}
       />
+
       <Tab.Screen
         name="SearchScreen"
         component={Screens.SearchScreen}
@@ -44,6 +45,7 @@ export default function BottomNavigator() {
           )
         }}
       />
+
       <Tab.Screen
         name="BookmarkScreen"
         component={Screens.BookmarkScreen}
