@@ -1,43 +1,60 @@
 import styled from 'styled-components/native';
+import applyScale from '../../../utils/applyScale';
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled.View`
   width: 100%;
-  height: 196px;
-`;
-
-export const GameDetails = styled.View`
-  width: 100%;
-  height: 30%;
-  flex-direction: row;
-  justify-content: space-between;
+  height: ${applyScale(450)}px;
   align-items: center;
-  padding: 0px 15px;
-  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: ${({ theme }) => theme.colors.WHITE_BG_COLOR};
 `;
 
-export const GameTexts = styled.View`
-  width: 80%;
-  justify-content: space-evenly;
-`;
-
-export const GameTextsBottom = styled.View`
-  height: 100%;
-  flex-direction: row;
+export const GamePlatformImage = styled.View`
+  width: 42px;
+  height: 42px;
+  justify-content: center;
   align-items: center;
+  padding: 21.5px;
+  border-radius: 42px;
+  border: 1.5px ${({ theme }) => theme.colors.ACTION_BG_COLOR} solid;
 `;
 
-export const GameTitle = styled.Text`
-  font-size: ${({ theme }) => theme.fonts.LARGE_SIZE + 2}px;
+export const GamePlatformText = styled.View`
+  justify-content: center;
+  padding-left: 10px;
+`;
+
+export const GameEngineTitle = styled.Text`
+  font-size: ${({ theme }) => theme.fonts.MEDIUM_SIZE - 1}px;
   font-family: ${({ theme }) => theme.fonts.NOTOSANS_BOLD};
-  letter-spacing: 1px;
-  color: ${({ theme }) => theme.colors.WHITE_FONT_COLOR};
+  color: ${({ theme }) => theme.colors.BLACK_FONT_COLOR};
+  text-transform: capitalize;
 `;
 
-export const GameRealizeYear = styled.Text`
-  font-size: ${({ theme }) => theme.fonts.MEDIUM_SIZE + 2}px;
+export const GamePlatformTitle = styled.Text`
+  font-size: ${({ theme }) => theme.fonts.MEDIUM_SIZE - 2}px;
+  font-family: ${({ theme }) => theme.fonts.NOTOSANS_REGULAR};
+  color: ${({ theme }) => theme.colors.BLACK_FONT_COLOR};
+  text-transform: capitalize;
+`;
+
+export const GamePaginationContainer = styled.View`
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 50, 63, 0.8);
+  border-radius: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+`;
+
+export const GamePaginationText = styled.Text`
+  font-size: ${({ theme }) => theme.fonts.MEDIUM_SIZE}px;
   font-family: ${({ theme }) => theme.fonts.NOTOSANS_REGULAR};
   color: ${({ theme }) => theme.colors.WHITE_FONT_COLOR};
-  margin-right: 5px;
 `;
 
 export const YearAndGenreSeparator = styled.View`

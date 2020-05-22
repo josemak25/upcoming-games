@@ -1,15 +1,18 @@
-import React from 'react';
-import { FlatList } from 'react-native';
+import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { RecyclerListView, DataProvider } from 'recyclerlistview';
+import FastImage from 'react-native-fast-image';
 import { NavigationInterface } from '../types';
 import { useThemeContext } from '../../theme';
+import { GameInterface } from '../../store/game/types';
 import { useStoreContext } from '../../store';
 import Game from './game_card';
 import Card from '../../components/card';
 import Header from '../../commons/header';
-import GameListHeader from './gameListHeader';
-import ResponsiveImage from '../../libs/responsiveImage';
+import GameListHeader from './game_platform';
 import LoadingGames from '../../components/loadingGames';
+import layoutProvider, { ViewTypes } from './recycler_list_view';
+import { GameScreenshotInterface } from '../../constants';
 
 import { Container } from './styles';
 
@@ -24,11 +27,35 @@ export default function HomeScreen(props: HomeScreenProps) {
     store: { gameState, userState }
   } = useStoreContext();
 
+  const [state] = useState({
+    dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows([
+      {},
+      ...gameState.games
+    ]),
+
+    layoutProvider: layoutProvider()
+  });
+
+  const _renderGame = (type: string, data: GameInterface, index: number) => {
+    switch (type) {
+      case ViewTypes.GAME_LIST:
+        return <Game {...data} gameIndex={index} {...props} />;
+
+      case ViewTypes.GAME_LIST_HEADER:
+        return <GameListHeader {...props} />;
+
+      default:
+        return null;
+    }
+  };
+
+  const _renderFooter = () => gameState.isLoading && <LoadingGames />;
+
   return (
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: colors.DARK_BG_COLOR,
+        backgroundColor: colors.WHITE_BG_COLOR,
         paddingTop: 0,
         paddingBottom: 0
       }}
@@ -36,33 +63,39 @@ export default function HomeScreen(props: HomeScreenProps) {
       <Header
         headerLeft={() => (
           <Card style={{ width: 40, height: 40 }}>
-            <ResponsiveImage
-              imageUrl={userState.user.avatar}
-              width={40}
-              height={40}
+            <FastImage
               style={{
+                width: 40,
+                height: 40,
                 borderRadius: 45,
                 borderWidth: 2,
                 borderColor: colors.ACTION_BG_COLOR
               }}
+              source={{
+                uri: `${userState.user.avatar}`,
+                priority: FastImage.priority.normal
+              }}
+              resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
         )}
       />
 
       <Container>
-        <FlatList
-          ListHeaderComponent={() => <GameListHeader {...props} />}
-          ListEmptyComponent={LoadingGames}
-          data={gameState.games}
-          renderItem={({ item, index }) => (
-            <Game {...item} gameIndex={index} {...props} />
-          )}
-          keyExtractor={game => `${game.id}`}
-          showsVerticalScrollIndicator={false}
-          style={{ width: '100%' }}
-          contentContainerStyle={{ flexGrow: 1 }}
-        />
+        {gameState.games.length ? (
+          <RecyclerListView
+            style={{ minHeight: 1, minWidth: 1, flex: 1, width: '100%' }}
+            contentContainerStyle={{ paddingTop: 10 }}
+            dataProvider={state.dataProvider}
+            layoutProvider={state.layoutProvider}
+            rowRenderer={_renderGame}
+            renderFooter={_renderFooter}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={(game: GameScreenshotInterface) => `${game.id}`}
+          />
+        ) : (
+          <LoadingGames />
+        )}
       </Container>
     </SafeAreaView>
   );
