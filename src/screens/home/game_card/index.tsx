@@ -1,29 +1,36 @@
+//@ts-nocheck
 import React from 'react';
-import { ImageBackground } from 'react-native';
-import getImageURL from '../../../utils/getImageURL';
+import { Dimensions } from 'react-native';
 import getGenres from '../../../utils/getGenres';
+import AppIntroSlider from 'react-native-app-intro-slider';
 import { NavigationInterface } from '../../types';
 import { GameInterface } from '../../../store/game/types';
 import { useThemeContext } from '../../../theme';
+import { GameScreenshotInterface } from '../../../constants';
+import Card from '../../../components/card';
+import FastImage from 'react-native-fast-image';
+import GameScreenShotPagination from './pagination';
 
 import {
   Container,
-  GameTitle,
-  GameDetails,
-  GameTexts,
-  GameRealizeYear,
+  GamePlatformImage,
+  GamePlatformText,
+  GamePlatformTitle,
+  GameEngineTitle,
+  GamePaginationContainer,
+  GamePaginationText,
   YearAndGenreSeparator,
-  GameTextsBottom,
   GameGenres
 } from './styles';
-import Card from '../../../components/card';
+
+const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
 
 interface GameProp extends NavigationInterface, GameInterface {
   testID?: string;
   gameIndex: number;
 }
 
-export default function Game(props: GameProp) {
+const Game = (props: GameProp) => {
   const { colors } = useThemeContext();
 
   const {
@@ -41,24 +48,74 @@ export default function Game(props: GameProp) {
 
   const handleFavorite = () => {};
 
-  // getImageURL(screenshots)
+  const _renderItem = ({ item }) => {
+    return (
+      <FastImage
+        style={{
+          width: PHONE_FULL_WIDTH + 5,
+          height: PHONE_FULL_WIDTH - 100
+        }}
+        source={{
+          uri: `https:${item.url.replace('t_thumb', 't_screenshot_med_2x')}`,
+          priority: FastImage.priority.high
+        }}
+        resizeMode={FastImage.resizeMode.cover}
+      />
+    );
+  };
 
   return (
-    <Card
-      activeOpacity={0.7}
-      onPress={handleGame}
-      style={{ width: '100%', height: 450, borderWidth: 1 }}
-    >
-      <GameDetails>
-        <GameTexts>
-          <GameTitle>{name}</GameTitle>
-          <GameTextsBottom>
-            <GameRealizeYear>{year}</GameRealizeYear>
-            <YearAndGenreSeparator />
-            <GameGenres>{getGenres(genres)}</GameGenres>
-          </GameTextsBottom>
-        </GameTexts>
-      </GameDetails>
-    </Card>
+    <Container>
+      <Card
+        activeOpacity={1}
+        onPress={handleGame}
+        style={{
+          width: '100%',
+          flexDirection: 'row',
+          alignItems: 'center',
+          padding: 10,
+          paddingTop: 0
+        }}
+      >
+        <GamePlatformImage>
+          <FastImage
+            style={{
+              width: 40,
+              height: 40,
+              borderRadius: 40
+            }}
+            source={{
+              uri: 'https://bit.ly/3cRTZjh',
+              priority: FastImage.priority.normal
+            }}
+            resizeMode={FastImage.resizeMode.contain}
+          />
+        </GamePlatformImage>
+        <GamePlatformText>
+          <GameEngineTitle>cyclone engine</GameEngineTitle>
+          <GamePlatformTitle>play station 3</GamePlatformTitle>
+        </GamePlatformText>
+      </Card>
+      <AppIntroSlider
+        data={screenshots}
+        renderItem={_renderItem}
+        keyExtractor={(game: GameScreenshotInterface) => `${game.id}`}
+        showNextButton={false}
+        showPrevButton={false}
+        showDoneButton={false}
+        renderPagination={activeIndex => (
+          <GameScreenShotPagination
+            activeIndex={activeIndex}
+            screenshotsLength={screenshots.length}
+          />
+        )}
+        style={{
+          height: PHONE_FULL_WIDTH - 100,
+          width: PHONE_FULL_WIDTH
+        }}
+      />
+    </Container>
   );
-}
+};
+
+export default Game;
