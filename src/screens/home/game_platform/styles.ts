@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   align-items: center;
   justify-content: center;
-  margin: 8px;
+  margin-top: 10px;
 `;
 
 export const ImageClipper = styled.View`
