@@ -148,7 +148,7 @@
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="expo.modules.payments.stripe.ff6d4092-8187-4f9c-b110-96cb6ff3c776" />
+            <data android:scheme="expo.modules.payments.stripe.7cf61594-dfbc-4dd7-98bd-ed3efa4e109f" />
         </intent-filter>
     </activity>
     <!-- Versioned Activity for Stripe -->
@@ -356,7 +356,7 @@
     <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
     <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
 
-    <meta-data android:name="standaloneStripeScheme" android:value="ff6d4092-8187-4f9c-b110-96cb6ff3c776" />
+    <meta-data android:name="standaloneStripeScheme" android:value="7cf61594-dfbc-4dd7-98bd-ed3efa4e109f" />
   </application>
 
 </manifest>
