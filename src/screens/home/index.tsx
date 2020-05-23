@@ -91,6 +91,8 @@ export default function HomeScreen(props: HomeScreenProps) {
             rowRenderer={_renderGame}
             renderFooter={_renderFooter}
             showsVerticalScrollIndicator={false}
+            canChangeSize={true}
+            renderAheadOffset={4}
             keyExtractor={(game: GameScreenshotInterface) => `${game.id}`}
           />
         ) : (
