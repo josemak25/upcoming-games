@@ -3,20 +3,23 @@ import applyScale from '../../../utils/applyScale';
 
 export const Container = styled.View`
   width: 100%;
-  height: ${applyScale(450)}px;
+  height: ${applyScale(550)}px;
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: ${({ theme }) => theme.colors.WHITE_BG_COLOR};
+  border-color: ${({ theme }) => theme.colors.DARK_BG_COLOR};
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 8px;
 `;
 
 export const GamePlatformImage = styled.View`
-  width: 42px;
-  height: 42px;
+  width: 35px;
+  height: 35px;
   justify-content: center;
   align-items: center;
-  padding: 21.5px;
-  border-radius: 42px;
+  border-radius: ${35 / 2}px;
   border: 1.5px ${({ theme }) => theme.colors.ACTION_BG_COLOR} solid;
 `;
 
@@ -55,6 +58,18 @@ export const GamePaginationText = styled.Text`
   font-size: ${({ theme }) => theme.fonts.MEDIUM_SIZE}px;
   font-family: ${({ theme }) => theme.fonts.NOTOSANS_REGULAR};
   color: ${({ theme }) => theme.colors.WHITE_FONT_COLOR};
+`;
+
+export const GameActionContainer = styled.View`
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const GameActionLeftContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const YearAndGenreSeparator = styled.View`
