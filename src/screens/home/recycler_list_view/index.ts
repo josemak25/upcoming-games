@@ -16,7 +16,7 @@ export default function layoutProvider() {
       switch (type) {
         case ViewTypes.GAME_LIST:
           dim.width = PHONE_FULL_WIDTH;
-          dim.height = applyScale(450);
+          dim.height = applyScale(550);
           break;
 
         case ViewTypes.GAME_LIST_HEADER:
