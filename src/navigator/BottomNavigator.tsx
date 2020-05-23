@@ -14,7 +14,7 @@ export default function BottomNavigator() {
   return (
     <Tab.Navigator
       activeColor={colors.ACTION_BG_COLOR}
-      inactiveColor={colors.INACTIVE_BG_COLOR}
+      inactiveColor={colors.INACTIVE_ICON_COLOR}
       barStyle={{ backgroundColor: colors.WHITE_BG_COLOR }}
       screenOptions={{ title: null }}
     >
