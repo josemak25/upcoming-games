@@ -1,19 +1,20 @@
 //@ts-nocheck
 import React from 'react';
 import { Dimensions, TouchableOpacity } from 'react-native';
-import getGenres from '../../../utils/getGenres';
 import { EvilIcons } from '@expo/vector-icons';
+import FastImage from 'react-native-fast-image';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { NavigationInterface } from '../../types';
 import { GameInterface } from '../../../store/game/types';
 import { useThemeContext } from '../../../theme';
 import { GameScreenshotInterface } from '../../../constants';
+import { useStoreContext } from '../../../store';
+import { BOOKMARK_ACTION_TYPES } from '../../../store/bookmark/types';
 import Card from '../../../components/card';
 import BookmarkIcon from '../../../../assets/icons/bookmark';
-import FastImage from 'react-native-fast-image';
 import LoveIcon from '../../../../assets/icons/love_icon';
-import applyScale from '../../../utils/applyScale';
 import GameScreenShotPagination from './pagination';
+import bookmarkActions from '../../../store/bookmark/actions';
 
 import {
   Container,
@@ -23,8 +24,9 @@ import {
   GameEngineTitle,
   GameActionContainer,
   GameActionLeftContainer,
-  YearAndGenreSeparator,
-  GameGenres
+  GameRating,
+  GameSummary,
+  GameReadMore
 } from './styles';
 
 const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
@@ -32,25 +34,41 @@ const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
 interface GameProp extends NavigationInterface, GameInterface {
   testID?: string;
   gameIndex: number;
+  gamesListLastIndex: number;
 }
 
 const Game = (props: GameProp) => {
   const { colors } = useThemeContext();
+
+  const { dispatch } = useStoreContext();
 
   const {
     release_dates,
     gameIndex,
     navigation,
     screenshots,
-    genres,
-    name
+    name,
+    summary,
+    id,
+    gamesListLastIndex
   } = props;
 
-  const { y: year } = release_dates[release_dates.length - 1];
+  const releaseDate = release_dates[release_dates.length - 1];
 
   const handleGame = () => navigation.navigate('DetailScreen', { gameIndex });
 
-  const handleFavorite = () => {};
+  const handleBookmark = () => {
+    const bookMarkedTime = Math.floor(new Date().getTime() / 1000);
+
+    bookmarkActions(dispatch, BOOKMARK_ACTION_TYPES.ADD_BOOKMARK_GAME, [
+      {
+        id: id,
+        game_id: id,
+        created_at: bookMarkedTime,
+        updated_at: bookMarkedTime
+      }
+    ]);
+  };
 
   const handleLove = () => {};
 
@@ -68,7 +86,9 @@ const Game = (props: GameProp) => {
   };
 
   return (
-    <Container>
+    <Container
+      style={{ borderBottomWidth: gameIndex === gamesListLastIndex ? 0 : 8 }}
+    >
       <Card
         activeOpacity={1}
         onPress={handleGame}
@@ -160,7 +180,7 @@ const Game = (props: GameProp) => {
             </TouchableOpacity>
           </GameActionLeftContainer>
           <TouchableOpacity
-            onPress={handleFavorite}
+            onPress={handleBookmark}
             style={{
               width: 40,
               height: 40,
@@ -176,7 +196,13 @@ const Game = (props: GameProp) => {
             />
           </TouchableOpacity>
         </GameActionContainer>
-        <GamePlatformText></GamePlatformText>
+        <GameRating>10,432 likes</GameRating>
+        <GamePlatformText>
+          <GameSummary numberOfLines={2}>
+            {summary.replace(/\r?\n/, '').substr(0, 100)}
+            <GameReadMore> ...more</GameReadMore>
+          </GameSummary>
+        </GamePlatformText>
       </Card>
     </Container>
   );
