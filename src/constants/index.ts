@@ -11,7 +11,7 @@ export const customHeaderStyle = {
   borderBottomWidth: 0,
   elevation: 0,
   shadowOpacity: 0,
-  backgroundColor: theme.colors.BD_DARK_COLOR
+  backgroundColor: theme.colors.WHITE_BG_COLOR
 };
 
 export interface GameReleaseDateInterface {
@@ -51,4 +51,14 @@ export interface GameVideoInterface {
   name: string;
   game: number;
   video_id: string;
+}
+
+export interface GameBookmarkInterface {
+  id: number;
+  game_id: string;
+  name: string;
+  game_engine: string;
+  screenshots: GameScreenshotInterface[];
+  created_at: string;
+  updated_at: string;
 }
