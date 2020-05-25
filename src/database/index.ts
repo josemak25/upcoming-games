@@ -2,8 +2,7 @@ import Realm from 'realm';
 import dbSchemas from './schema';
 import APP_CONFIG from '../config';
 
-import { GAME_SCHEMA } from './schema/games';
-import { GameInterface } from '../store/game/types';
+const DATA_BASE_ENCRYPTION_KEY = new Int8Array(64);
 
 export default class database {
   static realm: null | Realm = null;
@@ -14,6 +13,7 @@ export default class database {
         path: 'upcomingGames.realm',
         schema: [...dbSchemas],
         schemaVersion: APP_CONFIG.SCHEMA_VERSION
+        // encryptionKey: DATA_BASE_ENCRYPTION_KEY
       });
       this.realm = response;
     } catch (error) {
@@ -21,21 +21,25 @@ export default class database {
     }
   }
 
-  static async create(games: GameInterface[]) {
+  static async create<T>(games: T[], WRITE_SCHEMA: string) {
     const { realm } = this;
     try {
-      const cachedGames = this.getCachedGames();
-      if (cachedGames.length) return cachedGames;
-
-      realm.write(() => games.forEach(game => realm.create(GAME_SCHEMA, game)));
+      realm.write(() => {
+        games.forEach(game => realm.create<T>(WRITE_SCHEMA, game));
+      });
     } catch (error) {
       console.warn(error);
     }
   }
 
-  static getCachedGames() {
+  static delete(data: Realm.Object) {
     const { realm } = this;
-    return realm.objects(GAME_SCHEMA);
+    return realm.delete(data);
+  }
+
+  static retrieveDatabaseData(RETRIEVABLE_SCHEMA: string) {
+    const { realm } = this;
+    return realm.objects(RETRIEVABLE_SCHEMA);
   }
 
   static close() {
