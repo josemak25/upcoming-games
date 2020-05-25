@@ -28,7 +28,7 @@ export default function HomeScreen(props: HomeScreenProps) {
   } = useStoreContext();
 
   const [state] = useState({
-    dataProvider: new DataProvider((r1, r2) => r1 !== r2).cloneWithRows([
+    dataProvider: new DataProvider((r1, r2) => r1.id !== r2.id).cloneWithRows([
       {},
       ...gameState.games
     ]),
@@ -39,7 +39,14 @@ export default function HomeScreen(props: HomeScreenProps) {
   const _renderGame = (type: string, data: GameInterface, index: number) => {
     switch (type) {
       case ViewTypes.GAME_LIST:
-        return <Game {...data} gameIndex={index} {...props} />;
+        return (
+          <Game
+            gameIndex={index}
+            gamesListLastIndex={gameState.games.length}
+            {...data}
+            {...props}
+          />
+        );
 
       case ViewTypes.GAME_LIST_HEADER:
         return <GameListHeader {...props} />;
@@ -82,7 +89,9 @@ export default function HomeScreen(props: HomeScreenProps) {
       />
 
       <Container>
-        {gameState.games.length ? (
+        {gameState.isLoading ? (
+          <LoadingGames />
+        ) : (
           <RecyclerListView
             style={{ minHeight: 1, minWidth: 1, flex: 1, width: '100%' }}
             contentContainerStyle={{ paddingTop: 10 }}
@@ -91,10 +100,10 @@ export default function HomeScreen(props: HomeScreenProps) {
             rowRenderer={_renderGame}
             renderFooter={_renderFooter}
             showsVerticalScrollIndicator={false}
+            canChangeSize={true}
+            renderAheadOffset={4}
             keyExtractor={(game: GameScreenshotInterface) => `${game.id}`}
           />
-        ) : (
-          <LoadingGames />
         )}
       </Container>
     </SafeAreaView>

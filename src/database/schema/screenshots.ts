@@ -1,4 +1,4 @@
-export const SCREENSHOT_SCHEMA = 'Screenshot';
+export const SCREENSHOT_SCHEMA = 'Screenshots';
 
 const screenshotSchema = {
   primaryKey: 'id',

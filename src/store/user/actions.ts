@@ -1,3 +1,5 @@
+import { Dispatch } from 'react';
+import { DispatchTypes } from '../types';
 import { USER_TYPES, UserAction } from './types';
 
 const registrationStarted = () => ({ type: USER_TYPES.REGISTER_USER_STARTED });
@@ -25,7 +27,7 @@ const loginError = (error: string) => ({
 });
 
 export default function userActions() {
-  return (dispatch: any) => {
+  return (dispatch: Dispatch<DispatchTypes>) => {
     // To unsubscribe to these update, just use the functions:
   };
 }

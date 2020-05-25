@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Container, ImageBackground, Logo } from './styles';
+import { Container } from './styles';
+import AppIcon from '../../../assets/icons/app_icon';
 
 export default function SplashScreen({ navigation }) {
   useEffect(() => {
@@ -8,13 +9,7 @@ export default function SplashScreen({ navigation }) {
 
   return (
     <Container>
-      <ImageBackground
-        source={require('../../../assets/splash.png')}
-        fadeDuration={0}
-        resizeMode="contain"
-      >
-        <Logo source={require('../../../assets/icon.png')} />
-      </ImageBackground>
+      <AppIcon />
     </Container>
   );
 }

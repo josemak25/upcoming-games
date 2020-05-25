@@ -5,11 +5,13 @@ import StoreContext from './types';
 
 import userReducer, { userInitialState } from './user/reducer';
 import gameReducer, { gameInitialState } from './game/reducer';
+import bookMarkReducer, { bookmarkInitialState } from './bookmark/reducer';
 
 const StoreProvider: FunctionComponent = ({ children }) => {
   const [store, dispatch] = useCombinedReducers({
     userState: useReducer(userReducer, userInitialState),
-    gameState: useReducer(gameReducer, gameInitialState)
+    gameState: useReducer(gameReducer, gameInitialState),
+    bookMarkState: useReducer(bookMarkReducer, bookmarkInitialState)
   });
 
   return (

@@ -1,4 +1,4 @@
-export const VIDEO_SCHEMA = 'Video';
+export const VIDEO_SCHEMA = 'Videos';
 
 const videoSchema = {
   primaryKey: 'id',

@@ -1,4 +1,4 @@
-export const GAME_SCHEMA = 'Game';
+export const GAME_SCHEMA = 'Games';
 
 const gameSchema = {
   name: GAME_SCHEMA,
@@ -8,10 +8,10 @@ const gameSchema = {
     name: 'string',
     summary: 'string',
     url: 'string',
-    release_dates: 'ReleaseDate[]',
-    genres: 'Genre[]',
-    screenshots: 'Screenshot[]',
-    videos: 'Video[]'
+    release_dates: 'Release_dates[]',
+    genres: 'Genres[]',
+    screenshots: 'Screenshots[]',
+    videos: 'Videos[]'
   }
 };
 

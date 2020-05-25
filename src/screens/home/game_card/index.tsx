@@ -1,15 +1,20 @@
 //@ts-nocheck
 import React from 'react';
-import { Dimensions } from 'react-native';
-import getGenres from '../../../utils/getGenres';
+import { Dimensions, TouchableOpacity } from 'react-native';
+import { EvilIcons } from '@expo/vector-icons';
+import FastImage from 'react-native-fast-image';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { NavigationInterface } from '../../types';
 import { GameInterface } from '../../../store/game/types';
 import { useThemeContext } from '../../../theme';
 import { GameScreenshotInterface } from '../../../constants';
+import { useStoreContext } from '../../../store';
+import { BOOKMARK_ACTION_TYPES } from '../../../store/bookmark/types';
 import Card from '../../../components/card';
-import FastImage from 'react-native-fast-image';
+import BookmarkIcon from '../../../../assets/icons/bookmark';
+import LoveIcon from '../../../../assets/icons/love_icon';
 import GameScreenShotPagination from './pagination';
+import bookmarkActions from '../../../store/bookmark/actions';
 
 import {
   Container,
@@ -17,10 +22,11 @@ import {
   GamePlatformText,
   GamePlatformTitle,
   GameEngineTitle,
-  GamePaginationContainer,
-  GamePaginationText,
-  YearAndGenreSeparator,
-  GameGenres
+  GameActionContainer,
+  GameActionLeftContainer,
+  GameRating,
+  GameSummary,
+  GameReadMore
 } from './styles';
 
 const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
@@ -28,33 +34,48 @@ const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
 interface GameProp extends NavigationInterface, GameInterface {
   testID?: string;
   gameIndex: number;
+  gamesListLastIndex: number;
 }
 
 const Game = (props: GameProp) => {
   const { colors } = useThemeContext();
+
+  const { dispatch } = useStoreContext();
 
   const {
     release_dates,
     gameIndex,
     navigation,
     screenshots,
-    genres,
-    name
+    name,
+    summary,
+    id,
+    gamesListLastIndex
   } = props;
 
-  const { y: year } = release_dates[release_dates.length - 1];
+  const releaseDate = release_dates[release_dates.length - 1];
 
   const handleGame = () => navigation.navigate('DetailScreen', { gameIndex });
 
-  const handleFavorite = () => {};
+  const handleBookmark = () => {
+    const bookMarkedTime = Math.floor(new Date().getTime() / 1000);
+
+    bookmarkActions(dispatch, BOOKMARK_ACTION_TYPES.ADD_BOOKMARK_GAME, [
+      {
+        id: id,
+        game_id: id,
+        created_at: bookMarkedTime,
+        updated_at: bookMarkedTime
+      }
+    ]);
+  };
+
+  const handleLove = () => {};
 
   const _renderItem = ({ item }) => {
     return (
       <FastImage
-        style={{
-          width: PHONE_FULL_WIDTH + 5,
-          height: PHONE_FULL_WIDTH - 100
-        }}
+        style={{ width: '100%', height: '100%' }}
         source={{
           uri: `https:${item.url.replace('t_thumb', 't_screenshot_med_2x')}`,
           priority: FastImage.priority.high
@@ -65,7 +86,9 @@ const Game = (props: GameProp) => {
   };
 
   return (
-    <Container>
+    <Container
+      style={{ borderBottomWidth: gameIndex === gamesListLastIndex ? 0 : 8 }}
+    >
       <Card
         activeOpacity={1}
         onPress={handleGame}
@@ -80,9 +103,9 @@ const Game = (props: GameProp) => {
         <GamePlatformImage>
           <FastImage
             style={{
-              width: 40,
-              height: 40,
-              borderRadius: 40
+              width: 30,
+              height: 30,
+              borderRadius: 30 / 2
             }}
             source={{
               uri: 'https://bit.ly/3cRTZjh',
@@ -92,10 +115,11 @@ const Game = (props: GameProp) => {
           />
         </GamePlatformImage>
         <GamePlatformText>
-          <GameEngineTitle>cyclone engine</GameEngineTitle>
-          <GamePlatformTitle>play station 3</GamePlatformTitle>
+          <GameEngineTitle>{name}</GameEngineTitle>
+          <GamePlatformTitle>cyclone engine</GamePlatformTitle>
         </GamePlatformText>
       </Card>
+
       <AppIntroSlider
         data={screenshots}
         renderItem={_renderItem}
@@ -109,13 +133,79 @@ const Game = (props: GameProp) => {
             screenshotsLength={screenshots.length}
           />
         )}
-        style={{
-          height: PHONE_FULL_WIDTH - 100,
-          width: PHONE_FULL_WIDTH
-        }}
+        horizontal
+        showsVerticalScrollIndicator={false}
+        style={{ width: PHONE_FULL_WIDTH }}
       />
+
+      <Card
+        activeOpacity={1}
+        onPress={handleGame}
+        style={{
+          width: '100%',
+          alignItems: 'flex-start',
+          paddingRight: 10,
+          paddingLeft: 5
+        }}
+      >
+        <GameActionContainer>
+          <GameActionLeftContainer>
+            <TouchableOpacity
+              onPress={handleLove}
+              style={{
+                width: 40,
+                height: 40,
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 40 / 2
+              }}
+            >
+              <LoveIcon fillColor={colors.INACTIVE_ICON_COLOR} />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={handleLove}
+              style={{
+                width: 40,
+                height: 40,
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 40 / 2
+              }}
+            >
+              <EvilIcons
+                name="share-google"
+                size={30}
+                color={colors.INACTIVE_ICON_COLOR}
+              />
+            </TouchableOpacity>
+          </GameActionLeftContainer>
+          <TouchableOpacity
+            onPress={handleBookmark}
+            style={{
+              width: 40,
+              height: 40,
+              justifyContent: 'center',
+              alignItems: 'center',
+              borderRadius: 40 / 2
+            }}
+          >
+            <BookmarkIcon
+              width={25}
+              height="70%"
+              fillColor={colors.INACTIVE_ICON_COLOR}
+            />
+          </TouchableOpacity>
+        </GameActionContainer>
+        <GameRating>10,432 likes</GameRating>
+        <GamePlatformText>
+          <GameSummary numberOfLines={2}>
+            {summary.replace(/\r?\n/, '').substr(0, 100)}
+            <GameReadMore> ...more</GameReadMore>
+          </GameSummary>
+        </GamePlatformText>
+      </Card>
     </Container>
   );
 };
 
-export default Game;
+export default React.memo(Game);

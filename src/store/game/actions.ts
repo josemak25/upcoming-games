@@ -1,4 +1,7 @@
+import { Dispatch } from 'react';
+import { DispatchTypes } from '../types';
 import database from '../../database';
+import { GAME_SCHEMA } from '../../database/schema/games';
 
 import {
   GAME_TYPES,
@@ -27,8 +30,8 @@ const getGameError = (error: string): GameAction => ({
 });
 
 export default async function gameActions(
-  dispatch: any,
-  payload: object,
+  dispatch: Dispatch<DispatchTypes>,
+  payload: any | null,
   actionType: string
 ) {
   // test calling for more post
@@ -39,7 +42,7 @@ export default async function gameActions(
       try {
         // make network request here
         // dispatch(getGameSuccess(games));
-        // setImmediate(() => database.create(games));
+        // setImmediate(() => database.create<GameInterface>(games, GAME_SCHEMA));
       } catch (error) {
         dispatch(getGameError(error.message));
       }
@@ -48,7 +51,7 @@ export default async function gameActions(
     case GAME_ACTION_TYPES.LOAD_CACHED_GAMES:
       try {
         // get all cached games from database
-        const cachedGames = database.getCachedGames();
+        const cachedGames = database.retrieveDatabaseData(GAME_SCHEMA);
         dispatch(getCachedGames(cachedGames));
       } catch (error) {
         dispatch(getGameError(error.message));

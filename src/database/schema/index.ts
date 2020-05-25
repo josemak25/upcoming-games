@@ -2,9 +2,9 @@ import Games from './games';
 import Genres from './genres';
 import Screenshots from './screenshots';
 import Videos from './videos';
-import Favorites from './favorites';
+import Bookmarks from './bookmarks';
 import ReleaseDate from './releaseDate';
 
-const dbSchemas = [Games, Genres, Screenshots, Videos, Favorites, ReleaseDate];
+const dbSchemas = [Games, Genres, Screenshots, Videos, Bookmarks, ReleaseDate];
 
 export default dbSchemas;

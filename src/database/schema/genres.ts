@@ -1,4 +1,4 @@
-export const GENRE_SCHEMA = 'Genre';
+export const GENRE_SCHEMA = 'Genres';
 
 const genreSchema = {
   name: GENRE_SCHEMA,
