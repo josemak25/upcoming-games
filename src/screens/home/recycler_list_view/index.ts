@@ -1,12 +1,14 @@
 import { Dimensions } from 'react-native';
-import applyScale from '../../../utils/applyScale';
 import { LayoutProvider } from 'recyclerlistview';
+import applyScale from '../../../utils/applyScale';
 
 const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
 
 export const ViewTypes = {
   GAME_LIST_HEADER: 'GAME_LIST_HEADER',
-  GAME_LIST: 'GAME_LIST'
+  GAME_LIST: 'GAME_LIST',
+  GAME_PLATFORM: 'GAME_PLATFORM',
+  GAME_BOOKMARK: 'GAME_BOOKMARK'
 };
 
 export default function layoutProvider() {
@@ -21,7 +23,7 @@ export default function layoutProvider() {
 
         case ViewTypes.GAME_LIST_HEADER:
           dim.width = PHONE_FULL_WIDTH;
-          dim.height = applyScale(100);
+          dim.height = 95;
           break;
 
         default:
@@ -34,10 +36,20 @@ export default function layoutProvider() {
 
 export function headerLayoutProvider() {
   return new LayoutProvider(
-    () => 'GAME_PLATFORM',
+    () => ViewTypes.GAME_PLATFORM,
     (_type, dim) => {
       dim.width = 80;
       dim.height = 70;
+    }
+  );
+}
+
+export function bookmarkLayoutProvider() {
+  return new LayoutProvider(
+    () => ViewTypes.GAME_BOOKMARK,
+    (type, dim) => {
+      dim.width = PHONE_FULL_WIDTH;
+      dim.height = applyScale(200);
     }
   );
 }
