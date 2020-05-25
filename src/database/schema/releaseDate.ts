@@ -1,4 +1,4 @@
-export const RELEASE_DATE_SCHEMA = 'ReleaseDate';
+export const RELEASE_DATE_SCHEMA = 'Release_dates';
 
 const ReleaseDateSchema = {
   primaryKey: 'id',
