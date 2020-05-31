@@ -9,8 +9,14 @@ import Input from '../../components/input';
 import hexToRGB from '../../utils/hexToRGB';
 import Card from '../../components/card';
 import Header from '../../commons/header';
+import SearchPlatforms from './platforms';
 
-import { Container, SearchCancelIconContainer } from './styles';
+import {
+  Container,
+  SearchCancelIconContainer,
+  SearchContainerHeader,
+  SearchContainerHeaderText
+} from './styles';
 
 interface SearchScreenProp extends NavigationInterface {
   testID?: string;
@@ -59,7 +65,7 @@ export default function SearchScreen(props: SearchScreenProp) {
         )}
         title={() => (
           <Input
-            placeholder="Search gamestad"
+            placeholder="search gamestad"
             onChangeText={handleChangeText}
             defaultValue={state.searchFieldValue}
             returnKeyType="search"
@@ -75,7 +81,15 @@ export default function SearchScreen(props: SearchScreenProp) {
         )}
       />
 
-      <Container></Container>
+      <Container>
+        <SearchContainerHeader>
+          <SearchContainerHeaderText>
+            Search by platform
+          </SearchContainerHeaderText>
+        </SearchContainerHeader>
+
+        <SearchPlatforms onPress={handleChangeText} />
+      </Container>
     </SafeAreaView>
   );
 }
