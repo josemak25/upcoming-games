@@ -1,5 +1,5 @@
 //@ts-nocheck
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dimensions, TouchableOpacity } from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import FastImage from 'react-native-fast-image';
@@ -34,6 +34,7 @@ const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
 interface GameProp extends NavigationInterface, GameInterface {
   testID?: string;
   gameIndex: number;
+  bookmarked: boolean;
   gamesListLastIndex: number;
 }
 
@@ -49,25 +50,40 @@ const Game = (props: GameProp) => {
     screenshots,
     name,
     summary,
-    id,
+    bookmarked,
+    id: game_id,
     gamesListLastIndex
   } = props;
+
+  const [bookmarkChecked, setBookmarkChecked] = useState(bookmarked);
 
   const releaseDate = release_dates[release_dates.length - 1];
 
   const handleGame = () => navigation.navigate('DetailScreen', { gameIndex });
 
   const handleBookmark = () => {
+    if (bookmarkChecked) {
+      bookmarkActions(
+        dispatch,
+        BOOKMARK_ACTION_TYPES.REMOVE_BOOKMARK_GAME,
+        game_id
+      );
+
+      return setBookmarkChecked(false);
+    }
+
     const bookMarkedTime = Math.floor(new Date().getTime() / 1000);
 
     bookmarkActions(dispatch, BOOKMARK_ACTION_TYPES.ADD_BOOKMARK_GAME, [
       {
-        id: id,
-        game_id: id,
+        id: game_id,
+        game_id,
         created_at: bookMarkedTime,
         updated_at: bookMarkedTime
       }
     ]);
+
+    setBookmarkChecked(true);
   };
 
   const handleLove = () => {};
@@ -192,7 +208,12 @@ const Game = (props: GameProp) => {
             <BookmarkIcon
               width={25}
               height="70%"
-              fillColor={colors.INACTIVE_ICON_COLOR}
+              fillColor={
+                bookmarkChecked
+                  ? colors.ACTION_BG_COLOR
+                  : colors.INACTIVE_ICON_COLOR
+              }
+              isFocused={bookmarkChecked}
             />
           </TouchableOpacity>
         </GameActionContainer>
