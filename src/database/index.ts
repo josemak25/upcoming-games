@@ -34,7 +34,7 @@ export default class database {
 
   static delete(data: Realm.Object) {
     const { realm } = this;
-    return realm.delete(data);
+    realm.write(() => realm.delete(data));
   }
 
   static retrieveDatabaseData(RETRIEVABLE_SCHEMA: string) {
