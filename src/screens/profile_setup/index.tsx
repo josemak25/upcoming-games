@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FastImage from 'react-native-fast-image';
+import { Dimensions } from 'react-native';
 import { NavigationInterface } from '../types';
 import { useThemeContext } from '../../theme';
 import { useStoreContext } from '../../store';
-import Card from '../../components/card';
-import Header from '../../commons/header';
 import { gradientAppIconLink } from '../../constants';
+import Card from '../../components/card';
 import SearchPlatforms from './platforms';
+import boxShadow from '../../utils/boxShadows';
+import applyScale from '../../utils/applyScale';
 
 import { Container, HeaderText, HeaderTextContent } from './styles';
+import { ContainerHeader } from '../search/styles';
 
 interface ProfileSetupProp extends NavigationInterface {
   testID?: string;
@@ -33,12 +36,19 @@ export default function ProfileSetup(props: ProfileSetupProp) {
       style={{
         flex: 1,
         backgroundColor: colors.WHITE_BG_COLOR,
-        paddingTop: 0,
         paddingBottom: 0
       }}
     >
-      <Header
-        headerLeft={() => (
+      <Container>
+        <ContainerHeader
+          style={[
+            boxShadow({
+              elevation: 3,
+              shadowColor: colors.BLACK_FONT_COLOR,
+              shadowOpacity: 0.06
+            })
+          ]}
+        >
           <Card style={{ width: 40, height: 40 }}>
             <FastImage
               style={{
@@ -55,14 +65,12 @@ export default function ProfileSetup(props: ProfileSetupProp) {
               resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
-        )}
-        title={() => (
+
           <FastImage
             style={{
-              width: 180,
-              height: 180,
-              top: 12,
-              right: 8
+              width: 40,
+              height: 40,
+              left: applyScale(Math.floor(Dimensions.get('screen').width / 3))
             }}
             source={{
               uri: gradientAppIconLink,
@@ -70,10 +78,8 @@ export default function ProfileSetup(props: ProfileSetupProp) {
             }}
             resizeMode={FastImage.resizeMode.contain}
           />
-        )}
-      />
+        </ContainerHeader>
 
-      <Container>
         <HeaderText>game profile setup</HeaderText>
         <HeaderTextContent>
           Select your favourite game platform and {'\n'} we’d help you set up
