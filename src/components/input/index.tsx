@@ -7,7 +7,8 @@ type InputFieldProps = {
   placeholder: string;
   placeholderTextColor: string;
   onChangeText(e: string): void;
-  handleFocus?(): void;
+  onFocus?(): void;
+  onSubmitEditing?(): void;
   defaultValue: string;
   textContentType?: any;
   keyboardType?: any;
@@ -16,7 +17,7 @@ type InputFieldProps = {
   inputStyle?: object;
 };
 
-const Input: FunctionComponent<InputFieldProps> = props => {
+const InputField: FunctionComponent<InputFieldProps> = props => {
   const { children, ...restProps } = props;
 
   const {
@@ -41,4 +42,4 @@ const Input: FunctionComponent<InputFieldProps> = props => {
   );
 };
 
-export default Input;
+export default InputField;

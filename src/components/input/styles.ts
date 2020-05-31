@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 import hexToRGB from '../../utils/hexToRGB';
 
 export const Container = styled.View`
-  width: 75%;
-  height: 70%;
+  width: 80%;
+  height: 90%;
   flex-direction: row;
   align-items: center;
 `;
