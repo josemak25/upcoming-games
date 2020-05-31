@@ -1,1 +1,2 @@
-# Upcoming Games
+# Gamestad 
+### a plaform for upcoming games
