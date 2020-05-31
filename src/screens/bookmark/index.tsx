@@ -1,21 +1,21 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Image } from 'react-native';
 import { RecyclerListView, DataProvider } from 'recyclerlistview';
 import { RefreshControl } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import { NavigationInterface } from '../types';
 import { useStoreContext } from '../../store';
-import { bookmarkLayoutProvider } from '../home/recycler_list_view';
-import { GameBookmarkInterface } from '../../constants';
+import { bookmarkLayoutProvider } from '../../components/recycler_list_view';
+import { GameBookmarkInterface, gradientAppIconLink } from '../../constants';
 import { useThemeContext } from '../../theme';
 import { GameInterface } from '../../store/game/types';
 import { BOOKMARK_ACTION_TYPES } from '../../store/bookmark/types';
 import bookmarkActions from '../../store/bookmark/actions';
 import LoadingGames from '../../components/loadingGames';
-import Game from '../home/game_card';
+import Game from '../../components/game_card';
 import Card from '../../components/card';
 import Header from '../../commons/header';
-import AppIcon from '../../../assets/icons/app_icon';
 
 import { Container } from './styles';
 
@@ -102,7 +102,19 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
           </Card>
         )}
         title={() => (
-          <AppIcon fillColor={colors.ACTION_BG_COLOR} width="25%" height="25" />
+          <FastImage
+            style={{
+              width: 180,
+              height: 180,
+              top: 12,
+              right: 8
+            }}
+            source={{
+              uri: gradientAppIconLink,
+              priority: FastImage.priority.high
+            }}
+            resizeMode={FastImage.resizeMode.contain}
+          />
         )}
       />
 
