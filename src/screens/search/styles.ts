@@ -8,6 +8,15 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.DARK_BG_COLOR};
 `;
 
+export const ContainerHeader = styled.View`
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.WHITE_BG_COLOR};
+  z-index: 999;
+  padding: 10px 10px;
+`;
+
 export const SearchCancelIconContainer = styled.TouchableOpacity`
   width: 15%;
   height: 100%;
