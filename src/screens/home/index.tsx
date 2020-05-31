@@ -13,6 +13,7 @@ import GameListHeader from './game_platform';
 import LoadingGames from '../../components/loadingGames';
 import layoutProvider, { ViewTypes } from './recycler_list_view';
 import { GameScreenshotInterface } from '../../constants';
+import AppIcon from '../../../assets/icons/app_icon';
 
 import { Container } from './styles';
 
@@ -24,7 +25,7 @@ export default function HomeScreen(props: HomeScreenProps) {
   const { colors } = useThemeContext();
 
   const {
-    store: { gameState, userState }
+    store: { gameState, userState, bookMarkState }
   } = useStoreContext();
 
   const [state] = useState({
@@ -45,6 +46,7 @@ export default function HomeScreen(props: HomeScreenProps) {
             gamesListLastIndex={gameState.games.length}
             {...data}
             {...props}
+            bookmarked={bookMarkState.checkedBookmarks[data.id] ? true : false}
           />
         );
 
@@ -85,6 +87,9 @@ export default function HomeScreen(props: HomeScreenProps) {
               resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
+        )}
+        title={() => (
+          <AppIcon fillColor={colors.ACTION_BG_COLOR} width="25%" height="25" />
         )}
       />
 
