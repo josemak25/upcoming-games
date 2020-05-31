@@ -1,16 +1,21 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RecyclerListView, DataProvider } from 'recyclerlistview';
-import { RefreshControl, ScrollView, Platform } from 'react-native';
+import { RefreshControl } from 'react-native';
+import FastImage from 'react-native-fast-image';
 import { NavigationInterface } from '../types';
 import { useStoreContext } from '../../store';
-import { BOOKMARK_ACTION_TYPES } from '../../store/bookmark/types';
 import { bookmarkLayoutProvider } from '../home/recycler_list_view';
 import { GameBookmarkInterface } from '../../constants';
 import { useThemeContext } from '../../theme';
+import { GameInterface } from '../../store/game/types';
+import { BOOKMARK_ACTION_TYPES } from '../../store/bookmark/types';
 import bookmarkActions from '../../store/bookmark/actions';
 import LoadingGames from '../../components/loadingGames';
-import Bookmark from './bookmark_card';
+import Game from '../home/game_card';
+import Card from '../../components/card';
+import Header from '../../commons/header';
+import AppIcon from '../../../assets/icons/app_icon';
 
 import { Container } from './styles';
 
@@ -22,29 +27,48 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
   const { colors } = useThemeContext();
 
   const {
-    store: { bookMarkState },
+    store: { bookMarkState, userState },
     dispatch
   } = useStoreContext();
 
-  const [state, setState] = React.useState({
-    dataProvider: new DataProvider((r1, r2) => r1.id !== r2.id).cloneWithRows(
-      bookMarkState.bookmarks
-    ),
+  const [state, setState] = useState({
+    dataProvider: new DataProvider((r1, r2) => r1.id !== r2.id),
     layoutProvider: bookmarkLayoutProvider(),
     refreshing: false
   });
 
   useEffect(() => {
-    bookmarkActions(dispatch, BOOKMARK_ACTION_TYPES.LOAD_BOOKMARK_GAMES);
-  }, []);
+    if (!bookMarkState.bookmarks.length) {
+      bookmarkActions(dispatch, BOOKMARK_ACTION_TYPES.LOAD_BOOKMARK_GAMES);
+    }
+
+    setState({
+      ...state,
+      dataProvider: state.dataProvider.cloneWithRows(bookMarkState.bookmarks)
+    });
+  }, [bookMarkState.bookmarks.length]);
 
   const onRefresh = useCallback(() => {
-    setState({ ...state, refreshing: true });
-    setTimeout(() => setState({ ...state, refreshing: false }), 4000);
-  }, [state.refreshing]);
+    bookmarkActions(dispatch, BOOKMARK_ACTION_TYPES.LOAD_BOOKMARK_GAMES);
 
-  const _renderBookmark = (_type: string, data: GameBookmarkInterface) => (
-    <Bookmark {...data} {...props} />
+    setState({
+      ...state,
+      dataProvider: state.dataProvider.cloneWithRows(bookMarkState.bookmarks)
+    });
+  }, [bookMarkState.isLoading]);
+
+  const _renderBookmark = (
+    _type: string,
+    data: GameInterface,
+    index: number
+  ) => (
+    <Game
+      gameIndex={index}
+      gamesListLastIndex={bookMarkState.bookmarks.length - 1}
+      {...data}
+      {...props}
+      bookmarked={bookMarkState.checkedBookmarks[data.id] ? true : false}
+    />
   );
 
   const _renderFooter = () => bookMarkState.isLoading && <LoadingGames />;
@@ -54,16 +78,40 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
       style={{
         flex: 1,
         backgroundColor: colors.DARK_BG_COLOR,
+        paddingTop: 0,
         paddingBottom: 0
       }}
     >
+      <Header
+        headerLeft={() => (
+          <Card style={{ width: 40, height: 40 }}>
+            <FastImage
+              style={{
+                width: 40,
+                height: 40,
+                borderRadius: 45,
+                borderWidth: 2,
+                borderColor: colors.ACTION_BG_COLOR
+              }}
+              source={{
+                uri: `${userState.user.avatar}`,
+                priority: FastImage.priority.normal
+              }}
+              resizeMode={FastImage.resizeMode.contain}
+            />
+          </Card>
+        )}
+        title={() => (
+          <AppIcon fillColor={colors.ACTION_BG_COLOR} width="25%" height="25" />
+        )}
+      />
+
       <Container>
-        {bookMarkState.isLoading ? (
+        {!bookMarkState.bookmarks.length ? (
           <LoadingGames />
-        ) : bookMarkState.bookmarks.length ? (
+        ) : (
           <RecyclerListView
             style={{ minHeight: 1, minWidth: 1, flex: 1, width: '100%' }}
-            contentContainerStyle={{ paddingTop: 10 }}
             dataProvider={state.dataProvider}
             layoutProvider={state.layoutProvider}
             rowRenderer={_renderBookmark}
@@ -75,19 +123,15 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
             scrollViewProps={{
               refreshControl: (
                 <RefreshControl
-                  refreshing={state.refreshing}
+                  refreshing={bookMarkState.isLoading}
                   onRefresh={onRefresh}
                   tintColor={colors.ACTION_BG_COLOR}
-                  colors={[
-                    colors.ACTION_BG_COLOR,
-                    colors.NOTIFICATION_HIGHLIGHT_COLOR,
-                    colors.BLACK_FONT_COLOR
-                  ]}
+                  colors={[colors.ACTION_BG_COLOR]}
                 />
               )
             }}
           />
-        ) : null}
+        )}
       </Container>
     </SafeAreaView>
   );

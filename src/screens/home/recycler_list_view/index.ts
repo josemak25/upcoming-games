@@ -47,9 +47,9 @@ export function headerLayoutProvider() {
 export function bookmarkLayoutProvider() {
   return new LayoutProvider(
     () => ViewTypes.GAME_BOOKMARK,
-    (type, dim) => {
+    (_type, dim) => {
       dim.width = PHONE_FULL_WIDTH;
-      dim.height = applyScale(200);
+      dim.height = applyScale(550);
     }
   );
 }

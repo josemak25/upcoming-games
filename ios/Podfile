@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
-target 'upcoming-games' do
+target 'gamestad' do
   pod 'ExpoKit',
     :git => "http://github.com/expo/expo.git",
     :tag => "ios/2.14.6",
@@ -29,9 +29,9 @@ target 'upcoming-games' do
  require_relative '../node_modules/react-native/scripts/autolink-ios.rb'
  use_react_native!
 
-  pod 'RealmJS', :path => '../node_modules/realm'
-
   pod 'RNFastImage', :path => '../node_modules/react-native-fast-image'
+
+  pod 'RealmJS', :path => '../node_modules/realm'
 
   post_install do |installer|
     installer.pods_project.main_group.tab_width = '2';

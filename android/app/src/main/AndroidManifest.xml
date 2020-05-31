@@ -5,11 +5,11 @@
   xmlns:tools="http://schemas.android.com/tools">
 
   <permission
-    android:name="com.upcomingGames.permission.C2D_MESSAGE"
+    android:name="com.Gamestad.permission.C2D_MESSAGE"
     android:protectionLevel="signature"/>
 
   <!-- These are required permissions to make the app run -->
-  <uses-permission android:name="com.upcomingGames.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.Gamestad.permission.C2D_MESSAGE" />
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
@@ -74,7 +74,7 @@
       android:theme="@style/Theme.Exponent.Splash"
       android:windowSoftInputMode="adjustResize">
       <intent-filter>
-        <data android:scheme="expf71e353ae35e4883877c6b061de31caa"/>
+        <data android:scheme="expf6c0f423f9964fd3901d101a0bbb534a"/>
 
         <action android:name="android.intent.action.VIEW"/>
 
@@ -134,7 +134,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.upcomingGames" android:path="oauthredirect"/>
+        <data android:scheme="com.Gamestad" android:path="oauthredirect"/>
       </intent-filter>
     </activity>
 
@@ -148,7 +148,7 @@
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="expo.modules.payments.stripe.7cf61594-dfbc-4dd7-98bd-ed3efa4e109f" />
+            <data android:scheme="expo.modules.payments.stripe.7f6f5fee-e1d9-4e5d-969d-6476f89f2ad5" />
         </intent-filter>
     </activity>
     <!-- Versioned Activity for Stripe -->
@@ -276,7 +276,7 @@
         <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
         <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
 
-        <category android:name="com.upcomingGames"/>
+        <category android:name="com.Gamestad"/>
       </intent-filter>
     </receiver>
 
@@ -356,7 +356,7 @@
     <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
     <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
 
-    <meta-data android:name="standaloneStripeScheme" android:value="7cf61594-dfbc-4dd7-98bd-ed3efa4e109f" />
+    <meta-data android:name="standaloneStripeScheme" android:value="7f6f5fee-e1d9-4e5d-969d-6476f89f2ad5" />
   </application>
 
 </manifest>

@@ -56,9 +56,6 @@ export interface GameVideoInterface {
 export interface GameBookmarkInterface {
   id: number;
   game_id: string;
-  name: string;
-  game_engine: string;
-  screenshots: GameScreenshotInterface[];
   created_at: string;
   updated_at: string;
 }
