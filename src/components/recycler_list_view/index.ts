@@ -1,6 +1,6 @@
 import { Dimensions } from 'react-native';
 import { LayoutProvider } from 'recyclerlistview';
-import applyScale from '../../../utils/applyScale';
+import applyScale from '../../utils/applyScale';
 
 const { width: PHONE_FULL_WIDTH } = Dimensions.get('window');
 

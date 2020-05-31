@@ -1,22 +1,24 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Dimensions } from 'react-native';
 import { RecyclerListView, DataProvider } from 'recyclerlistview';
 import { RefreshControl } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import { NavigationInterface } from '../types';
 import { useStoreContext } from '../../store';
-import { bookmarkLayoutProvider } from '../home/recycler_list_view';
-import { GameBookmarkInterface } from '../../constants';
+import { bookmarkLayoutProvider } from '../../components/recycler_list_view';
+import { GameBookmarkInterface, gradientAppIconLink } from '../../constants';
 import { useThemeContext } from '../../theme';
 import { GameInterface } from '../../store/game/types';
 import { BOOKMARK_ACTION_TYPES } from '../../store/bookmark/types';
 import bookmarkActions from '../../store/bookmark/actions';
 import LoadingGames from '../../components/loadingGames';
-import Game from '../home/game_card';
+import Game from '../../components/game_card';
 import Card from '../../components/card';
-import Header from '../../commons/header';
-import AppIcon from '../../../assets/icons/app_icon';
+import boxShadow from '../../utils/boxShadows';
+import applyScale from '../../utils/applyScale';
 
+import { ContainerHeader } from '../search/styles';
 import { Container } from './styles';
 
 interface BookmarkScreenProp extends NavigationInterface {
@@ -77,13 +79,20 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: colors.DARK_BG_COLOR,
-        paddingTop: 0,
+        backgroundColor: colors.WHITE_BG_COLOR,
         paddingBottom: 0
       }}
     >
-      <Header
-        headerLeft={() => (
+      <Container>
+        <ContainerHeader
+          style={[
+            boxShadow({
+              elevation: 3,
+              shadowColor: colors.BLACK_FONT_COLOR,
+              shadowOpacity: 0.06
+            })
+          ]}
+        >
           <Card style={{ width: 40, height: 40 }}>
             <FastImage
               style={{
@@ -100,13 +109,21 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
               resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
-        )}
-        title={() => (
-          <AppIcon fillColor={colors.ACTION_BG_COLOR} width="25%" height="25" />
-        )}
-      />
 
-      <Container>
+          <FastImage
+            style={{
+              width: 40,
+              height: 40,
+              left: applyScale(Math.floor(Dimensions.get('screen').width / 3))
+            }}
+            source={{
+              uri: gradientAppIconLink,
+              priority: FastImage.priority.high
+            }}
+            resizeMode={FastImage.resizeMode.contain}
+          />
+        </ContainerHeader>
+
         {!bookMarkState.bookmarks.length ? (
           <LoadingGames />
         ) : (

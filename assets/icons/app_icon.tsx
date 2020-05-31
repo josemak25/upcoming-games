@@ -11,7 +11,7 @@ export default class AppIcon extends React.Component<IconProps> {
         viewBox="0 0 199.353 126.829"
         {...this.props}
       >
-        <G fill={this.props.fillColor ? this.props.fillColor : '#fff'}>
+        <G fill="#fff">
           <Path
             data-name="Path 112"
             d="M35.408 43.668a3.511 3.511 0 11-3.511-3.511 3.511 3.511 0 013.511 3.511z"

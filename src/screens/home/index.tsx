@@ -6,15 +6,17 @@ import { NavigationInterface } from '../types';
 import { useThemeContext } from '../../theme';
 import { GameInterface } from '../../store/game/types';
 import { useStoreContext } from '../../store';
-import Game from './game_card';
+import Game from '../../components/game_card';
 import Card from '../../components/card';
-import Header from '../../commons/header';
 import GameListHeader from './game_platform';
 import LoadingGames from '../../components/loadingGames';
-import layoutProvider, { ViewTypes } from './recycler_list_view';
-import { GameScreenshotInterface } from '../../constants';
-import AppIcon from '../../../assets/icons/app_icon';
+import layoutProvider, { ViewTypes } from '../../components/recycler_list_view';
+import { GameScreenshotInterface, gradientAppIconLink } from '../../constants';
+import { Dimensions } from 'react-native';
+import applyScale from '../../utils/applyScale';
+import boxShadow from '../../utils/boxShadows';
 
+import { ContainerHeader } from '../search/styles';
 import { Container } from './styles';
 
 interface HomeScreenProps extends NavigationInterface {
@@ -65,12 +67,19 @@ export default function HomeScreen(props: HomeScreenProps) {
       style={{
         flex: 1,
         backgroundColor: colors.WHITE_BG_COLOR,
-        paddingTop: 0,
         paddingBottom: 0
       }}
     >
-      <Header
-        headerLeft={() => (
+      <Container>
+        <ContainerHeader
+          style={[
+            boxShadow({
+              elevation: 3,
+              shadowColor: colors.BLACK_FONT_COLOR,
+              shadowOpacity: 0.06
+            })
+          ]}
+        >
           <Card style={{ width: 40, height: 40 }}>
             <FastImage
               style={{
@@ -87,13 +96,20 @@ export default function HomeScreen(props: HomeScreenProps) {
               resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
-        )}
-        title={() => (
-          <AppIcon fillColor={colors.ACTION_BG_COLOR} width="25%" height="25" />
-        )}
-      />
 
-      <Container>
+          <FastImage
+            style={{
+              width: 40,
+              height: 40,
+              left: applyScale(Math.floor(Dimensions.get('screen').width / 3))
+            }}
+            source={{
+              uri: gradientAppIconLink,
+              priority: FastImage.priority.high
+            }}
+            resizeMode={FastImage.resizeMode.contain}
+          />
+        </ContainerHeader>
         {gameState.isLoading ? (
           <LoadingGames />
         ) : (

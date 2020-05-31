@@ -4,17 +4,17 @@ import { Dimensions, TouchableOpacity } from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import FastImage from 'react-native-fast-image';
 import AppIntroSlider from 'react-native-app-intro-slider';
-import { NavigationInterface } from '../../types';
-import { GameInterface } from '../../../store/game/types';
-import { useThemeContext } from '../../../theme';
-import { GameScreenshotInterface } from '../../../constants';
-import { useStoreContext } from '../../../store';
-import { BOOKMARK_ACTION_TYPES } from '../../../store/bookmark/types';
-import Card from '../../../components/card';
-import BookmarkIcon from '../../../../assets/icons/bookmark';
-import LoveIcon from '../../../../assets/icons/love_icon';
+import { NavigationInterface } from '../../screens/types';
+import { GameInterface } from '../../store/game/types';
+import { useThemeContext } from '../../theme';
+import { GameScreenshotInterface } from '../../constants';
+import { useStoreContext } from '../../store';
+import { BOOKMARK_ACTION_TYPES } from '../../store/bookmark/types';
+import Card from '../card';
+import BookmarkIcon from '../../../assets/icons/bookmark';
+import LoveIcon from '../../../assets/icons/love_icon';
 import GameScreenShotPagination from './pagination';
-import bookmarkActions from '../../../store/bookmark/actions';
+import bookmarkActions from '../../store/bookmark/actions';
 
 import {
   Container,

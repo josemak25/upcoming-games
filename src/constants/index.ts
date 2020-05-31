@@ -1,10 +1,6 @@
 import { theme } from '../theme/types';
 
-declare global {
-  interface Console {
-    tron: any;
-  }
-}
+export const gradientAppIconLink = `https://drive.google.com/uc?view=&id=1oollcbRbIegvthSJeYqF5Aa_n2ndSN60`;
 
 // App header custom style
 export const customHeaderStyle = {
