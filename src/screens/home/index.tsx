@@ -6,14 +6,13 @@ import { NavigationInterface } from '../types';
 import { useThemeContext } from '../../theme';
 import { GameInterface } from '../../store/game/types';
 import { useStoreContext } from '../../store';
-import Game from './game_card';
+import Game from '../../components/game_card';
 import Card from '../../components/card';
 import Header from '../../commons/header';
 import GameListHeader from './game_platform';
 import LoadingGames from '../../components/loadingGames';
-import layoutProvider, { ViewTypes } from './recycler_list_view';
-import { GameScreenshotInterface } from '../../constants';
-import AppIcon from '../../../assets/icons/app_icon';
+import layoutProvider, { ViewTypes } from '../../components/recycler_list_view';
+import { GameScreenshotInterface, gradientAppIconLink } from '../../constants';
 
 import { Container } from './styles';
 
@@ -89,7 +88,19 @@ export default function HomeScreen(props: HomeScreenProps) {
           </Card>
         )}
         title={() => (
-          <AppIcon fillColor={colors.ACTION_BG_COLOR} width="25%" height="25" />
+          <FastImage
+            style={{
+              width: 180,
+              height: 180,
+              top: 12,
+              right: 8
+            }}
+            source={{
+              uri: gradientAppIconLink,
+              priority: FastImage.priority.high
+            }}
+            resizeMode={FastImage.resizeMode.contain}
+          />
         )}
       />
 

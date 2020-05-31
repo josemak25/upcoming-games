@@ -5,7 +5,7 @@ import { NavigationInterface } from '../../types';
 import { useThemeContext } from '../../../theme';
 import Card from '../../../components/card';
 import platformsData from '../../../libs/platform.json';
-import { headerLayoutProvider } from '../recycler_list_view';
+import { headerLayoutProvider } from '../../../components/recycler_list_view';
 
 import { Container, GamePlatformTitle, ImageClipper } from './styles';
 
