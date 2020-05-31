@@ -52,6 +52,9 @@ ios/
 ios.real/
 android/
 
+# Expo
+.expo/packager-info.json
+
 # BUCK
 buck-out/
 \.buckd/
