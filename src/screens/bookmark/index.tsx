@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Image } from 'react-native';
+import { Dimensions } from 'react-native';
 import { RecyclerListView, DataProvider } from 'recyclerlistview';
 import { RefreshControl } from 'react-native';
 import FastImage from 'react-native-fast-image';
@@ -15,8 +15,10 @@ import bookmarkActions from '../../store/bookmark/actions';
 import LoadingGames from '../../components/loadingGames';
 import Game from '../../components/game_card';
 import Card from '../../components/card';
-import Header from '../../commons/header';
+import boxShadow from '../../utils/boxShadows';
+import applyScale from '../../utils/applyScale';
 
+import { ContainerHeader } from '../search/styles';
 import { Container } from './styles';
 
 interface BookmarkScreenProp extends NavigationInterface {
@@ -77,13 +79,20 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: colors.DARK_BG_COLOR,
-        paddingTop: 0,
+        backgroundColor: colors.WHITE_BG_COLOR,
         paddingBottom: 0
       }}
     >
-      <Header
-        headerLeft={() => (
+      <Container>
+        <ContainerHeader
+          style={[
+            boxShadow({
+              elevation: 3,
+              shadowColor: colors.BLACK_FONT_COLOR,
+              shadowOpacity: 0.06
+            })
+          ]}
+        >
           <Card style={{ width: 40, height: 40 }}>
             <FastImage
               style={{
@@ -100,14 +109,12 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
               resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
-        )}
-        title={() => (
+
           <FastImage
             style={{
-              width: 180,
-              height: 180,
-              top: 12,
-              right: 8
+              width: 40,
+              height: 40,
+              left: applyScale(Math.floor(Dimensions.get('screen').width / 3))
             }}
             source={{
               uri: gradientAppIconLink,
@@ -115,10 +122,8 @@ export default function BookmarkScreen(props: BookmarkScreenProp) {
             }}
             resizeMode={FastImage.resizeMode.contain}
           />
-        )}
-      />
+        </ContainerHeader>
 
-      <Container>
         {!bookMarkState.bookmarks.length ? (
           <LoadingGames />
         ) : (
