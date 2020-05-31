@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
+import { StyleSheet, TouchableOpacity, Keyboard } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { BlurView } from '@react-native-community/blur';
 import FastImage from 'react-native-fast-image';
 import { NavigationInterface } from '../types';
 import { useThemeContext } from '../../theme';
 import { useStoreContext } from '../../store';
 import { MaterialIcons } from '@expo/vector-icons';
-import Input from '../../components/input';
+import InputField from '../../components/input';
 import hexToRGB from '../../utils/hexToRGB';
 import Card from '../../components/card';
-import Header from '../../commons/header';
 import SearchPlatforms from './platforms';
+import boxShadow from '../../utils/boxShadows';
 
 import {
   Container,
   SearchCancelIconContainer,
   SearchContainerHeader,
-  SearchContainerHeaderText
+  SearchContainerHeaderText,
+  ContainerHeader
 } from './styles';
 
 interface SearchScreenProp extends NavigationInterface {
@@ -29,23 +32,35 @@ export default function SearchScreen(props: SearchScreenProp) {
     store: { userState }
   } = useStoreContext();
 
-  const [state, setState] = useState({ searchFieldValue: '' });
+  const [state, setState] = useState({
+    searchWord: '',
+    selectedPlatform: '',
+    blueView: false
+  });
 
-  const handleChangeText = (searchWord: string) => {
-    console.log(searchWord);
-  };
+  const handleSubmit = () => setState({ ...state, blueView: false });
+
+  const handleFocus = () => setState({ ...state, blueView: true });
 
   return (
     <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: colors.WHITE_BG_COLOR,
-        paddingTop: 0,
         paddingBottom: 0
       }}
     >
-      <Header
-        headerLeft={() => (
+      <Container>
+        <ContainerHeader
+          style={[
+            boxShadow({
+              elevation: 3,
+              shadowColor: colors.BLACK_FONT_COLOR,
+              shadowOpacity: 0.06
+            }),
+            { justifyContent: 'space-between' }
+          ]}
+        >
           <Card style={{ width: 40, height: 40 }}>
             <FastImage
               style={{
@@ -62,33 +77,52 @@ export default function SearchScreen(props: SearchScreenProp) {
               resizeMode={FastImage.resizeMode.contain}
             />
           </Card>
-        )}
-        title={() => (
-          <Input
+
+          <InputField
             placeholder="search gamestad"
-            onChangeText={handleChangeText}
-            defaultValue={state.searchFieldValue}
+            onChangeText={searchWord => setState({ ...state, searchWord })}
+            onFocus={handleFocus}
+            onSubmitEditing={handleSubmit}
+            defaultValue={state.searchWord}
             returnKeyType="search"
             placeholderTextColor={hexToRGB(colors.BLACK_FONT_COLOR, 0.5)}
-            inputStyle={{ paddingRight: 45 }}
+            style={{ marginRight: 20 }}
+            inputStyle={{ paddingRight: 50 }}
           >
             <SearchCancelIconContainer
-              onPress={() => setState({ ...state, searchFieldValue: '' })}
+              onPress={() => setState({ ...state, searchWord: '' })}
             >
-              <MaterialIcons name="cancel" size={25} />
+              <MaterialIcons name="cancel" size={20} />
             </SearchCancelIconContainer>
-          </Input>
-        )}
-      />
+          </InputField>
+        </ContainerHeader>
 
-      <Container>
         <SearchContainerHeader>
           <SearchContainerHeaderText>
             Search by platform
           </SearchContainerHeaderText>
         </SearchContainerHeader>
 
-        <SearchPlatforms onPress={handleChangeText} />
+        <SearchPlatforms
+          onPress={selectedPlatform => setState({ ...state, selectedPlatform })}
+        />
+
+        {state.blueView && (
+          <BlurView
+            style={StyleSheet.absoluteFill}
+            blurType="light"
+            blurAmount={5}
+            reducedTransparencyFallbackColor="white"
+          >
+            <TouchableOpacity
+              style={{ flex: 1 }}
+              onPress={() => {
+                setState({ ...state, blueView: false });
+                Keyboard.dismiss();
+              }}
+            />
+          </BlurView>
+        )}
       </Container>
     </SafeAreaView>
   );
