@@ -45,13 +45,6 @@ database/app.realm.management
 database/app.realm.lock
 database/app.realm.note
 
-
-# IOS AND ANDROID FOLDER CHNAGES
-#
-ios/
-ios.real/
-android/
-
 # Expo
 .expo/packager-info.json
 
