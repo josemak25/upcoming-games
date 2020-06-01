@@ -16,7 +16,7 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <RootStack.Navigator
-        initialRouteName="SplashScreen"
+        initialRouteName="HomeScreen"
         screenOptions={{
           headerShown: false,
           headerStyle: customHeaderStyle,
