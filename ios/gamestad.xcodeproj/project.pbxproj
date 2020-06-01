@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52134FB9966DFAE62A098110 /* libPods-gamestad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E44CF0207CC0B264DE6580 /* libPods-gamestad.a */; };
 		B501732B1DC01252003445D9 /* EXShell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501732A1DC01252003445D9 /* EXShell.plist */; };
 		B56386491DB9693800A0598C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56386481DB9693800A0598C /* AppDelegate.m */; };
 		B56386511DB9693800A0598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56386501DB9693800A0598C /* Assets.xcassets */; };
@@ -18,13 +19,12 @@
 		B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */; };
 		B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047E1F3A684600E91581 /* shell-app-manifest.json */; };
 		B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047F1F3A684600E91581 /* shell-app.bundle */; };
-		D730F38033EA48772859BFAD /* libPods-gamestad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE101FE5EFF5B3B79D3EAFC1 /* libPods-gamestad.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		334B26FBA2E0699635F8FCBB /* Pods-gamestad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamestad.debug.xcconfig"; path = "Target Support Files/Pods-gamestad/Pods-gamestad.debug.xcconfig"; sourceTree = "<group>"; };
-		49914382C2F2DE3089596242 /* Pods-gamestad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamestad.release.xcconfig"; path = "Target Support Files/Pods-gamestad/Pods-gamestad.release.xcconfig"; sourceTree = "<group>"; };
-		AE101FE5EFF5B3B79D3EAFC1 /* libPods-gamestad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gamestad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E44CF0207CC0B264DE6580 /* libPods-gamestad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gamestad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B11D8261A8F7A03D0710F16 /* Pods-gamestad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamestad.release.xcconfig"; path = "Target Support Files/Pods-gamestad/Pods-gamestad.release.xcconfig"; sourceTree = "<group>"; };
+		867A72FB93F1CAFDBD192B55 /* Pods-gamestad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamestad.debug.xcconfig"; path = "Target Support Files/Pods-gamestad/Pods-gamestad.debug.xcconfig"; sourceTree = "<group>"; };
 		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
 		B56386411DB9693800A0598C /* gamestad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gamestad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56386471DB9693800A0598C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,19 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D730F38033EA48772859BFAD /* libPods-gamestad.a in Frameworks */,
+				52134FB9966DFAE62A098110 /* libPods-gamestad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E045CCF7B8219A07CF185CB /* Frameworks */ = {
+		018B827B260E4E9CBAE91144 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AE101FE5EFF5B3B79D3EAFC1 /* libPods-gamestad.a */,
+				18E44CF0207CC0B264DE6580 /* libPods-gamestad.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BA56135DD980A55F9431E38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				867A72FB93F1CAFDBD192B55 /* Pods-gamestad.debug.xcconfig */,
+				3B11D8261A8F7A03D0710F16 /* Pods-gamestad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		B56386381DB9693800A0598C = {
@@ -66,8 +76,8 @@
 			children = (
 				B56386431DB9693800A0598C /* gamestad */,
 				B56386421DB9693800A0598C /* Products */,
-				BAF54A1944FE02B4ED14B23D /* Pods */,
-				2E045CCF7B8219A07CF185CB /* Frameworks */,
+				2BA56135DD980A55F9431E38 /* Pods */,
+				018B827B260E4E9CBAE91144 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,16 +117,6 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
-		BAF54A1944FE02B4ED14B23D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				334B26FBA2E0699635F8FCBB /* Pods-gamestad.debug.xcconfig */,
-				49914382C2F2DE3089596242 /* Pods-gamestad.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,13 +124,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "gamestad" */;
 			buildPhases = (
-				A8C4B46295DE472934EF7684 /* [CP] Check Pods Manifest.lock */,
+				32982A95E4FAF5D6CC6E5BD9 /* [CP] Check Pods Manifest.lock */,
 				B5722AD01DFB7E3F0084848F /* Prepare Expo */,
 				B563863D1DB9693800A0598C /* Sources */,
 				B563863E1DB9693800A0598C /* Frameworks */,
 				B563863F1DB9693800A0598C /* Resources */,
 				19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */,
-				F1E7EC304F2004E4BC5C3D33 /* [CP] Copy Pods Resources */,
+				259C67D3E6FBEB59B575FD46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,7 +209,35 @@
 			shellPath = /bin/sh;
 			shellScript = "set -eo pipefail\n\nif [ \"$CONFIGURATION\" == \"Debug\" ]; then\n  echo \"Skipping asset bundling in debug mode.\"\n  exit 0\nfi\n\npushd \"${SRCROOT}/..\"\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\ndest=\"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\nexpo bundle-assets --platform ios --dest \"$dest\"\npopd\n";
 		};
-		A8C4B46295DE472934EF7684 /* [CP] Check Pods Manifest.lock */ = {
+		259C67D3E6FBEB59B575FD46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gamestad/Pods-gamestad-resources.sh",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/api.amplitude.com.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaCA.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaDomainValidationCA.der",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/api.amplitude.com.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoCaLimitedRsaCertificationAuthority.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gamestad/Pods-gamestad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32982A95E4FAF5D6CC6E5BD9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,34 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "set -eo pipefail\n\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\nexpo prepare-detached-build --platform ios \"${SRCROOT}/..\"\n";
-		};
-		F1E7EC304F2004E4BC5C3D33 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gamestad/Pods-gamestad-resources.sh",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/api.amplitude.com.der",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaCA.der",
-				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaDomainValidationCA.der",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/api.amplitude.com.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoCaLimitedRsaCertificationAuthority.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaCA.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gamestad/Pods-gamestad-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -392,7 +392,7 @@
 		};
 		B56386591DB9693800A0598C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 334B26FBA2E0699635F8FCBB /* Pods-gamestad.debug.xcconfig */;
+			baseConfigurationReference = 867A72FB93F1CAFDBD192B55 /* Pods-gamestad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8D8QTF339;
@@ -406,7 +406,7 @@
 		};
 		B563865A1DB9693800A0598C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49914382C2F2DE3089596242 /* Pods-gamestad.release.xcconfig */;
+			baseConfigurationReference = 3B11D8261A8F7A03D0710F16 /* Pods-gamestad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8D8QTF339;

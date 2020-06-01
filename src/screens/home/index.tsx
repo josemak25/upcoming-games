@@ -44,7 +44,7 @@ export default function HomeScreen(props: HomeScreenProps) {
       case ViewTypes.GAME_LIST:
         return (
           <Game
-            gameIndex={index}
+            gameIndex={index - 1}
             gamesListLastIndex={gameState.games.length}
             {...data}
             {...props}

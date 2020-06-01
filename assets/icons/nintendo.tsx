@@ -1,14 +1,15 @@
 import * as React from 'react';
 import Svg, { G, Path, Circle, Rect } from 'react-native-svg';
+import { IconProps } from './types';
 
-function NintendoIcon(props) {
+export default function NintendoIcon(props: IconProps) {
   return (
-    <Svg width="14%" height="20%" viewBox="0 0 165.944 72.303" {...props}>
+    <Svg width="10%" height="50%" viewBox="0 0 165.944 72.303" {...props}>
       <G transform="translate(142.571)">
         <Path
           data-name="Path 166"
           d="M11.435 72.303H0V.003h11.435a11.938 11.938 0 0111.938 11.935v48.427a11.938 11.938 0 01-11.938 11.938z"
-          fill="#010101"
+          fill={props.fillColor ? props.fillColor : '#010101'}
         />
         <Circle
           data-name="Ellipse 10"
@@ -63,7 +64,7 @@ function NintendoIcon(props) {
         <Path
           data-name="Path 168"
           d="M11.938 0h11.435v72.3H11.938A11.938 11.938 0 010 60.365V11.938A11.938 11.938 0 0111.938 0z"
-          fill="#020202"
+          fill={props.fillColor ? props.fillColor : '#010101'}
         />
         <Circle
           data-name="Ellipse 5"
@@ -117,11 +118,9 @@ function NintendoIcon(props) {
       <Path
         data-name="Path 167"
         d="M27 71.37V3.044s2.238.094 2.291-2.977c5.7.037 108-.067 108-.067s-.634 3.14 2.291 2.971c-.012 3.323 0 68.533 0 68.533z"
-        fill="#010101"
+        fill={props.fillColor ? props.fillColor : '#010101'}
       />
       <Path data-name="Rectangle 185" fill="#fff" d="M30 3h106v65H30z" />
     </Svg>
   );
 }
-
-export default NintendoIcon;
