@@ -13,11 +13,13 @@ type GameOptionProps = {
   testID?: string;
   option: string;
   optionColor: string;
-  onPress(option: string): void;
+  code: string[];
+  onPress(option: string[]): void;
+  handleCancel(T: any): void;
 };
 
 export default function GameOption(props: GameOptionProps) {
-  const { option, optionColor, onPress, ...restProps } = props;
+  const { option, code, optionColor, onPress, ...restProps } = props;
 
   const [state, setState] = useState({
     selected: false,
@@ -27,7 +29,21 @@ export default function GameOption(props: GameOptionProps) {
 
   const handleOnPress = () => {
     setState({ ...state, selected: true });
-    onPress(option);
+    onPress(code);
+  };
+
+  const handleCancelPress = () => {
+    setState({ ...state, selected: false });
+
+    props.handleCancel(prevState => {
+      const { selectedPlatform } = prevState;
+
+      const filterPlatform = selectedPlatform.filter(
+        platform => !code.includes(platform)
+      );
+
+      return { ...prevState, selectedPlatform: filterPlatform };
+    });
   };
 
   return (
@@ -50,9 +66,7 @@ export default function GameOption(props: GameOptionProps) {
       </Option>
 
       {state.selected ? (
-        <CancelOptionContainer
-          onPress={() => setState({ ...state, selected: false })}
-        >
+        <CancelOptionContainer onPress={handleCancelPress}>
           <MaterialIcons name="cancel" size={20} color={state.containerColor} />
         </CancelOptionContainer>
       ) : null}
