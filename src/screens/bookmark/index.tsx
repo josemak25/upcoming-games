@@ -12,7 +12,7 @@ import { useThemeContext } from '../../theme';
 import { GameInterface } from '../../store/game/types';
 import { BOOKMARK_ACTION_TYPES } from '../../store/bookmark/types';
 import bookmarkActions from '../../store/bookmark/actions';
-import LoadingGames from '../../components/loadingGames';
+import LoadingGames from '../../components/LoadingGames';
 import Game from '../../components/game_card';
 import Card from '../../components/card';
 import boxShadow from '../../utils/boxShadows';
