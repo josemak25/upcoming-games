@@ -18,7 +18,7 @@ export default function SplashScreen({ navigation }) {
       duration: 2000,
       toValue: 1,
       easing: Easing.inOut(Easing.ease)
-    }).start(() => navigation.navigate('HomeScreen'));
+    }).start(() => navigation.navigate('SignupScreen'));
   };
 
   useEffect(() => {

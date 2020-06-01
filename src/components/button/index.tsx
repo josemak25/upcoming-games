@@ -15,11 +15,7 @@ export default function Button(props: ButtonProps) {
   const { title, buttonStyle, textStyle, activeOpacity } = props;
 
   return (
-    <Container
-      {...props}
-      activeOpacity={activeOpacity | 0.4}
-      style={buttonStyle}
-    >
+    <Container {...props} activeOpacity={activeOpacity} style={buttonStyle}>
       <ButtonText style={textStyle}>{title}</ButtonText>
     </Container>
   );

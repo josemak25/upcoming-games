@@ -9,11 +9,13 @@ import { SearchPlatformsContainer, SearchPlatformsButton } from './styles';
 interface SearchPlatformsProp {
   platforms: { option: string; optionColor: string }[];
   onPress(option: string): void;
+  handleComplete(): void;
 }
 
 export default function SearchPlatforms({
   platforms,
-  onPress
+  onPress,
+  handleComplete
 }: SearchPlatformsProp) {
   const { colors } = useThemeContext();
 
@@ -41,6 +43,7 @@ export default function SearchPlatforms({
             borderColor: hexToRGB(colors.ACTION_BG_COLOR, 0.2)
           }}
           textStyle={{ color: colors.ACTION_BG_COLOR }}
+          onPress={handleComplete}
         />
       </SearchPlatformsButton>
     </SearchPlatformsContainer>

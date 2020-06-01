@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { customHeaderStyle } from './constants';
 import { useThemeContext } from './theme';
 import HomeNavigator from './navigator/HomeNavigator';
+import SignupNavigator from './navigator/SignupNavigator';
 
 const RootStack = createStackNavigator();
 
@@ -31,6 +32,8 @@ export default function AppNavigator() {
           name="SplashScreen"
           component={Screens.SplashScreen}
         />
+
+        <RootStack.Screen name="SignupScreen" component={SignupNavigator} />
 
         <RootStack.Screen name="HomeScreen" component={HomeNavigator} />
       </RootStack.Navigator>
