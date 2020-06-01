@@ -7,29 +7,34 @@ import hexToRGB from '../../utils/hexToRGB';
 import { SearchPlatformsContainer, SearchPlatformsButton } from './styles';
 
 interface SearchPlatformsProp {
-  platforms: { option: string; optionColor: string }[];
-  onPress(option: string): void;
+  platforms: { option: string; optionColor: string; code: string[] }[];
+  onPress(option: string[]): void;
+  handleSearch(): void;
+  handleCancel(T: any): void;
 }
 
 export default function SearchPlatforms({
   platforms,
-  onPress
+  onPress,
+  handleSearch,
+  handleCancel
 }: SearchPlatformsProp) {
   const { colors } = useThemeContext();
 
   return (
     <SearchPlatformsContainer>
-      {platforms.map(({ option, optionColor }) => (
+      {platforms.map((platform, index) => (
         <GameOption
-          key={option}
-          option={option}
-          optionColor={optionColor}
+          key={index}
+          {...platform}
           onPress={onPress}
+          handleCancel={handleCancel}
         />
       ))}
 
       <SearchPlatformsButton>
         <Button
+          onPress={handleSearch}
           title="search platform"
           buttonStyle={{
             width: '80%',
@@ -49,11 +54,10 @@ export default function SearchPlatforms({
 
 SearchPlatforms.defaultProps = {
   platforms: [
-    { option: 'Playstation', optionColor: '#016dc7' },
-    { option: 'Game Boy Advance', optionColor: '#675f9b' },
-    { option: 'Xbox', optionColor: '#107C10' },
-    { option: 'Nintendo Switch', optionColor: '#ec5c52' },
-    { option: 'Mobile', optionColor: '#d5c3b2' },
-    { option: 'PC', optionColor: '#47464c' }
+    { option: 'Playstation', code: [48, 46, 9, 8], optionColor: '#016dc7' },
+    { option: 'Nintendo Switch', code: [130], optionColor: '#ec5c52' },
+    { option: 'Xbox', code: [169, 49, 12, 11], optionColor: '#107C10' },
+    { option: 'Mobile', code: [34, 39], optionColor: '#d5c3b2' },
+    { option: 'PC', code: [6, 14], optionColor: '#47464c' }
   ]
 };
