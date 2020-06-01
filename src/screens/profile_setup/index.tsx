@@ -31,6 +31,10 @@ export default function ProfileSetup(props: ProfileSetupProp) {
     console.log(searchWord);
   };
 
+  const handleComplete = () => {
+    props.navigation.replace('HomeScreen');
+  };
+
   return (
     <SafeAreaView
       style={{
@@ -86,7 +90,10 @@ export default function ProfileSetup(props: ProfileSetupProp) {
           your profile, by {'\n'} receiving feeds and updates for your {'\n'}
           specific selected platform.
         </HeaderTextContent>
-        <SearchPlatforms onPress={handleChangeText} />
+        <SearchPlatforms
+          onPress={handleChangeText}
+          handleComplete={handleComplete}
+        />
       </Container>
     </SafeAreaView>
   );

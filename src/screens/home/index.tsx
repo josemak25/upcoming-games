@@ -9,7 +9,7 @@ import { useStoreContext } from '../../store';
 import Game from '../../components/game_card';
 import Card from '../../components/card';
 import GameListHeader from './game_platform';
-import LoadingGames from '../../components/loadingGames';
+import LoadingGames from '../../components/LoadingGames';
 import layoutProvider, { ViewTypes } from '../../components/recycler_list_view';
 import { GameScreenshotInterface, gradientAppIconLink } from '../../constants';
 import { Dimensions } from 'react-native';
