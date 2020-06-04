@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { Dimensions } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -20,22 +19,4 @@ export const HeaderTextContent = styled.Text`
   font-family: ${({ theme }) => theme.fonts.NOTOSANS_REGULAR};
   color: ${({ theme }) => theme.colors.BLACK_FONT_COLOR};
   text-align: center;
-`;
-
-export const SearchPlatformsContainer = styled.View`
-  flex: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-top: 30px;
-`;
-
-export const SearchPlatformsButton = styled.View`
-  flex: 1;
-  width: ${Dimensions.get('window').width}px;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 50px;
 `;

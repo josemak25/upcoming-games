@@ -14,9 +14,9 @@ import InputField from '../../components/input';
 import hexToRGB from '../../utils/hexToRGB';
 import getImageURL from '../../utils/getImageURL';
 import Card from '../../components/card';
-import SearchPlatforms from './platforms';
 import boxShadow from '../../utils/boxShadows';
 import LoadingGames from '../../components/LoadingGames';
+import Platforms from '../../components/platforms';
 
 import {
   Container,
@@ -180,7 +180,7 @@ export default function SearchScreen(props: SearchScreenProp) {
         </SearchContainerHeader>
 
         {!state.dataProvider.getSize() ? (
-          <SearchPlatforms
+          <Platforms
             onPress={selectedPlatform =>
               setState({
                 ...state,

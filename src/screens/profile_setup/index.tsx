@@ -7,7 +7,7 @@ import { useThemeContext } from '../../theme';
 import { useStoreContext } from '../../store';
 import { gradientAppIconLink } from '../../constants';
 import Card from '../../components/card';
-import SearchPlatforms from './platforms';
+import Platforms from '../../components/platforms';
 import boxShadow from '../../utils/boxShadows';
 import applyScale from '../../utils/applyScale';
 
@@ -86,7 +86,7 @@ export default function ProfileSetup(props: ProfileSetupProp) {
           your profile, by {'\n'} receiving feeds and updates for your {'\n'}
           specific selected platform.
         </HeaderTextContent>
-        <SearchPlatforms
+        <Platforms
           onPress={selectedPlatform =>
             setState({
               ...state,
@@ -94,7 +94,7 @@ export default function ProfileSetup(props: ProfileSetupProp) {
             })
           }
           handleCancel={setState}
-          handleComplete={handleComplete}
+          handleSearch={handleComplete}
         />
       </Container>
     </SafeAreaView>
