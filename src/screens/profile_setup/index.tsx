@@ -25,11 +25,7 @@ export default function ProfileSetup(props: ProfileSetupProp) {
     store: { userState }
   } = useStoreContext();
 
-  const [state, setState] = useState({ searchFieldValue: '' });
-
-  const handleChangeText = (searchWord: string) => {
-    console.log(searchWord);
-  };
+  const [state, setState] = useState({ selectedPlatform: [] });
 
   const handleComplete = () => {
     props.navigation.replace('HomeScreen');
@@ -91,7 +87,13 @@ export default function ProfileSetup(props: ProfileSetupProp) {
           specific selected platform.
         </HeaderTextContent>
         <SearchPlatforms
-          onPress={handleChangeText}
+          onPress={selectedPlatform =>
+            setState({
+              ...state,
+              selectedPlatform: [...state.selectedPlatform, ...selectedPlatform]
+            })
+          }
+          handleCancel={setState}
           handleComplete={handleComplete}
         />
       </Container>

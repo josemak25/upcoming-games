@@ -42,6 +42,8 @@
   @**.expo.core.interfaces.DoNotStrip *;
 }
 
+-keep class io.realm.react.**
+
 ##### React Native #####
 -keep,allowobfuscation @interface **.facebook.proguard.annotations.DoNotStrip
 -keep,allowobfuscation @interface **.facebook.proguard.annotations.KeepGettersAndSetters
