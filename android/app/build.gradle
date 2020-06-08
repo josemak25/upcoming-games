@@ -3,6 +3,11 @@
     enableHermes: true  // clean and rebuild if changing
   ]
 
+  /**
+ * Run Proguard to shrink the Java bytecode in release builds.
+ */
+def enableProguardInReleaseBuilds = true
+
 buildscript {
   repositories {
     google()
@@ -56,10 +61,17 @@ android {
       storeFile file('../debug.keystore')
     }
     release {
-      storeFile file(System.getenv("ANDROID_KEYSTORE_PATH") ?: "release-key.jks")
-      storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
-      keyAlias System.getenv("ANDROID_KEY_ALIAS")
-      keyPassword System.getenv("ANDROID_KEY_PASSWORD")
+      // storeFile file(System.getenv("ANDROID_KEYSTORE_PATH") ?: "release-key.jks")
+      // storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
+      // keyAlias System.getenv("ANDROID_KEY_ALIAS")
+      // keyPassword System.getenv("ANDROID_KEY_PASSWORD")
+
+       if (project.hasProperty('ANDROID_KEYSTORE_PATH')) {
+          storeFile file(ANDROID_KEYSTORE_PATH)
+          storePassword ANDROID_KEYSTORE_PASSWORD
+          keyAlias ANDROID_KEY_ALIAS
+          keyPassword ANDROID_KEY_PASSWORD
+      }
     }
   }
   buildTypes {
