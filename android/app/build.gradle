@@ -1,4 +1,8 @@
 
+  project.ext.react = [
+    enableHermes: true  // clean and rebuild if changing
+  ]
+
 buildscript {
   repositories {
     google()
@@ -201,8 +205,8 @@ dependencies {
       target       : 'react-native',
       exclude      : [
         // You can exclude unneeded modules here, eg.
-        // 'unimodules-face-detector-interface',
-        // 'expo-face-detector'
+        'unimodules-face-detector-interface',
+        'expo-face-detector'
 
         // Adding a name here will also remove the package
         // from auto-generated BasePackageList.java
