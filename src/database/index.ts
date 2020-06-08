@@ -10,7 +10,6 @@ export default class database {
   static async connect() {
     try {
       const response = await Realm.open({
-        path: 'upcomingGames.realm',
         schema: [...dbSchemas],
         schemaVersion: APP_CONFIG.SCHEMA_VERSION
         // encryptionKey: DATA_BASE_ENCRYPTION_KEY

@@ -7,7 +7,7 @@ import { useThemeContext } from '../../theme';
 import { useStoreContext } from '../../store';
 import { gradientAppIconLink } from '../../constants';
 import Card from '../../components/card';
-import SearchPlatforms from './platforms';
+import Platforms from '../../components/platforms';
 import boxShadow from '../../utils/boxShadows';
 import applyScale from '../../utils/applyScale';
 
@@ -25,11 +25,7 @@ export default function ProfileSetup(props: ProfileSetupProp) {
     store: { userState }
   } = useStoreContext();
 
-  const [state, setState] = useState({ searchFieldValue: '' });
-
-  const handleChangeText = (searchWord: string) => {
-    console.log(searchWord);
-  };
+  const [state, setState] = useState({ selectedPlatform: [] });
 
   const handleComplete = () => {
     props.navigation.replace('HomeScreen');
@@ -90,9 +86,15 @@ export default function ProfileSetup(props: ProfileSetupProp) {
           your profile, by {'\n'} receiving feeds and updates for your {'\n'}
           specific selected platform.
         </HeaderTextContent>
-        <SearchPlatforms
-          onPress={handleChangeText}
-          handleComplete={handleComplete}
+        <Platforms
+          onPress={selectedPlatform =>
+            setState({
+              ...state,
+              selectedPlatform: [...state.selectedPlatform, ...selectedPlatform]
+            })
+          }
+          handleCancel={setState}
+          handleSearch={handleComplete}
         />
       </Container>
     </SafeAreaView>

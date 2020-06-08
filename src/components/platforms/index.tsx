@@ -1,24 +1,24 @@
 import React from 'react';
-import GameOption from '../../components/game_option';
-import Button from '../../components/button';
+import GameOption from '../game_option';
+import Button from '../button';
 import { useThemeContext } from '../../theme';
 import hexToRGB from '../../utils/hexToRGB';
 
 import { SearchPlatformsContainer, SearchPlatformsButton } from './styles';
 
-interface SearchPlatformsProp {
+interface PlatformsProp {
   platforms: { option: string; optionColor: string; code: string[] }[];
   onPress(option: string[]): void;
   handleSearch(): void;
   handleCancel(T: any): void;
 }
 
-export default function SearchPlatforms({
+export default function Platforms({
   platforms,
   onPress,
   handleSearch,
   handleCancel
-}: SearchPlatformsProp) {
+}: PlatformsProp) {
   const { colors } = useThemeContext();
 
   return (
@@ -52,7 +52,7 @@ export default function SearchPlatforms({
   );
 }
 
-SearchPlatforms.defaultProps = {
+Platforms.defaultProps = {
   platforms: [
     { option: 'Playstation', code: [48, 46, 9, 8], optionColor: '#016dc7' },
     { option: 'Nintendo Switch', code: [130], optionColor: '#ec5c52' },
